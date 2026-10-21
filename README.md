@@ -104,3 +104,4 @@ Git silently ignores a filter whose command is unset, so run this before staging
 | [#366: Back to Basics: Basics of the Bipolar Transistor - NPN and PNP](https://www.youtube.com/watch?v=IrAUC4ZoNYY) | [Video 366 folder](<366 - Back to Basics - Basics of the Bipolar Transistor - NPN and PNP/>) |
 | [#374: Back to Basics: JFET Current Source / Limiter circuits](https://www.youtube.com/watch?v=XJadPFYWglQ) | [Video 374 folder](<374 - Back to Basics - JFET Current Source - Limiter circuits/>) |
 | [#412: Common Emitter Amplifier - Input and Output Impedance](https://www.youtube.com/watch?v=yhuf2_Zu8T8) | [Video 412 folder](<412 - Common Emitter Amplifier - Input and Output Impedance/>) |
+| [#413: Cascading Common-Emitter Amplifiers using an Emitter Follower](https://www.youtube.com/watch?v=pAUYDPwCMj4) | [Video 413 folder](<413 - Cascading Common-Emitter Amplifiers using an Emitter Follower/>) |
