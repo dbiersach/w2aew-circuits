@@ -1,0 +1,4 @@
+* Diodes Incorporated 1N5711WS parameter transcription.
+* Source: https://www.diodes.com/part/view/1N5711WS/ (1N5711WS.spice.txt)
+* Used in video 167; verify source revision before updating.
+.model DI_1N5711WS D(Is=315n Rs=2.8 BV=70 IBV=10u Cjo=2p M=.333 N=2.03 Tt=1.44n)

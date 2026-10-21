@@ -1,0 +1,18 @@
+LTspice 26.1.1 for Windows
+Circuit: R-2R Ladder DAC.net
+Start Time: Tue Oct 20 22:16:31 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.047 seconds.
+Total iterations: 4664
+
+Files loaded:
+R-2R Ladder DAC.net
+
+vout_max: MAX(V(Vout))=3.09377169609 FROM 0 TO 0.004

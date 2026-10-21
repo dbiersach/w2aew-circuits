@@ -1,0 +1,4 @@
+* Generic legacy 1N34A germanium point-contact model.
+* Source: cmp\standard.dio in a local LTspice Libraries folder, line 137 (12 October 2026).
+* Provenance and manufacturer fitting are unverified. This is not a manufacturer-provided model.
+.MODEL 1N34A_LEGACY D(IS=2.6u RS=6.5 N=1.6 CJO=0.8p EG=0.67 BV=75 IBV=1m)

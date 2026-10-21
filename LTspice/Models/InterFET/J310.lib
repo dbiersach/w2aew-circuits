@@ -1,0 +1,5 @@
+* InterFET CTC-023, N0072SL J310 geometry; manufacturer's low/mid/high model entries.
+* https://interfet.com/jfet-spice-models/
+.MODEL J310-L njf VTO=-2.80 BETA=3.91m LAMBDA=14.7m CGD=7.00p CGS=7.00p PB=3.37 IS=80.1f MFG=InterFET
+.MODEL J310-M njf VTO=-3.23 BETA=3.52m LAMBDA=21.7m CGD=7.00p CGS=7.00p PB=3.37 IS=80.1f MFG=InterFET
+.MODEL J310-H njf VTO=-3.82 BETA=2.81m LAMBDA=33.1m CGD=7.00p CGS=7.00p PB=3.37 IS=80.1f MFG=InterFET

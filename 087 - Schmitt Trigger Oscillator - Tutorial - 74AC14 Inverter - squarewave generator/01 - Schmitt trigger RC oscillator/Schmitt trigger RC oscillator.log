@@ -1,0 +1,23 @@
+LTspice 26.1.1 for Windows
+Circuit: Schmitt trigger RC oscillator.net
+Start Time: Wed Oct 21 16:00:50 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.611 seconds.
+Total iterations: 100530
+
+Files loaded:
+Schmitt trigger RC oscillator.net
+
+t1: V(out)=2.5 AT 0.00124604449042
+t2: V(out)=2.5 AT 0.00161385003865
+period: T2-T1=0.000367805548225
+freq: 1/(T2-T1)=2718.82793728
+vrc_upper: MAX(V(RC))=3.2000207901 FROM 0.001 TO 0.005
+vrc_lower: MIN(V(RC))=1.79997932911 FROM 0.001 TO 0.005

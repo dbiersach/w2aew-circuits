@@ -1,0 +1,39 @@
+LTspice 26.1.1 for Windows
+Circuit: Transistor tail current source.net
+Start Time: Wed Oct 21 01:18:25 2026
+Options:plotwinsize=0
+
+.step vcmset=2
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step vcmset=2.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step vcmset=3
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.540 seconds.
+Total iterations: 5043
+
+Files loaded:
+Transistor tail current source.net
+standard.bjt
+
+
+Measurement: vdiff_pp
+  step	PP(V(OUT1,OUT2))	FROM	TO
+     1	0.934443473816	0.001	0.005
+     2	0.93426656723	0.001	0.005
+     3	0.934080600739	0.001	0.005
+
+Measurement: vout1_avg
+  step	AVG(V(OUT1))	FROM	TO
+     1	6.34515332507	0.001	0.005
+     2	6.34369594957	0.001	0.005
+     3	6.34224617485	0.001	0.005

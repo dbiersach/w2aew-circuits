@@ -1,0 +1,23 @@
+LTspice 26.1.1 for Windows
+Circuit: CE driver and loaded follower.net
+Start Time: Tue Oct 20 01:28:39 2026
+
+.step load=100
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step load=1000000000000
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.110 seconds.
+Total iterations: 10053
+
+Files loaded:
+CE driver and loaded follower.net
+standard.bjt
+

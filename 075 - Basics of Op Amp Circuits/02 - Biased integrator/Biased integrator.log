@@ -1,0 +1,24 @@
+LTspice 26.1.1 for Windows
+Circuit: Biased integrator.net
+Start Time: Wed Oct 21 11:41:15 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 3.194 seconds.
+Total iterations: 621668
+
+Files loaded:
+Biased integrator.net
+lmx58b_lm2904b.lib
+
+vin_pp: PP(V(vin))=2 FROM 0.0598 TO 0.06
+vout_pp: PP(V(vout))=0.354368686676 FROM 0.0598 TO 0.06
+vout_avg: AVG(V(vout))=4.90778657074 FROM 0.0598 TO 0.06

@@ -1,0 +1,23 @@
+LTspice 26.1.1 for Windows
+Circuit: LC ringdown.net
+Start Time: Wed Oct 21 16:04:57 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 0.860 seconds.
+Total iterations: 100118
+
+Files loaded:
+LC ringdown.net
+
+tc1: V(TANK)=0 AT 8.94524375021e-07
+tc2: V(TANK)=0 AT 1.52648272597e-06
+ring_period: TC2-TC1=6.31958350951e-07
+ring_freq: 1/(TC2-TC1)=1582382.76066
+first_peak: MAX(V(TANK))=0.0495037548244 FROM 1e-07 TO 7e-07

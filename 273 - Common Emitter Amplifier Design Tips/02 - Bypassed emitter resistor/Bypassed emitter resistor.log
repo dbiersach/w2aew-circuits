@@ -1,0 +1,41 @@
+LTspice 26.1.1 for Windows
+Circuit: Bypassed emitter resistor.net
+Start Time: Tue Oct 20 00:46:59 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.291 seconds.
+Total iterations: 40053
+
+Files loaded:
+Bypassed emitter resistor.net
+standard.bjt
+
+Fourier components of V(out)
+N-Period=5
+DC component:10.2139
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.000e+04	 1.655e-01	 1.000e+00	  -90.32°	    0.00°
+    2   	 2.000e+04	 3.750e-03	 2.266e-02	   -0.95°	   89.37°
+    3   	 3.000e+04	 5.024e-05	 3.036e-04	 -154.27°	  -63.95°
+    4   	 4.000e+04	 2.344e-05	 1.416e-04	   92.38°	  182.69°
+    5   	 5.000e+04	 8.124e-05	 4.908e-04	   52.52°	  142.84°
+    6   	 6.000e+04	 1.336e-05	 8.074e-05	 -142.41°	  -52.09°
+    7   	 7.000e+04	 7.247e-05	 4.379e-04	  -94.19°	   -3.87°
+    8   	 8.000e+04	 4.554e-05	 2.752e-04	  -73.36°	   16.96°
+    9   	 9.000e+04	 5.453e-05	 3.295e-04	  161.95°	  252.26°
+   10   	 1.000e+05	 1.574e-05	 9.513e-05	   41.64°	  131.96°
+Partial Harmonic Distortion: 2.267661%
+Total Harmonic Distortion:   2.269715%
+
+vin_avg: AVG(V(in))=1.08567685199 FROM 0.001 TO 0.002
+vin_pp: PP(V(in))=0.00489591373354 FROM 0.001 TO 0.002
+vout_pp: PP(V(out))=0.331114169717 FROM 0.001 TO 0.002
+gain: Vout_pp/Vin_pp=67.6307197671

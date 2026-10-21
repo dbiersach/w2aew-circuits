@@ -1,0 +1,19 @@
+LTspice 26.1.1 for Windows
+Circuit: PNP mirror - two LEDs.net
+Start Time: Mon Oct 19 00:11:40 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Total elapsed time: 0.066 seconds.
+Total iterations: 169
+
+Files loaded:
+PNP mirror - two LEDs.net
+standard.dio
+standard.bjt
+
+iled_10v: I(DLED1)=0.000377468328224 at 10

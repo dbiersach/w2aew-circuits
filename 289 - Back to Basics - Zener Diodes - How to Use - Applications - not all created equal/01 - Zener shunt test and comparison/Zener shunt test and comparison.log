@@ -1,0 +1,21 @@
+LTspice 26.1.1 for Windows
+Circuit: Zener shunt test and comparison.net
+Start Time: Wed Oct 21 11:41:48 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Total elapsed time: 0.015 seconds.
+Total iterations: 2006
+
+Files loaded:
+Zener shunt test and comparison.net
+1N4732A_1N4736A.lib
+
+vz47: V(vz_4v7)=4.62070131302 at 10
+iz47: I(R4V7)=0.0163009054959 at 10
+vz68: V(vz_6v8)=6.76131057739 at 10
+iz68: I(R6V8)=0.00981420930475 at 10

@@ -1,0 +1,22 @@
+LTspice 26.1.1 for Windows
+Circuit: Common Emitter (2 kHz).net
+Start Time: Tue Oct 20 00:54:58 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.062 seconds.
+Total iterations: 16149
+
+Files loaded:
+Common Emitter (2 kHz).net
+standard.bjt
+
+vin_avg: AVG(V(in))=1.29291037173 FROM 0.09 TO 0.1
+vin_pp: PP(V(in))=0.019742846489 FROM 0.09 TO 0.1
+vout_pp: PP(V(out))=2.1734637022 FROM 0.09 TO 0.1
+gain: Vout_pp/Vin_pp=110.088669505

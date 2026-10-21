@@ -1,0 +1,5 @@
+* MV209 legacy LTspice diode model, attributed to Motorola in the source line.
+* Copied from cmp\standard.dio in a local LTspice Libraries folder, line 217.
+* Original model authorship and revision have not been independently verified.
+* The onsemi MV209 datasheet identifies the physical diode but does not supply this SPICE line.
+.model MV209_LEGACY D(Is=.43p Rs=1 Bv=35 Ibv=10u Isr=4.4p Cjo=125p Vj=.75 M=.908)

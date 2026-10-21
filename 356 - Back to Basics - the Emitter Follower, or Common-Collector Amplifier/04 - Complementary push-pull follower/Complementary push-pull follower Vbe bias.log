@@ -1,0 +1,39 @@
+LTspice 26.1.1 for Windows
+Circuit: Complementary push-pull follower Vbe bias.net
+Start Time: Tue Oct 20 11:34:50 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.331 seconds.
+Total iterations: 10048
+
+Files loaded:
+Complementary push-pull follower Vbe bias.net
+standard.bjt
+
+Fourier components of V(LOAD_OUT)
+N-Period=1
+DC component:-5.12647e-05
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.000e+03	 2.300e-01	 1.000e+00	  -96.84°	    0.00°
+    2   	 2.000e+03	 3.598e-03	 1.564e-02	   -9.03°	   87.81°
+    3   	 3.000e+03	 2.854e-03	 1.241e-02	 -111.31°	  -14.46°
+    4   	 4.000e+03	 9.473e-05	 4.118e-04	  -39.31°	   57.53°
+    5   	 5.000e+03	 2.633e-04	 1.145e-03	 -124.59°	  -27.75°
+    6   	 6.000e+03	 7.260e-05	 3.156e-04	  147.08°	  243.92°
+    7   	 7.000e+03	 3.236e-05	 1.407e-04	   46.68°	  143.52°
+    8   	 8.000e+03	 1.766e-05	 7.679e-05	  125.84°	  222.69°
+    9   	 9.000e+03	 1.534e-05	 6.669e-05	   35.13°	  131.97°
+Partial Harmonic Distortion: 2.000521%
+Total Harmonic Distortion:   2.000518%
+
+isupply_avg: AVG(-I(V1))=0.00812771908613 FROM 0.007 TO 0.009
+vbias_avg: AVG(V(UPPER_BASE,LOWER_BASE))=1.46799591386 FROM 0.007 TO 0.009

@@ -1,0 +1,38 @@
+LTspice 26.1.1 for Windows
+Circuit: Fixed Base Bias.net
+Start Time: Mon Oct 19 23:52:58 2026
+
+.step beta=115
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step beta=180
+Direct Newton iteration succeeded in finding operating point.
+
+.step beta=275
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.171 seconds.
+Total iterations: 250
+
+Files loaded:
+Fixed Base Bias.net
+standard.bjt
+
+
+Measurement: vrc
+  step	AVG(V(VCC,COLLECTOR))	FROM	TO
+     1	3.95675373077	0.0005	0.001
+     2	6.01041126251	0.0005	0.001
+     3	8.73452335596	0.0005	0.001
+
+Measurement: vc
+  step	AVG(V(COLLECTOR))	FROM	TO
+     1	5.04324626923	0.0005	0.001
+     2	2.98958873749	0.0005	0.001
+     3	0.265476644039	0.0005	0.001

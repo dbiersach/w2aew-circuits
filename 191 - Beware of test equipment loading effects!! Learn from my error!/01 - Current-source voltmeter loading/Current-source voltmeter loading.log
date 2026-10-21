@@ -1,0 +1,27 @@
+LTspice 26.1.1 for Windows
+Circuit: Current-source voltmeter loading.net
+Start Time: Mon Oct 19 14:13:45 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Total elapsed time: 0.040 seconds.
+Total iterations: 329
+
+Files loaded:
+Current-source voltmeter loading.net
+standard.bjt
+
+i_at_10v: I(VSENSE)=0.000360523437848 at 0
+i_at_2v: I(VSENSE)=0.000357548065949 at 8
+vcol_at_10v: V(COLLECTOR)=10 at 0
+vcol_at_2v: V(COLLECTOR)=2 at 8
+rout_ohms: (VCOL_AT_10V-VCOL_AT_2V)/(I_AT_10V-I_AT_2V)=2688739.51605
+iq1_at_10v: Ic(Q1)=0.000359523430234 at 0
+iq1_at_2v: Ic(Q1)=0.000357348064426 at 8
+rout_q1_ohms: (VCOL_AT_10V-VCOL_AT_2V)/(IQ1_AT_10V-IQ1_AT_2V)=3677542.40342
+ivom_at_10v: I(RVOM)=9.99999997475e-07 at 0
+ivom_at_2v: I(RVOM)=2.00000002337e-07 at 8

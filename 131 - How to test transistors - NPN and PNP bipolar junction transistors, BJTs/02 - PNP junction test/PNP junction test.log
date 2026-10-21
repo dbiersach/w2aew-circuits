@@ -1,0 +1,20 @@
+LTspice 26.1.1 for Windows
+Circuit: PNP junction test.net
+Start Time: Wed Oct 21 00:40:32 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+.OP point found by inspection.
+Total elapsed time: 0.080 seconds.
+Total iterations: 502
+
+Files loaded:
+PNP junction test.net
+standard.bjt
+
+ifwd: I(RLIMIT)=0.00033430304029 at 1
+irev: I(RLIMIT)=-1.01079442125e-12 at -1

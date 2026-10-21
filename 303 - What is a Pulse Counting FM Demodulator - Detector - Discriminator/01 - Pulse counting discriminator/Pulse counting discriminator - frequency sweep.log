@@ -1,0 +1,41 @@
+LTspice 26.1.1 for Windows
+Circuit: Pulse counting discriminator - frequency sweep.net
+Start Time: Tue Oct 20 16:47:14 2026
+
+.step fif=50000
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step fif=75000
+Direct Newton iteration succeeded in finding operating point.
+
+.step fif=100000
+Direct Newton iteration succeeded in finding operating point.
+
+.step fif=125000
+Direct Newton iteration succeeded in finding operating point.
+
+.step fif=150000
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 2.700 seconds.
+Total iterations: 189932
+
+Files loaded:
+Pulse counting discriminator - frequency sweep.net
+standard.dio
+standard.bjt
+
+
+Measurement: audio_avg
+  step	AVG(V(audio))	FROM	TO
+     1	4.49115502008	0.001	0.0015
+     2	4.30770520174	0.001	0.0015
+     3	4.17601186557	0.001	0.0015
+     4	4.0746072901	0.001	0.0015
+     5	3.99484499556	0.001	0.0015

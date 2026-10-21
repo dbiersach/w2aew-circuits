@@ -1,0 +1,18 @@
+LTspice 26.1.1 for Windows
+Circuit: Basic emitter follower.net
+Start Time: Tue Oct 20 11:16:33 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.113 seconds.
+Total iterations: 10053
+
+Files loaded:
+Basic emitter follower.net
+standard.bjt
+

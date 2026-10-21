@@ -1,0 +1,26 @@
+LTspice 26.1.1 for Windows
+Circuit: Pulse counting discriminator.net
+Start Time: Tue Oct 20 16:43:49 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 3.209 seconds.
+Total iterations: 576796
+
+Files loaded:
+Pulse counting discriminator.net
+standard.dio
+standard.bjt
+
+audio_max: MAX(V(audio))=4.48930931091 FROM 0.002 TO 0.004
+audio_min: MIN(V(audio))=3.98833680153 FROM 0.002 TO 0.004
+audio_pp: AUDIO_MAX-AUDIO_MIN=0.500972509384
+pw_50k=1.3063812414e-06 FROM 0.0029982396195 TO 0.00299954600074
+pw_150k=8.89363505284e-07 FROM 0.00399361370947 TO 0.00399450307297
+avg_150k: AVG(V(pulse))=4.00283363191 FROM 0.00395 TO 0.00405
+avg_50k: AVG(V(pulse))=4.47484958131 FROM 0.00295 TO 0.00305

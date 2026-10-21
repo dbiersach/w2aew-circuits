@@ -1,0 +1,20 @@
+LTspice 26.1.1 for Windows
+Circuit: LED transistor switch.net
+Start Time: Tue Oct 20 00:29:51 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Total elapsed time: 0.065 seconds.
+Total iterations: 1060
+
+Files loaded:
+LED transistor switch.net
+standard.dio
+standard.bjt
+
+vce_on: V(COLLECTOR)=0.0385793596506 at 5
+ic_on: I(RC)=0.00478309812024 at 5

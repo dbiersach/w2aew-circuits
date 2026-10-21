@@ -1,0 +1,20 @@
+LTspice 26.1.1 for Windows
+Circuit: Two-transistor current mirror.net
+Start Time: Mon Oct 19 00:08:23 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.109 seconds.
+Total iterations: 10803
+
+Files loaded:
+Two-transistor current mirror.net
+standard.bjt
+
+iout_avg: AVG(I(RLOAD))=0.00259946574105 FROM 0.003 TO 0.005
+iout_low: AVG(I(RLOAD))=0.00194056866227 FROM 0.006 TO 0.008

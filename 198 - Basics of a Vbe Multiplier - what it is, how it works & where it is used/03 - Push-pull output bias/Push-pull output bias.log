@@ -1,0 +1,33 @@
+LTspice 26.1.1 for Windows
+Circuit: Push-pull output bias.net
+Start Time: Wed Oct 21 01:23:17 2026
+Options:plotwinsize=0
+
+.step w=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step w=0.8
+Direct Newton iteration succeeded in finding operating point.
+
+.step w=1
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.770 seconds.
+Total iterations: 10063
+
+Files loaded:
+Push-pull output bias.net
+standard.bjt
+
+
+Measurement: isupply_avg
+  step	AVG(-I(V1))	FROM	TO
+     1	0.00603018962551	0.007	0.009
+     2	0.00963028163498	0.007	0.009
+     3	0.0136386702595	0.007	0.009

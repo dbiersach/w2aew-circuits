@@ -1,0 +1,21 @@
+LTspice 26.1.1 for Windows
+Circuit: Parallel LC frequency sweep.net
+Start Time: Tue Oct 20 20:37:25 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 0.008 seconds.
+Total iterations: 0
+
+Files loaded:
+Parallel LC frequency sweep.net
+
+f_res: im(V(ch1)/I(V1))=0 AT 33924.647006
+z_res: mag(V(ch1)/I(V1))=(66.8001548968dB,0°) at 33924.647006
+tank_res: mag(V(ch1))=(5.82432693965dB,0°) at 33924.647006

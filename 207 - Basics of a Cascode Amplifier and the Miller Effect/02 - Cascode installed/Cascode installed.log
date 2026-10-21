@@ -1,0 +1,22 @@
+LTspice 26.1.1 for Windows
+Circuit: Cascode installed.net
+Start Time: Wed Oct 21 01:27:52 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.089 seconds.
+Total iterations: 9
+
+Files loaded:
+Cascode installed.net
+standard.bjt
+
+avpeak: MAX(mag(V(out)))=(28.0186940111dB,0°) FROM 10000 TO 200000000
+fpeak: mag(V(out))=AVPEAK AT 4954501.90805
+f3db: mag(V(out))=AVPEAK*0.7071 AT 10376953.8945
+vcol_q2: mag(V(q2_col))=(-3.25816610867dB,0°) at 100000

@@ -1,0 +1,53 @@
+LTspice 26.1.1 for Windows
+Circuit: Slew rate limit.net
+Start Time: Wed Oct 21 01:12:56 2026
+
+.step amp=0.1
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step amp=0.4
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step amp=0.8
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 2.066 seconds.
+Total iterations: 140672
+
+Files loaded:
+Slew rate limit.net
+LM358.MOD
+
+
+Measurement: vopp
+  step	PP(V(out))	FROM	TO
+     1	0.176826953888	0.000105	0.000115
+     2	0.640246152878	0.000105	0.000115
+     3	0.80238199234	0.000105	0.000115
+
+Measurement: tr
+  step	tr	FROM	TO
+     1	6.48183810042e-07	0.000105034136034	0.000105682319844
+     2	1.9715375088e-07	0.000105389402895	0.000105586556646
+     3	1.76952772952e-07	0.000105666534521	0.000105843487294
+
+Measurement: slewrate
+  step	0.1/Tr
+     1	154277.225767
+     2	507218.348897
+     3	565122.537114

@@ -1,0 +1,15 @@
+# LTspice records absolute paths in every .log it writes. The ltspicelog clean
+# filter reduces those paths to bare filenames as a log is staged, so a local
+# username and folder layout never reach the repository. Rerunning a
+# simulation restores the full paths in the working copy, but the staged and
+# committed form stays clean, and the file no longer shows as modified.
+#
+# Enable it once per clone, from the repository root:
+#   git config filter.ltspicelog.clean "sh tools/strip-ltspice-log-paths.sh"
+#
+# Git silently ignores the attribute when that config is absent, and logs would
+# then be staged with full paths, so set it before committing a log.
+*.log filter=ltspicelog
+
+# Keep the shell scripts LF so Git for Windows can run them.
+*.sh text eol=lf

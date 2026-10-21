@@ -1,0 +1,42 @@
+LTspice 26.1.1 for Windows
+Circuit: Inverting amplifier.net
+Start Time: Wed Oct 21 11:41:01 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Starting Gmin stepping level 2
+Gmin stepping level 2 failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient succeeded in finding the operating point at 544.268 ms
+Total elapsed time: 12.064 seconds.
+Total iterations: 145132
+
+Files loaded:
+Inverting amplifier.net
+lmx58b_lm2904b.lib
+
+vout_at_4v: V(vout)=7.00057506561 at 4
+inv_at_4v: V(inv_in)=5.00025510788 at 4
+vout_at_3v: V(vout)=8.78907203674 at 3
+vout_max: MAX(V(vout))=8.7892742157 FROM 3 TO 7
+vout_at_7v: V(vout)=1.00084519386 at 7

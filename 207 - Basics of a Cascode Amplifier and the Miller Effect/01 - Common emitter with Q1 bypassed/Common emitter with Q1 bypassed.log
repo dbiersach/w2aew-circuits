@@ -1,0 +1,22 @@
+LTspice 26.1.1 for Windows
+Circuit: Common emitter with Q1 bypassed.net
+Start Time: Wed Oct 21 01:27:16 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.081 seconds.
+Total iterations: 9
+
+Files loaded:
+Common emitter with Q1 bypassed.net
+standard.bjt
+
+avpeak: MAX(mag(V(out)))=(26.68358447dB,0°) FROM 10000 TO 200000000
+fpeak: mag(V(out))=AVPEAK AT 2398832.91902
+f3db: mag(V(out))=AVPEAK*0.7071 AT 4042609.5575
+vcol_q2: mag(V(q2_col))=(16.2570902835dB,0°) at 100000

@@ -1,0 +1,25 @@
+LTspice 26.1.1 for Windows
+Circuit: Phase Detector Tests.net
+Start Time: Wed Oct 21 11:40:36 2026
+CD4046Bg-corrected.sub(13): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A6 0 N007 0 N012 0 N016 N013 0 XOR
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(22): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A7 0 N002 0 N005 0 N006 N003 0 OR
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(24): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A3 Vdd 0 N007 0 N009 0 N002 0 DFLOP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(25): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A5 Vdd 0 N012 0 N009 0 N005 0 DFLOP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(38): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A8 Inh e 0 0 0 ni 0 0 SCHMITT vt=0 vh=1m td=50n
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(45): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A12 0 N018 0 ni 0 0 N011 0 AND
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(46): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A13 0 N019 0 ni 0 0 N010 0 AND
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Unable to open "Phase Detector Tests.raw" for writing.

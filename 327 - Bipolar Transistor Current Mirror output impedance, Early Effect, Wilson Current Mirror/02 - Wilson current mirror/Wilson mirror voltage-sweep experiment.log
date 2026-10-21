@@ -1,0 +1,20 @@
+LTspice 26.1.1 for Windows
+Circuit: Wilson mirror voltage-sweep experiment.net
+Start Time: Tue Oct 20 10:56:42 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Total elapsed time: 0.069 seconds.
+Total iterations: 228
+
+Files loaded:
+Wilson mirror voltage-sweep experiment.net
+standard.bjt
+
+i_at_0v: I(Vload)=0.00106296665035 at 0
+i_at_5v: I(Vload)=0.00106238364242 at 5
+rout_ohms: 5/(I_AT_0V-I_AT_5V)=8576212.65176

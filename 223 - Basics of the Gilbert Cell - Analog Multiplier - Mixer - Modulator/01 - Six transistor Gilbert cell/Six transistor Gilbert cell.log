@@ -1,0 +1,20 @@
+LTspice 26.1.1 for Windows
+Circuit: Six transistor Gilbert cell.net
+Start Time: Wed Oct 21 01:33:55 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 1.017 seconds.
+Total iterations: 72051
+
+Files loaded:
+Six transistor Gilbert cell.net
+standard.bjt
+
+vout_pp: PP(V(col_a,col_b))=0.61074924469 FROM 0.022 TO 0.034

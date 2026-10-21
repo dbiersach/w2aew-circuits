@@ -1,0 +1,10 @@
+* Educational approximation of Mini-Circuits T1-6T-X65+.
+* Pin order follows the manufacturer datasheet: primary 4,6; secondary 3,CT2,1.
+* 25 uH primary, 25 uH full secondary, and K=0.999 are assumptions,
+* not measured values or an official Mini-Circuits SPICE model.
+.subckt T1_6T_X65 P4 P6 S3 CT2 S1
+Lpri P4 P6 25u
+Lsec_top S3 CT2 6.25u
+Lsec_bottom CT2 S1 6.25u
+Kwind Lpri Lsec_top Lsec_bottom 0.999
+.ends T1_6T_X65

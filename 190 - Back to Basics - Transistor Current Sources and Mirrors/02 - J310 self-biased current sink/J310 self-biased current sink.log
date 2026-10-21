@@ -1,0 +1,24 @@
+LTspice 26.1.1 for Windows
+Circuit: J310 self-biased current sink.net
+Start Time: Mon Oct 19 00:06:41 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Total elapsed time: 0.022 seconds.
+Total iterations: 326
+
+Files loaded:
+J310 self-biased current sink.net
+standard.jft
+J310.lib
+
+i_at_10v: I(VSENSE)=0.000655157084111 at 0
+i_at_4v: I(VSENSE)=0.000620459497441 at 6
+i_at_2v: I(VSENSE)=0.000425523816375 at 8
+vdrain_at_10v: V(DRAIN)=10 at 0
+vdrain_at_4v: V(DRAIN)=4 at 6
+rout_ohms: (VDRAIN_AT_10V-VDRAIN_AT_4V)/(I_AT_10V-I_AT_4V)=172922.689321

@@ -1,0 +1,19 @@
+LTspice 26.1.1 for Windows
+Circuit: Inverting summer.net
+Start Time: Wed Oct 21 00:52:38 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.065 seconds.
+Total iterations: 6233
+
+Files loaded:
+Inverting summer.net
+LTC.lib
+
+final_out: AVG(V(OUT))=-3.99970769882 FROM 0.004 TO 0.005

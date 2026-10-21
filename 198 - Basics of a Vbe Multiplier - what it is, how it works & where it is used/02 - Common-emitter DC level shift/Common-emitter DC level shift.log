@@ -1,0 +1,33 @@
+LTspice 26.1.1 for Windows
+Circuit: Common-emitter DC level shift.net
+Start Time: Wed Oct 21 01:22:40 2026
+Options:plotwinsize=0
+
+.step w=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step w=0.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step w=1
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.784 seconds.
+Total iterations: 10047
+
+Files loaded:
+Common-emitter DC level shift.net
+standard.bjt
+
+
+Measurement: offset_avg
+  step	AVG(V(SHIFT_TOP,SHIFT_BOTTOM))	FROM	TO
+     1	0.693401789129	0.007	0.009
+     2	0.961548054635	0.007	0.009
+     3	1.54420588726	0.007	0.009

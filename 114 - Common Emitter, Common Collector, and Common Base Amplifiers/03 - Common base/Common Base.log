@@ -1,0 +1,21 @@
+LTspice 26.1.1 for Windows
+Circuit: Common Base.net
+Start Time: Wed Oct 21 00:35:37 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.101 seconds.
+Total iterations: 2471
+
+Files loaded:
+Common Base.net
+standard.bjt
+
+vin_pp: PP(V(E_IN))=0.0198304653168 FROM 0.0001 TO 0.0003
+vout_pp: PP(V(out))=0.91881275177 FROM 0.0001 TO 0.0003
+gain: Vout_pp/Vin_pp=46.3333934476

@@ -1,0 +1,46 @@
+LTspice 26.1.1 for Windows
+Circuit: Parallel LC below at and above resonance.net
+Start Time: Tue Oct 20 20:27:49 2026
+
+.step f=20000
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step f=33930
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step f=50000
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 0.224 seconds.
+Total iterations: 12054
+
+Files loaded:
+Parallel LC below at and above resonance.net
+
+
+Measurement: tank_pp
+  step	PP(V(ch1))	FROM	TO
+     1	2.51857233047	0.0002	0.0003
+     2	3.91018033028	0.0002	0.0003
+     3	3.03274977207	0.0002	0.0003
+
+Measurement: il_pp
+  step	PP(I(L1))	FROM	TO
+     1	0.0910249017179	0.0002	0.0003
+     2	0.0833684355021	0.0002	0.0003
+     3	0.0438712351024	0.0002	0.0003
+
+Measurement: igen_pp
+  step	PP(I(V1))	FROM	TO
+     1	0.0594222005457	0.0002	0.0003
+     2	0.00177739869105	0.0002	0.0003
+     3	0.0514046177268	0.0002	0.0003

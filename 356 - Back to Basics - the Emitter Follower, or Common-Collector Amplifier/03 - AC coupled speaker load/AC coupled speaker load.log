@@ -1,0 +1,18 @@
+LTspice 26.1.1 for Windows
+Circuit: AC coupled speaker load.net
+Start Time: Tue Oct 20 01:28:40 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.057 seconds.
+Total iterations: 10327
+
+Files loaded:
+AC coupled speaker load.net
+standard.bjt
+

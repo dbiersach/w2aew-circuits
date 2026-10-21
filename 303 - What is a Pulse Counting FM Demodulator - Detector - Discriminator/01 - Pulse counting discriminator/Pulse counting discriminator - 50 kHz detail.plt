@@ -1,0 +1,35 @@
+[Transient Analysis]
+{
+   Npanes: 3
+   Active Pane: 2
+   {
+      traces: 1 {524292,0,"V(if)"}
+      Text: "V" 1 (0.003,0.17) ;IF at Q1's input: the 160 mV p-p VIF behind 50 ohms, here at about 50 kHz
+      X: ('m',3,0.00298,5e-06,0.00302)
+      Y[0]: ('m',0,-0.2,0.05,0.25)
+      Y[1]: ('_',0,1e+308,0,-1e+308)
+      Volts: ('m',0,0,1,-0.2,0.05,0.25)
+      Log: 0 0 0
+      GridStyle: 1
+   },
+   {
+      traces: 1 {524291,0,"V(lim)"}
+      Text: "V" 1 (0.003,6.3) ;LIM: Q1 collector; drops fast when Q1 conducts, then climbs slowly as RC1 recharges CT through D1: 3.6 V peak at 50 kHz
+      X: ('m',3,0.00298,5e-06,0.00302)
+      Y[0]: (' ',0,-1,1,7)
+      Y[1]: ('_',0,1e+308,0,-1e+308)
+      Volts: (' ',0,0,1,-1,1,7)
+      Log: 0 0 0
+      GridStyle: 1
+   },
+   {
+      traces: 1 {524290,0,"V(pulse)"}
+      Text: "V" 1 (0.003,6.3) ;PULSE: Q2 collector, a 1.3 us negative pulse (down to -0.6 V) per falling LIM edge: 2 pulses in 40 us, average 4.47 V
+      X: ('m',3,0.00298,5e-06,0.00302)
+      Y[0]: (' ',0,-1,1,7)
+      Y[1]: ('_',0,1e+308,0,-1e+308)
+      Volts: (' ',0,0,1,-1,1,7)
+      Log: 0 0 0
+      GridStyle: 1
+   }
+}

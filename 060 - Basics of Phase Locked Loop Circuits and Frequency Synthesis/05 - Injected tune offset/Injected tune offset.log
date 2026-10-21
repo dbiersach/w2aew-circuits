@@ -1,0 +1,54 @@
+LTspice 26.1.1 for Windows
+Circuit: Injected tune offset.net
+Start Time: Wed Oct 21 11:40:49 2026
+CD4046Bg-corrected.sub(13): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A6 0 N007 0 N012 0 N016 N013 0 XOR
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(22): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A7 0 N002 0 N005 0 N006 N003 0 OR
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(24): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A3 Vdd 0 N007 0 N009 0 N002 0 DFLOP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(25): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A5 Vdd 0 N012 0 N009 0 N005 0 DFLOP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(38): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A8 Inh e 0 0 0 ni 0 0 SCHMITT vt=0 vh=1m td=50n
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(45): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A12 0 N018 0 ni 0 0 N011 0 AND
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CD4046Bg-corrected.sub(46): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
+A13 0 N019 0 ni 0 0 N010 0 AND
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 11.136 seconds.
+Total iterations: 1955305
+
+Files loaded:
+Injected tune offset.net
+cd4000.lib
+CD4046Bg-corrected.sub
+standard.dio
+standard.mos
+
+t1: V(VCO)=2.5 AT 0.0582310089145
+t2: V(VCO)=2.5 AT 0.0583143194544
+f_vco: 1/(T2-T1)=12003.2831511
+tr1: V(REF)=2.5 AT 0.04000001
+tf1: V(FB)=2.5 AT 0.0400010734513
+ph1: 360*((TF1-TR1)*FREF-floor((TF1-TR1)*FREF+0.5))=2.29705490448
+tr2: V(REF)=2.5 AT 0.09000001
+tf2: V(FB)=2.5 AT 0.0901531260087
+ph2: 360*((TF2-TR2)*FREF-floor((TF2-TR2)*FREF+0.5))=-29.2694212775
+tr3: V(REF)=2.5 AT 0.14000001
+tf3: V(FB)=2.5 AT 0.140021187062
+ph3: 360*((TF3-TR3)*FREF-floor((TF3-TR3)*FREF+0.5))=45.7424548636

@@ -1,0 +1,33 @@
+LTspice 26.1.1 for Windows
+Circuit: Adjustable Vbe multiplier.net
+Start Time: Wed Oct 21 01:22:02 2026
+Options:plotwinsize=0
+
+.step w=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step w=0.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step w=1
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.788 seconds.
+Total iterations: 10090
+
+Files loaded:
+Adjustable Vbe multiplier.net
+standard.bjt
+
+
+Measurement: vx_avg
+  step	AVG(V(VX))	FROM	TO
+     1	0.679617762566	0.002	0.004
+     2	0.937732815743	0.002	0.004
+     3	1.49660809088	0.002	0.004

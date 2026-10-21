@@ -1,0 +1,17 @@
+LTspice 26.1.1 for Windows
+Circuit: BJT DC operating regions.net
+Start Time: Wed Oct 21 00:28:01 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Total elapsed time: 0.083 seconds.
+Total iterations: 1224
+
+Files loaded:
+BJT DC operating regions.net
+standard.bjt
+
