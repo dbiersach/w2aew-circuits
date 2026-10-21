@@ -1,0 +1,37 @@
+LTspice 26.1.1 for Windows
+Circuit: Flexible 555 ramp generator.net
+Start Time: Wed Oct 21 17:25:53 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 60.569 seconds.
+Total iterations: 3414245
+
+Files loaded:
+Flexible 555 ramp generator.net
+standard.bjt
+LM358.MOD
+NE555.sub
+
+ramp_lo: MIN(V(RAMP))=2.99715328217 FROM 0.2 TO 0.6
+ramp_hi: MAX(V(RAMP))=6.00100421906 FROM 0.2 TO 0.6
+ts1: V(RAMP)=4.5 AT 0.215961149026
+ts2: V(RAMP)=4.5 AT 0.303998298022
+sweep_period: TS2-TS1=0.0880371489964
+tr_lo: V(RAMP)=4 AT 0.201352213246
+tr_hi: V(RAMP)=5 AT 0.230651899778
+icharge: 22u/(TR_HI-TR_LO)=0.000750861275459
+out_lo: MIN(V(OUT))=-1.00528669357 FROM 0.2 TO 0.6
+out_hi: MAX(V(OUT))=6.06153106689 FROM 0.2 TO 0.6
+inv1_lo: MIN(V(INV1))=-2.57729411125 FROM 0.2 TO 0.6
+inv1_hi: MAX(V(INV1))=0.42645534873 FROM 0.2 TO 0.6
