@@ -1,0 +1,29 @@
+LTspice 26.1.1 for Windows
+Circuit: Stairstep generator.net
+Start Time: Wed Oct 21 18:11:07 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.999 seconds.
+Total iterations: 82939
+
+Files loaded:
+Stairstep generator.net
+standard.dio
+standard.bjt
+LMC6482A.lib
+NE555.sub
+
+reset1: V(PULSE)=4.5 AT 0.0110886267054
+reset2: V(PULSE)=4.5 AT 0.0166838070742
+reset_period: RESET2-RESET1=0.00559518036877
+out_peak: MAX(V(OUT))=8.98904514313 FROM 0.01 TO 0.02
+clk1: V(CLOCK)=4.5 AT 0.00685359433532
+clk2: V(CLOCK)=4.5 AT 0.00719870591811
+clk_period: CLK2-CLK1=0.000345111582797
+steps: (RESET2-RESET1)/(CLK2-CLK1)=16.2126704744

@@ -129,8 +129,8 @@ while IFS= read -r -d '' asc; do
         is_project_ref "$(normalise "$path")" ||
             { say "$rel_asc: include directive does not use a relative path: $path"; continue; }
         check_ref "include directive" "$rel_asc" "$dir" "$path"
-    done < <(grep -aoiE '\.(include|inc|lib)[[:space:]]+[^[:space:]]+' "$asc" |
-             sed -E 's/^[^[:space:]]+[[:space:]]+//')
+    done < <(grep -aoiE '\.(include|inc|lib)[[:space:]]+("[^"]*"|[^[:space:]]+)' "$asc" |
+             sed -E 's/^[^[:space:]]+[[:space:]]+//; s/^"//; s/"$//')
 done < <(find "$root" -path "$root/.git" -prune -o -path "$central" -prune -o \
          -type f -iname '*.asc' -print0)
 
