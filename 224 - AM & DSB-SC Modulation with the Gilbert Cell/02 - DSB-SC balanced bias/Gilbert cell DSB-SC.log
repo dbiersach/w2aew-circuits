@@ -1,0 +1,44 @@
+LTspice 26.1.1 for Windows
+Circuit: Gilbert cell DSB-SC.net
+Start Time: Wed Oct 21 18:03:46 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.671 seconds.
+Total iterations: 40140
+
+Files loaded:
+Gilbert cell DSB-SC.net
+standard.bjt
+
+Fourier components of V(COL_A,COL_B)
+N-Period=15
+DC component:-0.000526687
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.500e+03	 9.953e-06	 1.000e+00	  -98.29°	    0.00°
+    2   	 3.000e+03	 5.713e-04	 5.740e+01	  -87.53°	   10.76°
+    3   	 4.500e+03	 3.256e-05	 3.272e+00	  -17.37°	   80.92°
+    4   	 6.000e+03	 2.473e-06	 2.484e-01	 -156.05°	  -57.77°
+    5   	 7.500e+03	 2.073e-07	 2.083e-02	  -83.25°	   15.04°
+    6   	 9.000e+03	 3.398e-08	 3.414e-03	 -110.98°	  -12.69°
+    7   	 1.050e+04	 1.582e-07	 1.589e-02	    5.67°	  103.95°
+    8   	 1.200e+04	 4.515e-07	 4.537e-02	  -37.56°	   60.73°
+    9   	 1.350e+04	 2.830e-04	 2.843e+01	  -82.62°	   15.67°
+   10   	 1.500e+04	 1.523e-04	 1.530e+01	  160.50°	  258.79°
+   11   	 1.650e+04	 7.869e-02	 7.906e+03	 -152.39°	  -54.10°
+   12   	 1.800e+04	 2.940e-03	 2.954e+02	   84.38°	  182.67°
+   13   	 1.950e+04	 7.858e-02	 7.895e+03	  -39.06°	   59.23°
+Partial Harmonic Distortion: 1117714.230081%
+Total Harmonic Distortion:   1117730.943364%
+
+env_max: MAX(V(COL_A,COL_B))=0.155528068542 FROM 0.01 TO 0.02
+env_min: MIN(V(COL_A,COL_B))=-0.159222602844 FROM 0.01 TO 0.02
+lpair_max: MAX(V(L_SIG,L_REF))=0.0137813091278 FROM 0.01 TO 0.02
+lpair_min: MIN(V(L_SIG,L_REF))=-0.0144033432007 FROM 0.01 TO 0.02

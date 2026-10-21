@@ -1,0 +1,44 @@
+LTspice 26.1.1 for Windows
+Circuit: Gilbert cell AM.net
+Start Time: Wed Oct 21 18:03:13 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.634 seconds.
+Total iterations: 40137
+
+Files loaded:
+Gilbert cell AM.net
+standard.bjt
+
+Fourier components of V(COL_A,COL_B)
+N-Period=15
+DC component:-0.000625498
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.500e+03	 2.386e-03	 1.000e+00	 -141.40°	    0.00°
+    2   	 3.000e+03	 7.416e-04	 3.108e-01	  -82.26°	   59.14°
+    3   	 4.500e+03	 1.286e-05	 5.388e-03	  114.36°	  255.76°
+    4   	 6.000e+03	 4.534e-06	 1.900e-03	 -144.72°	   -3.32°
+    5   	 7.500e+03	 1.232e-07	 5.165e-05	    8.35°	  149.75°
+    6   	 9.000e+03	 9.823e-08	 4.117e-05	  -91.23°	   50.17°
+    7   	 1.050e+04	 1.050e-06	 4.401e-04	  -26.90°	  114.50°
+    8   	 1.200e+04	 7.836e-06	 3.284e-03	   54.54°	  195.94°
+    9   	 1.350e+04	 2.508e-04	 1.051e-01	  -87.38°	   54.02°
+   10   	 1.500e+04	 2.575e-03	 1.079e+00	  -26.42°	  114.98°
+   11   	 1.650e+04	 7.087e-02	 2.970e+01	 -153.00°	  -11.60°
+   12   	 1.800e+04	 2.500e-01	 1.048e+02	  -95.74°	   45.66°
+   13   	 1.950e+04	 7.077e-02	 2.966e+01	  -38.51°	  102.89°
+Partial Harmonic Distortion: 11286.927089%
+Total Harmonic Distortion:   11287.563039%
+
+env_max: MAX(V(COL_A,COL_B))=0.380340576172 FROM 0.01 TO 0.02
+env_min: MIN(V(COL_A,COL_B))=-0.386451721191 FROM 0.01 TO 0.02
+lpair_max: MAX(V(L_SIG,L_REF))=0.0390381813049 FROM 0.01 TO 0.02
+lpair_min: MIN(V(L_SIG,L_REF))=0.00915908813477 FROM 0.01 TO 0.02
