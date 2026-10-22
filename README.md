@@ -2,7 +2,7 @@
 
 Alan Wolke teaches electronics on [his W2AEW channel](https://www.youtube.com/@w2aew) with a sketch, a breadboard and a bench full of instruments. This repository rebuilds those circuits in LTspice, so you can run one yourself, change a value and watch what it does.
 
-LTspice stands in for the supplies, meters, scopes and spectrum displays Alan reaches for, including the ones most of us do not own. Each chapter's notes tie the simulated numbers back to what he measures and say where the model and his hardware part company. None of this replaces watching him explain it; it just lets you take the circuit apart afterwards.
+LTspice can simulate the power supplies, meters, oscilloscopes, and spectrum displays that Alan uses. The notes in each chapter connect the simulated results to his measurements and explain where the model differs from his hardware. This does not replace watching him explain the material; it simply lets you construct the same circuit even if you don't have the equipment.
 
 If you haven't subscribed to [Alan's channel](https://www.youtube.com/@w2aew) yet, you should. More than 230,000 people already have, and with over 400 videos, it's easy to see why. He explains things clearly, takes his time, and knows his stuff. He makes you appreciate electronics, ham radio, and how to get the most out of test and diagnostic gear.
 
