@@ -126,8 +126,23 @@ while IFS= read -r -d '' asc; do
     # .include / .inc / .lib directives, wherever they sit in a TEXT line
     while IFS= read -r path; do
         [[ -n "$path" ]] || continue
-        is_project_ref "$(normalise "$path")" ||
-            { say "$rel_asc: include directive does not use a relative path: $path"; continue; }
+        norm_inc=$(normalise "$path")
+        if ! is_project_ref "$norm_inc"; then
+            # A bare library name with no path at all is a library LTspice
+            # supplies itself, the same way a bare SYMBOL name is. Flag it only
+            # when it is absolute, or when this repository carries a file of
+            # that name that the schematic should have reached relatively.
+            if is_absolute "$norm_inc"; then
+                say "$rel_asc: include directive uses an absolute path: $path"
+            elif [[ "$norm_inc" == */* ]]; then
+                say "$rel_asc: include directive does not use a relative path: $path"
+            else
+                shadow=$(find "$central" -type f -iname "$(basename -- "$norm_inc")" -print -quit 2>/dev/null)
+                [[ -z "$shadow" ]] ||
+                    say "$rel_asc: include directive names $path, but ${shadow#"$root"/} is in this repository"
+            fi
+            continue
+        fi
         check_ref "include directive" "$rel_asc" "$dir" "$path"
     done < <(grep -aoiE '\.(include|inc|lib)[[:space:]]+("[^"]*"|[^[:space:]]+)' "$asc" |
              sed -E 's/^[^[:space:]]+[[:space:]]+//; s/^"//; s/"$//')

@@ -1,0 +1,27 @@
+LTspice 26.1.1 for Windows
+Circuit: Automatic dual-range voltmeter.net
+Start Time: Thu Oct 22 08:24:04 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.081 seconds.
+Total iterations: 1284
+
+Files loaded:
+Automatic dual-range voltmeter.net
+standard.dio
+LTC.lib
+2N7000.REV0.LIB
+
+i_at_5v: I(RMETER)=9.99997428153e-05 at 5
+i_at_25v: I(RMETER)=0.000131359396619 at 25
+vswitch: V(GATE)=2.5 AT 5.59234282249
+i_at_30v: I(RMETER)=0.000157630813192 at 30

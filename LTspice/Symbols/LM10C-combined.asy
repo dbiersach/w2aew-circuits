@@ -1,0 +1,30 @@
+Version 4
+SymbolType CELL
+RECTANGLE Normal -64 -80 64 80
+TEXT -48 -16 Left 2 LM10C
+WINDOW 0 72 -64 Left 2
+WINDOW 3 72 -40 Left 2
+SYMATTR Prefix X
+SYMATTR Value LM10C
+SYMATTR Description LM10 op amp and 200mV reference; LTC.lib pin order 3 2 7 4 6 1 8
+PIN -96 -48 NONE 0
+PINATTR PinName IN+ (3)
+PINATTR SpiceOrder 1
+PIN -96 -16 NONE 0
+PINATTR PinName IN- (2)
+PINATTR SpiceOrder 2
+PIN 0 -112 NONE 0
+PINATTR PinName V+ (7)
+PINATTR SpiceOrder 3
+PIN 0 112 NONE 0
+PINATTR PinName V- (4)
+PINATTR SpiceOrder 4
+PIN 96 -48 NONE 0
+PINATTR PinName OUT (6)
+PINATTR SpiceOrder 5
+PIN 96 16 NONE 0
+PINATTR PinName REFOUT (1)
+PINATTR SpiceOrder 6
+PIN 96 48 NONE 0
+PINATTR PinName REFFB (8)
+PINATTR SpiceOrder 7
