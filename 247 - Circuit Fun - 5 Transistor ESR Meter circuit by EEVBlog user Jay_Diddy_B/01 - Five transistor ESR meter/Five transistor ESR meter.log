@@ -1,0 +1,132 @@
+LTspice 26.1.1 for Windows
+Circuit: Five transistor ESR meter.net
+Start Time: Thu Oct 22 07:16:46 2026
+
+.step r=0.0001
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=0.1
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=0.2
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=0.5
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=1
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=2
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=4
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=6
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=8
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=10
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=12
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=14
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=16
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=18
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step r=20
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 22.411 seconds.
+Total iterations: 640334
+
+Files loaded:
+Five transistor ESR meter.net
+standard.dio
+standard.bjt
+
+
+Measurement: osc_period
+  step	osc_period	FROM	TO
+     1	1.16454592456e-05	0.00950960029971	0.00952124575895
+     2	1.16484347879e-05	0.00951012080438	0.00952176923917
+     3	1.16482616194e-05	0.00951040702435	0.00952205528597
+     4	1.16452568814e-05	0.00951129935735	0.00952294461423
+     5	1.16539608403e-05	0.00951109692191	0.00952275088275
+     6	1.16512418302e-05	0.00951158037707	0.0095232316189
+     7	1.16452163928e-05	0.00950093901406	0.00951258423045
+     8	1.16526615553e-05	0.00950052555602	0.00951217821757
+     9	1.16498564336e-05	0.00951055660227	0.00952220645871
+    10	1.16493641524e-05	0.00951148442951	0.00952313379367
+    11	1.16366600311e-05	0.00950083749306	0.0095124741531
+    12	1.16489953479e-05	0.00951118601625	0.0095228350116
+    13	1.16536221705e-05	0.00950060948556	0.00951226310773
+    14	1.16473599622e-05	0.00950086744359	0.00951251480355
+    15	1.16540573778e-05	0.00950013465047	0.00951178870785
+
+Measurement: osc_freq
+  step	1/OSC_PERIOD
+     1	85870.3790819
+     2	85848.4438646
+     3	85849.720128
+     4	85871.8712851
+     5	85807.7364175
+     6	85827.7610724
+     7	85872.1698477
+     8	85817.304077
+     9	85837.9676776
+    10	85841.595036
+    11	85935.3111055
+    12	85844.3127615
+    13	85810.2301043
+    14	85856.3660128
+    15	85807.0256208
+
+Measurement: iout
+  step	AVG(I(R22))	FROM	TO
+     1	6.0437089096e-05	0.0095	0.01
+     2	5.77780402321e-05	0.0095	0.01
+     3	5.52905992873e-05	0.0095	0.01
+     4	4.8743251035e-05	0.0095	0.01
+     5	4.0179144349e-05	0.0095	0.01
+     6	2.860520728e-05	0.0095	0.01
+     7	1.63109154296e-05	0.0095	0.01
+     8	1.02047215927e-05	0.0095	0.01
+     9	6.77025271738e-06	0.0095	0.01
+    10	4.69263592525e-06	0.0095	0.01
+    11	3.37457637581e-06	0.0095	0.01
+    12	2.5059237871e-06	0.0095	0.01
+    13	1.91465979002e-06	0.0095	0.01
+    14	1.5001291672e-06	0.0095	0.01
+    15	1.20140791853e-06	0.0095	0.01

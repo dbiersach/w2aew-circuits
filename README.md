@@ -100,6 +100,7 @@ Git silently ignores a filter whose command is unset, so run this before staging
 | [#224: AM & DSB-SC Modulation with the Gilbert Cell](https://www.youtube.com/watch?v=38OQub2Vi2Q) | [Video 224 folder](<224 - AM & DSB-SC Modulation with the Gilbert Cell/>) |
 | [#231: Circuit Fun: Stairstep generator using 555 and op amps](https://www.youtube.com/watch?v=Kqb5zcrgv7s) | [Video 231 folder](<231 - Circuit Fun - Stairstep generator using 555 and op amps/>) |
 | [#232: More Circuit Fun: Simple transistor curve tracer using Stairstep generator circuit](https://www.youtube.com/watch?v=ZOLLoa2fH24) | [Video 232 folder](<232 - More Circuit Fun - Simple transistor curve tracer using Stairstep generator circuit/>) |
+| [#247: Circuit Fun: 5 Transistor ESR Meter circuit by EEVBlog user Jay_Diddy_B](https://www.youtube.com/watch?v=3fiUZZlveS0) | [Video 247 folder](<247 - Circuit Fun - 5 Transistor ESR Meter circuit by EEVBlog user Jay_Diddy_B/>) |
 | [#273: Common Emitter Amplifier Design Tips](https://www.youtube.com/watch?v=VWY2WQcKJgk) | [Video 273 folder](<273 - Common Emitter Amplifier Design Tips/>) |
 | [#281: Bipolar Transistor Switching Time Measurement](https://www.youtube.com/watch?v=XgSKLsWAWGs) | [Video 281 folder](<281 - Bipolar Transistor Switching Time Measurement/>) |
 | [#289: Back to Basics: Zener Diodes - How to Use &#124; Applications &#124; not all created equal](https://www.youtube.com/watch?v=jfstUsnCmao) | [Video 289 folder](<289 - Back to Basics - Zener Diodes - How to Use - Applications - not all created equal/>) |
