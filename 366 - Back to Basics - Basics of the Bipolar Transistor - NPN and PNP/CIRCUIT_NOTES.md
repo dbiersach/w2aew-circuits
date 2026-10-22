@@ -49,3 +49,5 @@ The horizontal axis is the swept `VBASE` supply from 0 to 5 V. The upper pane sh
 At `VBASE = 5 V`, the log reports `IC_ON = 4.78310 mA` and `VCE_ON = 38.58 mV`. The low `VCE` is the electrical sign of saturation in this model. For a real switch, choose enough base drive to ensure saturation across transistor variation; a forced `IC/IB` ratio around 10 to 20 is a design target, not the transistor's active-region beta.
 
 ![LTspice log showing the LED switch measurements](02%20-%20Saturated%20NPN%20LED%20switch/LED%20switch%20SPICE%20output%20log.png)
+
+After pressing Run, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window opens autoscaled instead of showing the saved panes.

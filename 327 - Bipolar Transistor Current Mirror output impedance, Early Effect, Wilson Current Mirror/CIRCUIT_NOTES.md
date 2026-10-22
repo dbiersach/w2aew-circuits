@@ -126,3 +126,5 @@ That is about 96 times the basic mirror's 89.5 kohm, using the same transistor m
 | Wilson, three transistors | 8.58 Mohm | above about 1 Mohm |
 
 The absolute values depend on the transistors' Early voltage, which differs between the LTspice model and Alan's parts. Both the simulation and the bench show the improvement Alan set out to demonstrate: adding one transistor raises the mirror's output resistance by about two orders of magnitude.
+
+Both pot sweeps are stepped runs, so the waveform window can open autoscaled with every step overlaid. Press Ctrl+Space (Plot Settings > Reload Plot Settings) after Run to pick up the saved panes and their step labels.

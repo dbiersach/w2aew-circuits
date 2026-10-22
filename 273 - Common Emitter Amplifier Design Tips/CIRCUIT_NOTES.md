@@ -51,3 +51,5 @@ At essentially the same input swing, the bypassed circuit produces about **10.5 
 The emitter resistor still sets the DC operating point in the bypassed example, because the capacitor blocks DC. At 10 kHz it substantially shunts the resistor for AC, so local negative feedback falls and the gain rises. The measured values should be read as an illustration of Alan's design point, not as a replacement for checking his board's bias and distortion on the bench. The two timestamped video shortcuts begin at Alan's explanation of the unbypassed case (about 9:40) and his insertion of the bypass capacitor (about 14:53).
 
 Each saved LTspice plot puts the coupled input in the top pane and the collector output in the bottom pane, with a separate voltage scale for each signal. The input source is V1 and the supply is V2, in their left-to-right schematic order.
+
+After pressing Run, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window opens autoscaled instead of showing the saved panes.
