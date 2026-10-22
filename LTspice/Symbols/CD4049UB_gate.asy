@@ -1,0 +1,27 @@
+Version 4
+SymbolType CELL
+LINE Normal -16 -32 48 0
+LINE Normal -16 32 48 0
+LINE Normal -16 -32 -16 32
+CIRCLE Normal 60 6 48 -6
+LINE Normal -32 0 -16 0
+LINE Normal 80 0 60 0
+LINE Normal 16 -32 16 -16
+LINE Normal 16 32 16 16
+WINDOW 0 24 -32 Left 2
+WINDOW 3 24 32 Left 2
+SYMATTR Prefix X
+SYMATTR Value CD4049UB
+SYMATTR Description One gate of the TI CD4049UB model; order OUT IN VCC GND
+PIN -32 0 NONE 0
+PINATTR PinName IN
+PINATTR SpiceOrder 2
+PIN 80 0 NONE 0
+PINATTR PinName OUT
+PINATTR SpiceOrder 1
+PIN 16 -32 NONE 0
+PINATTR PinName VCC
+PINATTR SpiceOrder 3
+PIN 16 32 NONE 0
+PINATTR PinName GND
+PINATTR SpiceOrder 4

@@ -1,0 +1,21 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -48 -32 48 32
+LINE Normal -64 0 -48 0
+LINE Normal 48 0 64 0
+LINE Normal 0 32 0 64
+TEXT -24 -16 Left 2 7805
+WINDOW 0 0 -64 Center 2
+WINDOW 3 0 72 Center 2
+SYMATTR Prefix X
+SYMATTR Value LM7805
+SYMATTR Description Legacy generic 7805 model; order IN GND OUT
+PIN -64 0 NONE 0
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 0 64 NONE 0
+PINATTR PinName GND
+PINATTR SpiceOrder 2
+PIN 64 0 NONE 0
+PINATTR PinName OUT
+PINATTR SpiceOrder 3
