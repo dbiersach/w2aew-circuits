@@ -1,0 +1,150 @@
+LTspice 26.1.1 for Windows
+Circuit: Twin-tee oscillator distortion trim.net
+Start Time: Thu Oct 22 11:18:12 2026
+
+.step trim=200
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Per .tran options, skipping operating point for transient analysis.
+Changing Tseed to 1e-10
+Changing Tseed to 1e-12
+
+.step trim=250
+
+.step trim=295
+
+.step trim=300
+Total elapsed time: 87.553 seconds.
+Total iterations: 10001338
+
+Files loaded:
+Twin-tee oscillator distortion trim.net
+LTC.lib
+
+Fourier components of V(out)
+step 1
+N-Period=1
+DC component:2.36101
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.592e+03	 2.421e+00	 1.000e+00	  125.29°	    0.00°
+    2   	 3.184e+03	 2.798e-02	 1.156e-02	  -55.11°	 -180.40°
+    3   	 4.776e+03	 1.555e-02	 6.425e-03	  -99.02°	 -224.31°
+    4   	 6.368e+03	 8.049e-03	 3.325e-03	 -161.09°	 -286.38°
+    5   	 7.960e+03	 4.003e-03	 1.654e-03	   98.06°	  -27.23°
+    6   	 9.552e+03	 5.022e-03	 2.075e-03	    6.94°	 -118.35°
+    7   	 1.114e+04	 6.445e-03	 2.662e-03	  -43.80°	 -169.09°
+    8   	 1.274e+04	 7.211e-03	 2.979e-03	  -89.65°	 -214.94°
+    9   	 1.433e+04	 5.566e-03	 2.300e-03	 -135.06°	 -260.35°
+Partial Harmonic Distortion: 1.463633%
+Total Harmonic Distortion:   1.503922%
+
+step 2
+N-Period=1
+DC component:2.36602
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.592e+03	 2.396e+00	 1.000e+00	  -85.59°	    0.00°
+    2   	 3.184e+03	 1.572e-03	 6.560e-04	 -130.75°	  -45.15°
+    3   	 4.776e+03	 5.402e-03	 2.255e-03	   32.01°	  117.61°
+    4   	 6.368e+03	 6.820e-03	 2.847e-03	   65.35°	  150.95°
+    5   	 7.960e+03	 5.961e-03	 2.488e-03	  116.72°	  202.31°
+    6   	 9.552e+03	 2.148e-03	 8.967e-04	 -164.36°	  -78.77°
+    7   	 1.114e+04	 2.004e-03	 8.366e-04	   -2.15°	   83.45°
+    8   	 1.274e+04	 3.784e-03	 1.580e-03	   53.81°	  139.41°
+    9   	 1.433e+04	 3.740e-03	 1.561e-03	  115.06°	  200.66°
+Partial Harmonic Distortion: 0.512341%
+Total Harmonic Distortion:   0.575459%
+
+step 3
+N-Period=1
+DC component:2.36427
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.592e+03	 2.367e+00	 1.000e+00	  -33.20°	    0.00°
+    2   	 3.184e+03	 1.577e-03	 6.664e-04	   74.11°	  107.31°
+    3   	 4.776e+03	 1.340e-03	 5.661e-04	 -129.05°	  -95.85°
+    4   	 6.368e+03	 7.630e-04	 3.223e-04	  -92.21°	  -59.01°
+    5   	 7.960e+03	 1.387e-03	 5.860e-04	   -0.92°	   32.29°
+    6   	 9.552e+03	 2.780e-04	 1.174e-04	  -71.37°	  -38.17°
+    7   	 1.114e+04	 6.534e-04	 2.760e-04	   34.19°	   67.39°
+    8   	 1.274e+04	 3.328e-04	 1.406e-04	   66.72°	   99.92°
+    9   	 1.433e+04	 5.830e-04	 2.463e-04	 -116.11°	  -82.90°
+Partial Harmonic Distortion: 0.117568%
+Total Harmonic Distortion:   0.181293%
+
+step 4
+N-Period=1
+DC component:2.36401
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 1.592e+03	 1.945e+00	 1.000e+00	  -43.86°	    0.00°
+    2   	 3.184e+03	 7.164e-04	 3.683e-04	   71.35°	  115.21°
+    3   	 4.776e+03	 1.609e-03	 8.269e-04	 -141.32°	  -97.47°
+    4   	 6.368e+03	 2.317e-04	 1.191e-04	 -100.29°	  -56.43°
+    5   	 7.960e+03	 1.124e-03	 5.778e-04	  -75.08°	  -31.22°
+    6   	 9.552e+03	 1.763e-04	 9.062e-05	  -98.62°	  -54.76°
+    7   	 1.114e+04	 6.263e-04	 3.220e-04	   -5.61°	   38.25°
+    8   	 1.274e+04	 2.154e-04	 1.107e-04	 -112.18°	  -68.32°
+    9   	 1.433e+04	 2.930e-04	 1.507e-04	  102.98°	  146.84°
+Partial Harmonic Distortion: 0.114646%
+Total Harmonic Distortion:   0.182601%
+
+
+Measurement: amp_early
+  step	PP(V(out))	FROM	TO
+     1	4.79849784472	4.7	4.72
+     2	4.77031213325	4.7	4.72
+     3	4.73571433476	4.7	4.72
+     4	3.93886452913	4.7	4.72
+
+Measurement: amp_late
+  step	PP(V(out))	FROM	TO
+     1	4.79848796362	4.98	5
+     2	4.76961119915	4.98	5
+     3	4.73590700328	4.98	5
+     4	3.9015429616	4.98	5
+
+Measurement: vmax
+  step	MAX(V(out))	FROM	TO
+     1	4.80085277557	4.98	5
+     2	4.77200984955	4.98	5
+     3	4.73839235306	4.98	5
+     4	4.31697797775	4.98	5
+
+Measurement: vmin
+  step	MIN(V(out))	FROM	TO
+     1	0.00236481195316	4.98	5
+     2	0.00239865039475	4.98	5
+     3	0.00248534977436	4.98	5
+     4	0.415435016155	4.98	5
+
+Measurement: period
+  step	period	FROM	TO
+     1	0.00625385860274	4.70612846445	4.71238232305
+     2	0.00626831353503	4.70571038721	4.71197870074
+     3	0.00628180574247	4.70579656941	4.71207837515
+     4	0.00628337533526	4.70570525476	4.71198863009
+
+Measurement: freq
+  step	10/PERIOD
+     1	1599.01280717
+     2	1595.32543229
+     3	1591.89895549
+     4	1591.5012977
+
+Measurement: hold
+  step	AMP_LATE/AMP_EARLY
+     1	0.999997940793
+     2	0.999853063265
+     3	1.00004068415
+     4	0.990524790264
