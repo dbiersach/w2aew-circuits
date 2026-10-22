@@ -17,7 +17,7 @@ You need LTspice to run the circuits. The Markdown notes and PNG figures can be 
 
 Each numbered video has a folder named for its topic. Inside it, `CIRCUIT_NOTES.md` is the guide for that video. It links to the video for that chapter and walks through the circuit’s purpose, operation, simulated results, and any assumptions needed to compare LTspice with Alan’s demonstration. The repository also includes Alan’s [W2AEW video index PDF](W2AEW_video_index.pdf).
 
-Numbered subfolders such as `01 - Diode ring mixer/` hold the circuits in the order they appear in the video. Each circuit has at least one LTspice `.asc` schematic, PNG images captured from LTspice for the schematic and relevant plots, and a time-coded video link that takes you to the point where Alan introduces it. A circuit may have more than one `.asc` file when separate simulation views are useful, plus `.plt` plot settings and the `.log` holding its measured results. The symbols and third-party models the schematics need are collected under [`LTspice/`](<LTspice/>). For example, [video 167’s diode-ring mixer](<167 - How a Diode Ring Mixer works - Mixer operation theory and measurement/01 - Diode ring mixer/>) links to its demonstration [from 0:00](https://www.youtube.com/watch?v=junuEwmQVQ8&t=0s) and contains transient and spectrum examples. An optional alternative transformer model sits in its own clearly named subfolder.
+Numbered subfolders such as `01 - Diode ring mixer/` hold the circuits in the order they appear in the video. Each circuit has at least one LTspice `.asc` schematic, PNG images captured from LTspice for the schematic and relevant plots, and a time-coded video link that takes you to the point where Alan introduces it. A circuit may have more than one `.asc` file when separate simulation views are useful, plus `.plt` plot settings and the `.log` holding its measured results. Waveform files are not stored here, so running a circuit writes its own `.raw`. The symbols and third-party models the schematics need are collected under [`LTspice/`](<LTspice/>). For example, [video 167’s diode-ring mixer](<167 - How a Diode Ring Mixer works - Mixer operation theory and measurement/01 - Diode ring mixer/>) links to its demonstration [from 0:00](https://www.youtube.com/watch?v=junuEwmQVQ8&t=0s) and contains transient and spectrum examples. An optional alternative transformer model sits in its own clearly named subfolder.
 
 | Chapter component | Video 167 example | Purpose |
 | --- | --- | --- |
@@ -41,20 +41,6 @@ The PNGs show LTspice output; they provide a quick reference while the `.asc` fi
 Two entries on it are worth reading before typing any component value. LTspice parses suffixes case insensitively, so **`M` means milli and mega must be written `MEG`**, and a bare **`F` means femto rather than farad**. Both mistakes simulate without complaint and are wrong by orders of magnitude. A unit may follow the prefix and is ignored, so `10nF` is safe; only a bare `F` or `M` straight after the number is a trap.
 
 The card is copyright Analog Devices.
-
-## If you commit simulation output
-
-Waveform files are not kept here. A `.raw` holds every sample of a simulation and a `.fft` every sample of an exported FFT view, and LTspice rewrites them in full on every run, so tracking them made each clone show hundreds of megabytes of modified binaries as soon as anyone pressed Run. The repository keeps what a reader needs instead: the `.asc` to simulate, the `.plt` to restore the saved view, the `.log` with the `.meas` results the chapter notes quote, and PNG captures of the schematic and plots. Press Run to regenerate a waveform file, then **Ctrl+Space** in the plot window to reload its saved settings.
-
-Rerunning a circuit does rewrite its `.log`, and LTspice records the absolute path of the simulated netlist there. A git clean filter reduces those paths to bare filenames as a log is staged, so the committed form never carries the folder layout of whoever ran the simulation. The filter is declared in `.gitattributes`, but git stores the command itself in local configuration, which a clone does not carry. Set it once, from the repository root:
-
-```sh
-git config filter.ltspicelog.clean "sh tools/strip-ltspice-log-paths.sh"
-```
-
-Git silently ignores a filter whose command is unset, so run this before staging a `.log`. It leaves the results themselves untouched: the `.meas` lines pass through byte for byte.
-
-`tools/check-asset-paths.sh` checks the other half of the arrangement, that every symbol and model a schematic needs sits under [`LTspice/`](<LTspice/>) and is reached by a relative path. Run it after moving or adding one.
 
 ## Videos
 
