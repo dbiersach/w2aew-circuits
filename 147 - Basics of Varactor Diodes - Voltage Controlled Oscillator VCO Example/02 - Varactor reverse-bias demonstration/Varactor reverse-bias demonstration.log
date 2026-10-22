@@ -1,0 +1,45 @@
+LTspice 26.1.1 for Windows
+Circuit: Varactor reverse-bias demonstration.net
+Start Time: Wed Oct 21 21:20:59 2026
+
+.step vb=1
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Changing Tseed to 1e-13
+
+.step vb=3
+Direct Newton iteration succeeded in finding operating point.
+
+.step vb=12
+Direct Newton iteration succeeded in finding operating point.
+
+.step vb=25
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.513 seconds.
+Total iterations: 20103
+
+Files loaded:
+Varactor reverse-bias demonstration.net
+standard.dio
+MV209_legacy.lib
+
+
+Measurement: out_pp
+  step	PP(V(OUT))	FROM	TO
+     1	0.0261505628005	5e-06	1e-05
+     2	0.014732609503	5e-06	1e-05
+     3	0.00505748786964	5e-06	1e-05
+     4	0.00268215278629	5e-06	1e-05
+
+Measurement: in_pp
+  step	PP(V(K))	FROM	TO
+     1	0.0886153578758	5e-06	1e-05
+     2	0.096292257309	5e-06	1e-05
+     3	0.0992736816406	5e-06	1e-05
+     4	0.0995578765869	5e-06	1e-05

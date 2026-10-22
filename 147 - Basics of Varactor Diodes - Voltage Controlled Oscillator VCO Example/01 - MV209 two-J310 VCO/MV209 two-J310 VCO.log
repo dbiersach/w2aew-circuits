@@ -1,0 +1,45 @@
+LTspice 26.1.1 for Windows
+Circuit: MV209 two-J310 VCO.net
+Start Time: Wed Oct 21 21:20:10 2026
+
+.step vb=1.286
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Per .tran options, skipping operating point for transient analysis.
+
+.step vb=12.39
+
+.step vb=24.79
+Total elapsed time: 2.797 seconds.
+Total iterations: 256235
+
+Files loaded:
+MV209 two-J310 VCO.net
+standard.dio
+standard.jft
+MV209_legacy.lib
+J310.lib
+
+
+Measurement: t1
+  step	V(TANK)=0
+     1	0.000150007763866
+     2	0.000150014749248
+     3	0.00015004649067
+
+Measurement: t2
+  step	V(TANK)=0
+     1	0.000153197038573
+     2	0.000153023026401
+     3	0.00015302533305
+
+Measurement: freq
+  step	50/(T2-T1)
+     1	15677545.7068
+     2	16620809.0075
+     3	16785043.859
