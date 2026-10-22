@@ -1,0 +1,23 @@
+LTspice 26.1.1 for Windows
+Circuit: AD8032 Op Amp.net
+Start Time: Wed Oct 21 23:16:02 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.044 seconds.
+Total iterations: 1256
+
+Files loaded:
+AD8032 Op Amp.net
+ADI.lib
+
+vout_max: MAX(V(CH1))=7.92835569382 FROM 0.0002 TO 0.001
+vout_min: MIN(V(CH1))=2.07160520554 FROM 0.0002 TO 0.001
+vout_pp: PP(V(CH1))=5.85675048828 FROM 0.0002 TO 0.001
+vin_pp: PP(V(CH3))=3.99750566483 FROM 0.0002 TO 0.001
+gain: VOUT_PP/VIN_PP=1.46510123546

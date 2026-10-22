@@ -1,0 +1,23 @@
+LTspice 26.1.1 for Windows
+Circuit: LM741 Op Amp - Single Rail Mode.net
+Start Time: Wed Oct 21 23:13:25 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.119 seconds.
+Total iterations: 1245
+
+Files loaded:
+LM741 Op Amp - Single Rail Mode.net
+LM741.lib
+
+vout_max: MAX(V(CH1))=7.92852306366 FROM 0.0002 TO 0.001
+vout_min: MIN(V(CH1))=2.0722618103 FROM 0.0002 TO 0.001
+vout_pp: PP(V(CH1))=5.85626125336 FROM 0.0002 TO 0.001
+vin_pp: PP(V(CH3))=3.99639701843 FROM 0.0002 TO 0.001
+gain: VOUT_PP/VIN_PP=1.46538525235

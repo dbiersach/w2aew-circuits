@@ -1,0 +1,38 @@
+LTspice 26.1.1 for Windows
+Circuit: LM741 Virtual Ground Sweep.net
+Start Time: Wed Oct 21 23:14:05 2026
+
+.step vref=2
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step vref=5
+Direct Newton iteration succeeded in finding operating point.
+
+.step vref=8
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.206 seconds.
+Total iterations: 1572
+
+Files loaded:
+LM741 Virtual Ground Sweep.net
+LM741.lib
+
+
+Measurement: vout_max
+  step	MAX(V(CH1))	FROM	TO
+     1	4.93243503571	0.0002	0.001
+     2	7.92852306366	0.0002	0.001
+     3	8.9669084549	0.0002	0.001
+
+Measurement: vout_min
+  step	MIN(V(CH1))	FROM	TO
+     1	1.03343391418	0.0002	0.001
+     2	2.0722618103	0.0002	0.001
+     3	5.07601499557	0.0002	0.001
