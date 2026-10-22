@@ -4,6 +4,8 @@ Alan Wolke teaches electronics on [his W2AEW channel](https://www.youtube.com/@w
 
 LTspice stands in for the supplies, meters, scopes and spectrum displays Alan reaches for, including the ones most of us do not own. Each chapter's notes tie the simulated numbers back to what he measures and say where the model and his hardware part company. None of this replaces watching him explain it; it just lets you take the circuit apart afterwards.
 
+Please subscribe to [Alan's channel](https://www.youtube.com/@w2aew) if you have not already. More than 230,000 people have, across more than 400 videos, and it is easy to see why: he is clear, he never rushes, and he is as good on ham radio and on getting the best out of bench test and diagnostic equipment as he is on the electronics itself.
+
 ## What to expect
 
 Video 167 is a fair sample of what a chapter holds. Alan builds a diode ring mixer on the bench and shows why it hands you the sum and difference of its two inputs. The same ring is drawn here in LTspice, driven by his 7 MHz local oscillator and 10 MHz RF.
