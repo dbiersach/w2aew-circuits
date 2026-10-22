@@ -72,6 +72,7 @@ I would genuinely like to hear about it when that happens. If something looks wr
 | --- | --- |
 | [#5: My ESR Meter project from 2006](https://www.youtube.com/watch?v=bmYAgat-sOQ) | [Video 005 folder](<005 - My ESR Meter project from 2006/>) |
 | [#7: Monitor your Ham Radio transmitter with an oscilloscope](https://www.youtube.com/watch?v=y4Zt_LJX1Tc) | [Video 007 folder](<007 - Monitor your Ham Radio transmitter with an oscilloscope/>) |
+| [#10: AC / DC Coupling on an Oscilloscope](https://www.youtube.com/watch?v=Hkq-fvb5-NI) | [Video 010 folder](<010 - AC-DC Coupling on an Oscilloscope/>) |
 | [#54: Back to Basics Tutorial: Voltage / Current in capacitors and inductors](https://www.youtube.com/watch?v=ykgmKOVkyW0) | [Video 054 folder](<054 - Back to Basics Tutorial - Current in Capacitors and Inductors/>) |
 | [#55: Back to Basics: Tutorial on LC Resonant Circuits](https://www.youtube.com/watch?v=hqhV50852jA) | [Video 055 folder](<055 - Back to Basics Tutorial - LC Resonant Circuits/>) |
 | [#56: Basics of Capacitor & Inductor self-resonance, parasitics, etc. - Tutorial](https://www.youtube.com/watch?v=vi24SpKYYoQ) | [Video 056 folder](<056 - Basics of Capacitor & Inductor self-resonance, parasitics, etc. - Tutorial/>) |
