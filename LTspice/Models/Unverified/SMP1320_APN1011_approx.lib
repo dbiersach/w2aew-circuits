@@ -1,0 +1,10 @@
+* LTspice teaching approximation for Skyworks SMP1320 PIN diode.
+* NOT a Skyworks-supplied LTspice model or proof of Alan's actual diode.
+* Source: Skyworks APN1011 Rev A (200321), July 21 2005:
+* https://www.skyworksinc.com/-/media/SkyWorks/Documents/Products/1-100/200321A.pdf
+* IS=2.4e-10, RS=2.6, N=1.75 are its PN junction fit parameters.
+* CJO=0.45p is the app note's zero-bias RF capacitance approximation.
+* TT=0.4u uses the stated SMP1320 carrier lifetime as a rough SPICE
+* transit-time proxy; ordinary D model cannot reproduce PIN stored-charge
+* RF resistance, distortion, or switching dynamics accurately.
+.model SMP1320A D(Is=2.4e-10 Rs=2.6 N=1.75 Cjo=0.45p Vj=1 M=0.5 Tt=0.4u)

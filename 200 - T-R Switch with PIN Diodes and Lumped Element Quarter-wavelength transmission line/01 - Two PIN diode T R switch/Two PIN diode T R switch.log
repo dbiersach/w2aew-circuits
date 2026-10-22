@@ -1,0 +1,35 @@
+LTspice 26.1.1 for Windows
+Circuit: Two PIN diode T R switch.net
+Start Time: Wed Oct 21 21:42:50 2026
+
+.step txon=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step txon=1
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.099 seconds.
+Total iterations: 6
+
+Files loaded:
+Two PIN diode T R switch.net
+standard.dio
+SMP1320_APN1011_approx.lib
+
+
+Measurement: ant_10m
+  step	mag(V(ANTENNA))	at
+     1	(-5.99490062485dB,0°)	10100000
+     2	(-6.67983194809dB,0°)	10100000
+
+Measurement: rx_10m
+  step	mag(V(RX_OUT))	at
+     1	(-6.02385469148dB,0°)	10100000
+     2	(-32.6036797241dB,0°)	10100000
