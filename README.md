@@ -4,6 +4,18 @@ This repository is a hands-on companion to Alan Wolke’s [W2AEW YouTube videos]
 
 The schematics aim to follow the circuits and test setups Alan shows. LTspice can stand in for power supplies, meters, oscilloscopes, spectrum displays, and other bench equipment, including instruments that are expensive or hard to obtain. The circuit notes connect the simulated readings to what Alan demonstrates and explain any modeling assumptions or differences from his hardware. The goal is to make his straightforward explanations easier to explore, not to replace the video or treat a simulated device as a measurement of Alan’s particular components.
 
+## What to expect
+
+Video 167 is a fair sample of what a chapter holds. Alan builds a diode ring mixer on the bench and shows why it hands you the sum and difference of its two inputs. The same ring is drawn here in LTspice, driven by his 7 MHz local oscillator and 10 MHz RF.
+
+![Diode ring mixer schematic copied from LTspice](<167%20-%20How%20a%20Diode%20Ring%20Mixer%20works%20-%20Mixer%20operation%20theory%20and%20measurement/01%20-%20Diode%20ring%20mixer/Diode%20ring%20mixer%20spectrum%20schematic.png>)
+
+*Four Schottky diodes in a ring between two center-tapped transformers, with the IF taken from the RF winding's center tap. Every part on the drawing is one you could wire up.*
+
+![LTspice FFT of the mixer, with the 3 MHz difference, 7 MHz LO, 10 MHz RF and 17 MHz sum peaks labeled](<167%20-%20How%20a%20Diode%20Ring%20Mixer%20works%20-%20Mixer%20operation%20theory%20and%20measurement/01%20-%20Diode%20ring%20mixer/Diode%20ring%20mixer%20LO%20RF%20and%20IF%20spectrum.png>)
+
+*An FFT of that circuit. The local oscillator stands at 7 MHz and the RF at 10 MHz, while the IF output carries their 3 MHz difference and 17 MHz sum, which is what a mixer is for. Its [chapter notes](167%20-%20How%20a%20Diode%20Ring%20Mixer%20works%20-%20Mixer%20operation%20theory%20and%20measurement/CIRCUIT_NOTES.md) identify each marked peak and separate Alan's values from the modeling assumptions.*
+
 ## Get started
 
 1. Install [LTspice from Analog Devices](https://www.analog.com/en/resources/design-tools-and-calculators/LTspice-simulator.html). The schematics use LTspice’s `.asc` format.
