@@ -56,13 +56,13 @@ The card is copyright Analog Devices.
 
 ## Mistakes, feedback, and pull requests
 
-Treat everything here as likely to contain mistakes.
+There are almost certainly mistakes in here.
 
-I build these circuits by watching Alan's videos and reading his notes, and I can misunderstand the point he is making. A schematic can follow his drawing and still miss what the demonstration is about, a value can be read wrong off the bench, and a chapter's explanation can be confident and wrong at the same time. I am not an expert in LTspice either, and a simulation that converges and draws a plausible plot is not evidence that the circuit is set up the way Alan sets it up, or that the model answers the question being asked of it.
+I put these circuits together by watching Alan's videos and working from his notes, so sometimes I will simply have missed his point. A schematic can match his drawing and still be a poor illustration of what he is demonstrating. I can misread a value off the bench. A chapter can explain something clearly and confidently and still have it wrong. I am not an LTspice expert either, and a simulation that runs and draws a believable-looking plot is no proof that I have set the circuit up the way Alan sets up his.
 
-Alan's video is the authority. Where it and this repository disagree, the video is right and the error is mine.
+So if the video and this repository ever disagree, trust Alan. The mistake will be mine.
 
-Feedback is always welcome, whether that is a correction, a better way to model something, or a note that an explanation does not make sense; open an issue and say so. If you would like to improve anything, clone the repository, make the change, and open a pull request, which I will review. A fix to a schematic, to a chapter's notes, to a plot or to a stated model assumption is equally welcome.
+I would genuinely like to hear about it when that happens. If something looks wrong, or you know a better way to model it, or an explanation just does not make sense, open an issue and say so. If you would rather fix it yourself, even better: clone the repository, make the change, and send a pull request. I will read every one. Schematics, chapter notes, plots, model assumptions, anything at all.
 
 ## Videos
 
