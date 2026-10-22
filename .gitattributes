@@ -13,3 +13,25 @@
 
 # Keep the shell scripts LF so Git for Windows can run them.
 *.sh text eol=lf
+
+# GitHub's Linguist guesses a language from the file extension, and its guesses
+# here are all wrong: .asc is its Adventure Game Studio script extension, .plt
+# its SWI-Prolog test extension, and .cir a SPICE netlist this repository does
+# not contain. Nothing here is source code in any language Linguist knows, so
+# none of it should count towards the repository's language statistics.
+#
+# linguist-detectable only affects those statistics. It does not mark a file as
+# vendored or generated, so diffs still render in full, which matters for a
+# pull request that corrects a schematic.
+*.asc linguist-detectable=false
+*.plt linguist-detectable=false
+*.cir linguist-detectable=false
+*.asy linguist-detectable=false
+*.lib linguist-detectable=false
+*.sub linguist-detectable=false
+*.net linguist-detectable=false
+*.log linguist-detectable=false
+
+# The two helper scripts are genuinely shell, but they are not what this
+# repository is, and leaving them detectable would label the whole thing Shell.
+*.sh linguist-detectable=false
