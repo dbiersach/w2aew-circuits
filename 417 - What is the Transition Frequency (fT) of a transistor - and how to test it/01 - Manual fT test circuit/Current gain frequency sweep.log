@@ -1,0 +1,23 @@
+LTspice 26.1.1 for Windows
+Circuit: Current gain frequency sweep.net
+Start Time: Thu Oct 22 11:54:06 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.077 seconds.
+Total iterations: 6
+
+Files loaded:
+Current gain frequency sweep.net
+standard.bjt
+
+beta_lf: mag(I(Vcprobe)/I(Rb))=(46.1046458418dB,0°) at 10000
+hfe_300k: mag(I(Vcprobe)/I(Rb))=(45.9377134783dB,0°) at 300000
+hfe_3meg: mag(I(Vcprobe)/I(Rb))=(39.1826056088dB,0°) at 3000000
+hfe_30meg: mag(I(Vcprobe)/I(Rb))=(20.1580175364dB,0°) at 30000000
+ft: mag(I(Vcprobe)/I(Rb))=1 AT 306368660.706

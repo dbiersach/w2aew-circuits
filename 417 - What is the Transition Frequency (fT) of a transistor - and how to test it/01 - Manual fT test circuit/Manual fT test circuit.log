@@ -1,0 +1,53 @@
+LTspice 26.1.1 for Windows
+Circuit: Manual fT test circuit.net
+Start Time: Thu Oct 22 11:49:47 2026
+
+.step freq=300000
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step freq=3000000
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 1.294 seconds.
+Total iterations: 110040
+
+Files loaded:
+Manual fT test circuit.net
+standard.bjt
+
+
+Measurement: ic_dc
+  step	AVG(I(Vcprobe))	FROM	TO
+     1	0.0100013879724	6.66666666667e-05	0.0001
+     2	0.010003503986	6.66666666667e-06	1e-05
+
+Measurement: ib_dc
+  step	AVG(I(Rb))	FROM	TO
+     1	4.80669574542e-05	6.66666666667e-05	0.0001
+     2	4.80701839172e-05	6.66666666667e-06	1e-05
+
+Measurement: ic_amp
+  step	PP(I(Vcprobe))	FROM	TO
+     1	0.00170806050301	6.66666666667e-05	0.0001
+     2	0.00121131539345	6.66666666667e-06	1e-05
+
+Measurement: ib_amp
+  step	PP(I(Rb))	FROM	TO
+     1	8.59632200445e-06	6.66666666667e-05	0.0001
+     2	1.33207649924e-05	6.66666666667e-06	1e-05
+
+Measurement: hfe
+  step	IC_AMP/IB_AMP
+     1	198.696663773
+     2	90.9343715725
+
+Measurement: ft
+  step	FREQ*IC_AMP/IB_AMP
+     1	59608999.132
+     2	272803114.718

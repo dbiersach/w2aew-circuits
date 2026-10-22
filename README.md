@@ -117,3 +117,4 @@ Git silently ignores a filter whose command is unset, so run this before staging
 | [#406: Current Regulator/Limiting Diodes (JFET) and their applications](https://www.youtube.com/watch?v=VXZH3UE-kSw) | [Video 406 folder](<406 - Current Regulator-Limiting Diodes (JFET) and their applications/>) |
 | [#412: Common Emitter Amplifier - Input and Output Impedance](https://www.youtube.com/watch?v=yhuf2_Zu8T8) | [Video 412 folder](<412 - Common Emitter Amplifier - Input and Output Impedance/>) |
 | [#413: Cascading Common-Emitter Amplifiers using an Emitter Follower](https://www.youtube.com/watch?v=pAUYDPwCMj4) | [Video 413 folder](<413 - Cascading Common-Emitter Amplifiers using an Emitter Follower/>) |
+| [#417: What is the Transition Frequency (fT) of a transistor - and how to test it.](https://www.youtube.com/watch?v=PRzytyqwK5U) | [Video 417 folder](<417 - What is the Transition Frequency (fT) of a transistor - and how to test it/>) |
