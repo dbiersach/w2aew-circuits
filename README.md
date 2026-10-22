@@ -112,6 +112,7 @@ Git silently ignores a filter whose command is unset, so run this before staging
 | [#356: Back to Basics: the Emitter Follower, or Common-Collector Amplifier](https://www.youtube.com/watch?v=8f-nhjQ1jMk) | [Video 356 folder](<356 - Back to Basics - the Emitter Follower, or Common-Collector Amplifier/>) |
 | [#366: Back to Basics: Basics of the Bipolar Transistor - NPN and PNP](https://www.youtube.com/watch?v=IrAUC4ZoNYY) | [Video 366 folder](<366 - Back to Basics - Basics of the Bipolar Transistor - NPN and PNP/>) |
 | [#374: Back to Basics: JFET Current Source / Limiter circuits](https://www.youtube.com/watch?v=XJadPFYWglQ) | [Video 374 folder](<374 - Back to Basics - JFET Current Source - Limiter circuits/>) |
+| [#380: Circuit Fun: Twin-Tee Oscillator - low distortion op amp sine waves](https://www.youtube.com/watch?v=KFVVozlXoOk) | [Video 380 folder](<380 - Circuit Fun - Twin-Tee Oscillator - low distortion op amp sine waves/>) |
 | [#406: Current Regulator/Limiting Diodes (JFET) and their applications](https://www.youtube.com/watch?v=VXZH3UE-kSw) | [Video 406 folder](<406 - Current Regulator-Limiting Diodes (JFET) and their applications/>) |
 | [#412: Common Emitter Amplifier - Input and Output Impedance](https://www.youtube.com/watch?v=yhuf2_Zu8T8) | [Video 412 folder](<412 - Common Emitter Amplifier - Input and Output Impedance/>) |
 | [#413: Cascading Common-Emitter Amplifiers using an Emitter Follower](https://www.youtube.com/watch?v=pAUYDPwCMj4) | [Video 413 folder](<413 - Cascading Common-Emitter Amplifiers using an Emitter Follower/>) |
