@@ -1,0 +1,21 @@
+LTspice 26.1.1 for Windows
+Circuit: 50 microamp Wilson current source.net
+Start Time: Wed Oct 21 22:02:06 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Total elapsed time: 0.069 seconds.
+Total iterations: 239
+
+Files loaded:
+50 microamp Wilson current source.net
+standard.dio
+standard.bjt
+1N4577_illustrative.lib
+
+idut_250mv: I(Vdut)=5.00097412441e-05 at 0.25
+idut_5v: I(Vdut)=4.99782399856e-05 at 5

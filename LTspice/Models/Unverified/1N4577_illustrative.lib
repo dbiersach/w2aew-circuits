@@ -1,0 +1,4 @@
+* Illustrative 6.4 V reference approximation for the source-notes 1N4577.
+* Not a manufacturer model; temperature compensation and tolerance are omitted.
+* Microchip 1N4565-1N4585A data sheet specifies 1N4577 at 6.4 V, 2 mA.
+.model D1N4577 D(Is=1e-14 N=1.5 Rs=5 BV=6.4 IBV=2m)
