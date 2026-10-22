@@ -11,7 +11,7 @@ The schematics aim to follow the circuits and test setups Alan shows. LTspice ca
 3. Choose a video from the table below. Watch Alan’s video alongside that folder’s `CIRCUIT_NOTES.md`.
 4. Open a circuit’s `.asc` file in LTspice and click **Run**. Use its saved `.plt` settings, when present, to reproduce the intended traces and scales. If the waveform window opens autoscaled instead, press **Ctrl+Space** (Plot Settings > Reload Plot Settings) to load them; stepped simulations in particular need this. The chapter notes explain any additional viewing steps, such as reloading the plot settings after creating an FFT.
 
-You need LTspice to run the circuits. The Markdown notes and PNG figures can be read without it. Some schematics use additional model or symbol files supplied in this repository; their location and scope are documented in [LTspice/README.md](LTspice/README.md).
+You need LTspice to run the circuits. The Markdown notes and PNG figures can be read without it.
 
 ## How the repository is organized
 
@@ -41,6 +41,16 @@ The PNGs show LTspice output; they provide a quick reference while the `.asc` fi
 Two entries on it are worth reading before typing any component value. LTspice parses suffixes case insensitively, so **`M` means milli and mega must be written `MEG`**, and a bare **`F` means femto rather than farad**. Both mistakes simulate without complaint and are wrong by orders of magnitude. A unit may follow the prefix and is ignored, so `10nF` is safe; only a bare `F` or `M` straight after the number is a trap.
 
 The card is copyright Analog Devices.
+
+## Mistakes, feedback, and pull requests
+
+Treat everything here as likely to contain mistakes.
+
+I build these circuits by watching Alan's videos and reading his notes, and I can misunderstand the point he is making. A schematic can follow his drawing and still miss what the demonstration is about, a value can be read wrong off the bench, and a chapter's explanation can be confident and wrong at the same time. I am not an expert in LTspice either, and a simulation that converges and draws a plausible plot is not evidence that the circuit is set up the way Alan sets it up, or that the model answers the question being asked of it.
+
+Alan's video is the authority. Where it and this repository disagree, the video is right and the error is mine.
+
+Feedback is always welcome, whether that is a correction, a better way to model something, or a note that an explanation does not make sense; open an issue and say so. If you would like to improve anything, clone the repository, make the change, and open a pull request, which I will review. A fix to a schematic, to a chapter's notes, to a plot or to a stated model assumption is equally welcome.
 
 ## Videos
 
