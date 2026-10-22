@@ -1,0 +1,12 @@
+* Illustrative two-terminal snapback proxy for the inverted, open-base 2N3904 in
+* W2AEW video 406. NOT a transistor macromodel, a manufacturer model, or a
+* prediction of any particular 2N3904. Pins are collector, base, emitter.
+* The 1 Gohm base return keeps the open base from floating in SPICE.
+* LTspice's SW switches at Vt+Vh and back at Vt-Vh, so Vt=5.8 and Vh=1.45 give
+* 7.25 V and 4.35 V, the levels Alan's sawtooth reaches on his scope at 10:45.
+* Ron=150 ohms sets a discharge time constant consistent with the fall he shows.
+.SUBCKT AVAL C B E
+RBASE B C 1G
+SAV E C E C SNAPBACK
+.MODEL SNAPBACK SW(Ron=150 Roff=1G Vt=5.8 Vh=1.45)
+.ENDS AVAL

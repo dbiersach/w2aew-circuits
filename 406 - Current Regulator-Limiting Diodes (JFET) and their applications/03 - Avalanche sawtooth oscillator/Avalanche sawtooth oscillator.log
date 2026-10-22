@@ -1,0 +1,24 @@
+LTspice 26.1.1 for Windows
+Circuit: Avalanche sawtooth oscillator.net
+Start Time: Wed Oct 21 22:42:55 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 0.300 seconds.
+Total iterations: 10087
+
+Files loaded:
+Avalanche sawtooth oscillator.net
+1N5297_illustrative.lib
+2N3904_avalanche_proxy.lib
+
+ramp_max: MAX(V(RAMP))=7.24771261215 FROM 0.001 TO 0.005
+ramp_min: MIN(V(RAMP))=4.41473722458 FROM 0.001 TO 0.005
+period=0.000288135639091 FROM 0.00164437884724 TO 0.00193251448633
+freq: 1/PERIOD=3470.58768278

@@ -1,0 +1,7 @@
+* Illustrative 1N5305 current-regulator diode, not a manufacturer SPICE model.
+* Central Semiconductor datasheet: 2.0 mA nominal at 25 V, 1.7 to 2.3 mA.
+* Single JFET approximation is fitted only to the forward regulating quadrant.
+.SUBCKT CRD_1N5305_APPROX ANODE CATHODE
+J1 ANODE CATHODE CATHODE CRD_1N5305_NJF
+.MODEL CRD_1N5305_NJF NJF(VTO=-1.35 BETA=0.00110 LAMBDA=0.00125)
+.ENDS CRD_1N5305_APPROX

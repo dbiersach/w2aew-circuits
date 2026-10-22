@@ -1,0 +1,23 @@
+LTspice 26.1.1 for Windows
+Circuit: Linear capacitor ramp.net
+Start Time: Wed Oct 21 22:42:19 2026
+Options:plotwinsize=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.468 seconds.
+Total iterations: 4070
+
+Files loaded:
+Linear capacitor ramp.net
+1N5297_illustrative.lib
+
+ramp_lo: V(RAMP)=0.66 AT 0.00106490256603
+ramp_hi: V(RAMP)=7.94 AT 0.00178437143927
+ramp_slope: 7.28/(RAMP_HI-RAMP_LO)=10118.5753419
+i_charge: AVG(I(C1))=0.00101029335862 FROM 0.0012 TO 0.0019

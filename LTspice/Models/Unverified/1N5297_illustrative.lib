@@ -1,0 +1,9 @@
+* Illustrative 1N5297 current-regulator diode, not a manufacturer SPICE model.
+* Fitted approximately to Central Semiconductor 1N5297: 1.0 mA nominal at
+* 25 V, 1.35 V limiting-voltage specification, 0.8 Mohm minimum dynamic
+* impedance at 25 V. Forward regulating quadrant only.
+* Pins: anode cathode. The internal JFET gate is tied to its source.
+.SUBCKT CRD_1N5297_APPROX ANODE CATHODE
+J1 ANODE CATHODE CATHODE CRD_1N5297_NJF
+.MODEL CRD_1N5297_NJF NJF(VTO=-1.35 BETA=0.00055 LAMBDA=0.00123)
+.ENDS CRD_1N5297_APPROX
