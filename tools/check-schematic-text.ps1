@@ -182,7 +182,6 @@ function Test-Schematic([string]$ascPath) {
   $bodies = New-Object System.Collections.ArrayList  # symbol bodies
   $missing = New-Object System.Collections.ArrayList
   $flags = New-Object System.Collections.ArrayList   # every FLAG, by coordinate
-  $defaulted = New-Object System.Collections.ArrayList # symbols with no WINDOW set
 
   # Wires first, so a FLAG can be placed relative to the wire it attaches to.
   foreach ($line in $lines) {
@@ -293,17 +292,6 @@ function Test-Schematic([string]$ascPath) {
         })
       }
 
-      # Record instances that never set a text position of their own.
-      if ($inst -and -not $ovr.ContainsKey(0) -and -not $ovr.ContainsKey(3)) {
-        $longest = $inst.Length
-        if ($val -and $val.Length -gt $longest) { $longest = $val.Length }
-        $anchor = if ($asy.Windows.ContainsKey(0)) { $asy.Windows[0] } else { @{ dx = 0; dy = 0 } }
-        $off = Convert-Offset $anchor.dx $anchor.dy $rot
-        [void]$defaulted.Add([pscustomobject]@{
-          Inst = $inst; X = $sx + $off[0]; Y = $sy + $off[1]; Len = $longest
-        })
-      }
-
       foreach ($wid in 0, 3) {
         $spec = if ($ovr.ContainsKey($wid)) { $ovr[$wid] } elseif ($asy.Windows.ContainsKey($wid)) { $asy.Windows[$wid] } else { $null }
         if (-not $spec) { continue }
@@ -313,7 +301,11 @@ function Test-Schematic([string]$ascPath) {
         $off = Convert-Offset $spec.dx $spec.dy $rot
         $b = New-TextBox ($sx + $off[0]) ($sy + $off[1]) $str $spec.just $spec.size `
              $(if ($wid -eq 0) { 'NAME' } else { 'VALUE' }) "$inst $(if($wid -eq 0){'name'}else{'value'})"
-        if ($b) { [void]$texts.Add($b) }
+        if ($b) {
+          # True when the position came from the .asy, not the instance.
+          Add-Member -InputObject $b -NotePropertyName Defaulted -NotePropertyValue (-not $ovr.ContainsKey($wid))
+          [void]$texts.Add($b)
+        }
       }
       $i = $j - 1
     }
@@ -326,22 +318,12 @@ function Test-Schematic([string]$ascPath) {
   # --- Tier 1: coordinate-only checks. No font metrics, no WINDOW transform,
   # so these are reliable rather than advisory.
 
-  # Crowded flags. A ground glyph is about 16 units tall and a net label needs
-  # its own row, so two flags nearer than this on a shared axis will collide
-  # whichever way the editor orients them.
-  for ($a = 0; $a -lt $flags.Count; $a++) {
-    for ($b = $a + 1; $b -lt $flags.Count; $b++) {
-      $fa = $flags[$a]; $fb = $flags[$b]
-      $dx = [Math]::Abs($fa.X - $fb.X); $dy = [Math]::Abs($fa.Y - $fb.Y)
-      if ($dx -le 32 -and $dy -le 48 -and ($dx + $dy) -gt 0) {
-        [void]$hits.Add([pscustomobject]@{
-          Tier = 1; Severity = 'flags crowded'; Area = (100 - $dx - $dy)
-          A = "$($fa.Name) at $($fa.X),$($fa.Y)"
-          B = "$($fb.Name) at $($fb.X),$($fb.Y)  (dx $dx, dy $dy)"
-        })
-      }
-    }
-  }
+  # A label landing on a ground glyph is checked by box overlap further
+  # down and promoted to this tier there. A proximity heuristic was tried
+  # first and dropped: it agreed with the renders on video 5 and video 25
+  # but not on video 140, where VIN2 points away from the ground and
+  # clears it, so the box comparison is the one to trust.
+
 
   # A net label on a node with three or more wires has no free side for the
   # editor to put its text on, so it lands on top of the junction.
@@ -360,31 +342,15 @@ function Test-Schematic([string]$ascPath) {
     }
   }
 
-  # Instance text left at the symbol's own defaults. Every fault reported on
-  # video 5 involved a symbol whose WINDOW 0 and WINDOW 3 were never set, so
-  # its text went wherever the .asy happened to put it. Flagged only when
-  # another symbol body sits within a text-length of the default anchor.
-  foreach ($d in $defaulted) {
-    foreach ($bd in $bodies) {
-      if ($bd.Kind -ne 'SYMBOL' -or $bd.What -eq "$($d.Inst) body") { continue }
-      # The default text runs rightward from its anchor. Report only when the
-      # span it would occupy actually overlaps the neighbour's body, and when
-      # that body shares the text's rows.
-      $textX1 = $d.X; $textX2 = $d.X + $d.Len * 12
-      $rowsOverlap = ($bd.Y1 -lt $d.Y + 40) -and ($bd.Y2 -gt $d.Y - 40)
-      $colsOverlap = ($bd.X1 -lt $textX2) -and ($bd.X2 -gt $textX1)
-      if ($rowsOverlap -and $colsOverlap) {
-        $over = [Math]::Min($bd.X2, $textX2) - [Math]::Max($bd.X1, $textX1)
-        [void]$hits.Add([pscustomobject]@{
-          Tier = 1; Severity = 'default text runs into a neighbour'; Area = [int]$over
-          A = "$($d.Inst) leaves its name and value where the symbol puts them"
-          B = "$($bd.What) overlaps that span by $([int]$over)"
-        })
-      }
-    }
-  }
+  # Text left at a symbol's own default position is checked by the box
+  # comparison further down and promoted to this tier there. An earlier
+  # heuristic tested the NAME's row against the longest string's length,
+  # which conflates the two strings: on video 412 it reported VIN against
+  # RSER although the name is 33 wide and stops 100 short of it, and the
+  # value sits 100 below its rows. Only real box overlap is reported now.
 
-  if ($Tier1Only) { return [pscustomobject]@{ Path = $ascPath; Hits = $hits; Missing = ($missing | Select-Object -Unique); TextCount = $texts.Count } }
+  # Tier1Only used to return here, but the reliable findings are produced by
+  # the comparisons below, so it filters the result instead of skipping them.
 
   # --- Tier 2: advisory. These depend on estimated glyph widths and on how
   # LTspice rotates a WINDOW offset, which is not documented. Confirm each
@@ -419,7 +385,7 @@ function Test-Schematic([string]$ascPath) {
       if ($bd.What -eq "$($tb.What -replace ' (name|value)$','') body") { continue }
       if (Test-BoxOverlap $tb $bd) {
         [void]$hits.Add([pscustomobject]@{
-          Tier = 2; Severity = 'text over ' + $bd.Kind.ToLower()
+          Tier = $(if (($tb.Kind -eq 'FLAG' -and $bd.Kind -eq 'GROUND') -or ($tb.PSObject.Properties['Defaulted'] -and $tb.Defaulted -and $bd.Kind -eq 'SYMBOL')) { 1 } else { 2 }); Severity = 'text over ' + $bd.Kind.ToLower()
           Area = [int](Get-OverlapArea $tb $bd)
           A = "$($tb.What): '$($tb.Text)'"
           B = $bd.What
@@ -428,6 +394,7 @@ function Test-Schematic([string]$ascPath) {
     }
   }
 
+  if ($Tier1Only) { $hits = @($hits | Where-Object { $_.Tier -eq 1 }) }
   return [pscustomobject]@{
     Path = $ascPath; Hits = $hits; Missing = ($missing | Select-Object -Unique)
     TextCount = $texts.Count
