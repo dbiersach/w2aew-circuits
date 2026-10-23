@@ -1,0 +1,96 @@
+LTspice 26.1.1 for Windows
+Circuit: Sensor signal conditioner.net
+Start Time: Fri Oct 23 02:49:55 2026
+Options:gminsteps=0
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Instance "u1:M12": Length shorter than recommended for a level 1 MOSFET.
+Instance "u1:M14": Length shorter than recommended for a level 1 MOSFET.
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient succeeded in finding the operating point at 221.824 ms
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient succeeded in finding the operating point at 281.081 ms
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient failed to find the operating point at 475.941 µs
+Pseudo Transient level 2 failed to find the operating point at 440.062 µs
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient failed to find the operating point at 187.204 µs
+Pseudo Transient level 2 failed to find the operating point at 187.204 µs
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient failed to find the operating point at 137.27 µs
+Pseudo Transient level 2 failed to find the operating point at 137.27 µs
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient succeeded in finding the operating point at 253.062 ms
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Starting source stepping with srcstepmethod=1
+Source stepping failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=1, level 2
+Starting source stepping with srcstepmethod=0, level 2
+Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
+Pseudo Transient succeeded in finding the operating point at 216.435 ms
+Total elapsed time: 7.656 seconds.
+Total iterations: 587251
+
+Files loaded:
+Sensor signal conditioner.net
+MCP6001_family_RevE_Bordodynov.lib
+
+vout_hi: V(conditioned_out)=4.97852277756 at 0.5
+vout_lo: V(conditioned_out)=0.00886225979775 at 2.5
+voff: V(voffset)=1.78571426868 at 2.5
