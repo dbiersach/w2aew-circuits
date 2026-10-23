@@ -1,0 +1,19 @@
+LTspice 26.1.1 for Windows
+Circuit: Basic bias tee.net
+Start Time: Fri Oct 23 02:34:32 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.090 seconds.
+Total iterations: 3
+
+Files loaded:
+Basic bias tee.net
+
+vmid: mag(V(rf_plus_dc))=(-6.02166666817dB,0°) at 10000000
+flow: mag(V(rf_plus_dc))=0.353553 AT 156743.521699
