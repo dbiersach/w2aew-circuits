@@ -1,0 +1,23 @@
+LTspice 26.1.1 for Windows
+Circuit: Capacitor self-resonance fixture.net
+Start Time: Thu Oct 22 20:44:23 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 0.084 seconds.
+Total iterations: 0
+
+Files loaded:
+Capacitor self-resonance fixture.net
+
+vout_lf: mag(V(out))=(-2.48271139869dB,0°) at 100000
+vout_min: MIN(mag(V(out)))=(-30.3373485356dB,0°) FROM 10000 TO 100000000
+vout_sr: mag(V(out))=(-30.337344176dB,0°) at 3262000
+vout_hf: mag(V(out))=(-5.3242192574dB,0°) at 30000000
+zdut_sr: mag(V(out)/I(Cdut))=(6.02516692562dB,0°) at 3262000
