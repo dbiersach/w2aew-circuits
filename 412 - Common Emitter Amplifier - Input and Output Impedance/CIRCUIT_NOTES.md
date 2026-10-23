@@ -1,6 +1,6 @@
 # Video 412: Common-emitter input and output impedance
 
-Sources: [Alan Wolke's video](https://www.youtube.com/watch?v=yhuf2_Zu8T8) and his [eight-page handwritten circuit and calculation notes](InputZceAmp.pdf). The circuit is introduced at 1:34, collector loading at 5:13, and emitter bypass at 10:55.
+Sources: [Alan Wolke's video](https://www.youtube.com/watch?v=yhuf2_Zu8T8) and his [eight-page handwritten circuit and calculation notes](<W2AEW Video Notes - InputZceAmp.pdf>). The circuit is introduced at 1:34, collector loading at 5:13, and emitter bypass at 10:55.
 
 | Time | What Alan shows |
 | --- | --- |
