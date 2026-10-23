@@ -1,4 +1,4 @@
-# W2AEW Videos in LTspice
+# W2AEW Circuits in LTspice
 
 Alan Wolke teaches electronics on [his W2AEW channel](https://www.youtube.com/@w2aew) with a sketch, a breadboard and a bench full of instruments. This repository rebuilds those circuits in LTspice, so you can run one yourself, change a value and watch what it does.
 
