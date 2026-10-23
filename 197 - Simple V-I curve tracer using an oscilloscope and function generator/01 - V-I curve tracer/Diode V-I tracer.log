@@ -1,0 +1,22 @@
+LTspice 26.1.1 for Windows
+Circuit: Diode V-I tracer.net
+Start Time: Fri Oct 23 00:52:38 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.343 seconds.
+Total iterations: 12039
+
+Files loaded:
+Diode V-I tracer.net
+standard.dio
+
+vx_at_pk: V(scope_x)=1.5126914978 at 0.001
+vy_at_pk: V(scope_y)=0.696645617485 at 0.001
+vdut_at_pk: V(scope_x)-V(scope_y)=0.816045880318 at 0.001
+id_at_pk: I(D1)=0.0696645602584 at 0.001
