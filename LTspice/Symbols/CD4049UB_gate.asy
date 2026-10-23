@@ -8,11 +8,11 @@ LINE Normal -32 0 -16 0
 LINE Normal 80 0 60 0
 LINE Normal 16 -32 16 -16
 LINE Normal 16 32 16 16
-WINDOW 0 24 -32 Left 2
-WINDOW 3 24 32 Left 2
+WINDOW 0 72 -48 Left 2
+WINDOW 3 72 48 Left 2
 SYMATTR Prefix X
 SYMATTR Value CD4049UB
-SYMATTR Description One gate of the TI CD4049UB model; order OUT IN VCC GND
+SYMATTR Description One gate of the TI CD4049UB model; order OUT IN VCC GND. Name and value sit clear of the VCC and GND pins, which share the body centre line.
 PIN -32 0 NONE 0
 PINATTR PinName IN
 PINATTR SpiceOrder 2
