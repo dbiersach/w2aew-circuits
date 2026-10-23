@@ -1,0 +1,76 @@
+LTspice 26.1.1 for Windows
+Circuit: RF detector probe.net
+Start Time: Thu Oct 22 21:16:12 2026
+
+.step vrms=0.1
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step vrms=0.2
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step vrms=0.4
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step vrms=0.6
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step vrms=0.8
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step vrms=1
+.OP point found by inspection.
+.OP point found by inspection.
+
+.step vrms=1.2
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 1.570 seconds.
+Total iterations: 126981
+
+Files loaded:
+RF detector probe.net
+standard.dio
+1N34A_legacy.lib
+
+
+Measurement: vout
+  step	AVG(V(detected))	FROM	TO
+     1	0.058516034109	0.00029	0.0003
+     2	0.213140065039	0.00029	0.0003
+     3	0.623439376868	0.00029	0.0003
+     4	1.07038097168	0.00029	0.0003
+     5	1.52909159909	0.00029	0.0003
+     6	1.99341829436	0.00029	0.0003
+     7	2.46104154387	0.00029	0.0003
+
+Measurement: vtip_max
+  step	MAX(V(clamped))	FROM	TO
+     1	0.168453902006	0.00029	0.0003
+     2	0.380753844976	0.00029	0.0003
+     3	0.847318053246	0.00029	0.0003
+     4	1.32959461212	0.00029	0.0003
+     5	1.81773209572	0.00029	0.0003
+     6	2.30884385109	0.00029	0.0003
+     7	2.80238866806	0.00029	0.0003
+
+Measurement: vtip_min
+  step	MIN(V(clamped))	FROM	TO
+     1	-0.10986007005	0.00029	0.0003
+     2	-0.167221263051	0.00029	0.0003
+     3	-0.220742464066	0.00029	0.0003
+     4	-0.249018758535	0.00029	0.0003
+     5	-0.268385499716	0.00029	0.0003
+     6	-0.283435106277	0.00029	0.0003
+     7	-0.295866250992	0.00029	0.0003
