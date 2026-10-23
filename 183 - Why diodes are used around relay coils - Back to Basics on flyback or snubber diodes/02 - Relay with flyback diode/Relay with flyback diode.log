@@ -1,0 +1,25 @@
+LTspice 26.1.1 for Windows
+Circuit: Relay with flyback diode.net
+Start Time: Thu Oct 22 21:43:58 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 4.046 seconds.
+Total iterations: 2300656
+
+Files loaded:
+Relay with flyback diode.net
+standard.dio
+standard.bjt
+MPSA42_legacy.lib
+
+vc_pk: MAX(V(collector))=5.79343652725 FROM 0.2 TO 0.23
+idfly_pk: MAX(I(DFLY))=0.0524726584554 FROM 0.2 TO 0.23
+vc_on: MIN(V(collector))=1.31837129593 FROM 0.205 TO 0.209
+icoil_on: AVG(I(LCOIL))=0.0525946952403 FROM 0.205 TO 0.209
+ie_on: AVG(I(REMIT))=0.0534118115902 FROM 0.205 TO 0.209
