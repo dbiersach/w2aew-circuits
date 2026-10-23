@@ -1,0 +1,24 @@
+LTspice 26.1.1 for Windows
+Circuit: Phase splitter.net
+Start Time: Thu Oct 22 20:24:59 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.272 seconds.
+Total iterations: 100050
+
+Files loaded:
+Phase splitter.net
+standard.bjt
+
+vc_avg: AVG(V(collector))=3.98640336313 FROM 0.045 TO 0.05
+ve_avg: AVG(V(emitter))=1.01856894453 FROM 0.045 TO 0.05
+vc_pp: PP(V(collector))=0.966768714964 FROM 0.045 TO 0.05
+ve_pp: PP(V(emitter))=0.971603657961 FROM 0.045 TO 0.05
+sum_pp: PP(V(collector)+V(emitter))=0.0048364977032 FROM 0.045 TO 0.05
+diff_pp: PP(V(collector)-V(emitter))=1.93837237293 FROM 0.045 TO 0.05

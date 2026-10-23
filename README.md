@@ -74,6 +74,7 @@ I would genuinely like to hear about it when that happens. If something looks wr
 | [#7: Monitor your Ham Radio transmitter with an oscilloscope](https://www.youtube.com/watch?v=y4Zt_LJX1Tc) | [Video 007 folder](<007 - Monitor your Ham Radio transmitter with an oscilloscope/>) |
 | [#10: AC / DC Coupling on an Oscilloscope](https://www.youtube.com/watch?v=Hkq-fvb5-NI) | [Video 010 folder](<010 - AC-DC Coupling on an Oscilloscope/>) |
 | [#25: Analog Oscilloscope bandwidth considerations](https://www.youtube.com/watch?v=oZ1Dv2dVGkU) | [Video 025 folder](<025 - Analog Oscilloscope bandwidth considerations/>) |
+| [#31: Analog oscilloscope ALT, CHOP, ADD, INVERT vertical controls](https://www.youtube.com/watch?v=zsy-pxpfB4o) | [Video 031 folder](<031 - Analog oscilloscope - ALT, CHOP, ADD, INVERT vertical controls/>) |
 | [#54: Back to Basics Tutorial: Voltage / Current in capacitors and inductors](https://www.youtube.com/watch?v=ykgmKOVkyW0) | [Video 054 folder](<054 - Back to Basics Tutorial - Current in Capacitors and Inductors/>) |
 | [#55: Back to Basics: Tutorial on LC Resonant Circuits](https://www.youtube.com/watch?v=hqhV50852jA) | [Video 055 folder](<055 - Back to Basics Tutorial - LC Resonant Circuits/>) |
 | [#56: Basics of Capacitor & Inductor self-resonance, parasitics, etc. - Tutorial](https://www.youtube.com/watch?v=vi24SpKYYoQ) | [Video 056 folder](<056 - Basics of Capacitor & Inductor self-resonance, parasitics, etc. - Tutorial/>) |
