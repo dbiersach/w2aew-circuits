@@ -32,6 +32,8 @@
 *.net linguist-detectable=false
 *.log linguist-detectable=false
 
-# The two helper scripts are genuinely shell, but they are not what this
-# repository is, and leaving them detectable would label the whole thing Shell.
+# The three helper scripts under tools/ are genuinely shell and PowerShell, but
+# they are not what this repository is, and leaving either language detectable
+# would label the whole collection by whichever of them happens to be largest.
 *.sh linguist-detectable=false
+*.ps1 linguist-detectable=false
