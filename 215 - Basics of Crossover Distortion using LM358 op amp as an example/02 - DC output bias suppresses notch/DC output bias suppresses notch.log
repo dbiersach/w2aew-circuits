@@ -1,0 +1,42 @@
+LTspice 26.1.1 for Windows
+Circuit: DC output bias suppresses notch.net
+Start Time: Fri Oct 23 02:11:04 2026
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.361 seconds.
+Total iterations: 41411
+
+Files loaded:
+DC output bias suppresses notch.net
+LM358_onsemi_2018.lib
+
+Fourier components of V(ac_out)
+N-Period=1
+DC component:-0.000212871
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	 5.000e+03	 4.987e-01	 1.000e+00	   85.89°	    0.00°
+    2   	 1.000e+04	 3.906e-05	 7.833e-05	 -109.30°	 -195.19°
+    3   	 1.500e+04	 2.762e-04	 5.539e-04	   53.75°	  -32.14°
+    4   	 2.000e+04	 4.164e-05	 8.350e-05	   34.26°	  -51.63°
+    5   	 2.500e+04	 3.364e-04	 6.745e-04	 -130.34°	 -216.23°
+    6   	 3.000e+04	 7.722e-05	 1.548e-04	 -127.18°	 -213.06°
+    7   	 3.500e+04	 1.943e-04	 3.896e-04	   50.25°	  -35.64°
+    8   	 4.000e+04	 3.106e-05	 6.228e-05	 -151.56°	 -237.45°
+    9   	 4.500e+04	 2.461e-04	 4.935e-04	   -2.39°	  -88.28°
+Partial Harmonic Distortion: 0.109452%
+Total Harmonic Distortion:   0.127710%
+
+vout_pp: PP(V(ac_out))=0.998884623349 FROM 0.001 TO 0.002
+iload_pp: PP(I(Rload))=0.000998884591829 FROM 0.001 TO 0.002
+itotal_min: MIN(I(Rload)+I(Rdc))=0.000662639260599 FROM 0.001 TO 0.002

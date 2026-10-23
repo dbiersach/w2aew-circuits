@@ -118,6 +118,7 @@ I would genuinely like to hear about it when that happens. If something looks wr
 | [#201: Basics of Reverse Recovery Time in a Diode](https://www.youtube.com/watch?v=SBqLOrlA7QI) | [Video 201 folder](<201 - Basics of Reverse Recovery Time in a Diode/>) |
 | [#207: Basics of a Cascode Amplifier and the Miller Effect](https://www.youtube.com/watch?v=Op_I3Ke7px0) | [Video 207 folder](<207 - Basics of a Cascode Amplifier and the Miller Effect/>) |
 | [#209: Basics of Phase Dots on Transformer Windings](https://www.youtube.com/watch?v=LuZh1QnegC4) | [Video 209 folder](<209 - Basics of Phase Dots on Transformer Windings/>) |
+| [#215: Basics of crossover distortion &#124; LM358 op amp example](https://www.youtube.com/watch?v=VgodYtiD_F0) | [Video 215 folder](<215 - Basics of Crossover Distortion using LM358 op amp as an example/>) |
 | [#216: Back to Basics: 555 based monostable multivibrator &#124; 555 tutorial](https://www.youtube.com/watch?v=MbWc70ZzTlI) | [Video 216 folder](<216 - Back to Basics - 555 based monostable multivibrator - 555 tutorial/>) |
 | [#219: Back to Basics: Introduction to Field Effect Transistors JFET MOSFET](https://www.youtube.com/watch?v=oambDFa0Pr8) | [Video 219 folder](<219 - Back to Basics - Introduction to Field Effect Transistors JFET MOSFET/>) |
 | [#223: Basics of the Gilbert Cell &#124; Analog Multiplier &#124; Mixer &#124; Modulator](https://www.youtube.com/watch?v=7nmmb0pqTU0) | [Video 223 folder](<223 - Basics of the Gilbert Cell - Analog Multiplier - Mixer - Modulator/>) |
