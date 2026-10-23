@@ -90,7 +90,6 @@ I would genuinely like to hear about it when that happens. If something looks wr
 | [#85: Basics of R2R Ladder DAC &#124; Digital Analog Conversion, Tutorial R-2R DAC Thevenin Superposition](https://www.youtube.com/watch?v=AulX1OM7RwE) | [Video 085 folder](<085 - Basics of R2R Ladder DAC/>) |
 | [#87: Schmitt Trigger Oscillator / Tutorial / 74AC14 Inverter / squarewave generator](https://www.youtube.com/watch?v=NuXitMK3HSA) | [Video 087 folder](<087 - Schmitt Trigger Oscillator - Tutorial - 74AC14 Inverter - squarewave generator/>) |
 | [#90: Measure Capacitors and Inductors with an Oscilloscope and some basic parts](https://www.youtube.com/watch?v=74fz9iwZ_sM) | [Video 090 folder](<090 - Measure Capacitors and Inductors with an Oscilloscope and some basic parts/>) |
-
 | [#100: Capacitor self-resonance measured with an oscilloscope and signal generator - how to tutorial](https://www.youtube.com/watch?v=C3wYMZ_cjdQ) | [Video 100 folder](<100 - Capacitor self-resonance measured with an oscilloscope and signal generator - how to tutorial/>) |
 | [#104: Circuit tutorial: sawtooth generator w/ current sources, diode switches, hysteresis comparator](https://www.youtube.com/watch?v=ibnz5UjQ4u0) | [Video 104 folder](<104 - Circuit tutorial - sawtooth generator with current sources, diode switches, hysteresis comparator/>) |
 | [#105: More Circuit Fun: Simple 3 transistor sawtooth generator / oscillator](https://www.youtube.com/watch?v=2a1I1X3RV0g) | [Video 105 folder](<105 - More Circuit Fun - Simple 3 transistor sawtooth generator - oscillator/>) |
