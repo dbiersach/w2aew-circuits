@@ -1,0 +1,15 @@
+* 2N5245 N-channel JFET.
+*
+* Provenance not established. This model line was taken from a standard.jft
+* file found in a local LTspice component library. The parameter set matches
+* the Siliconix/Vishay PSpice JFET series that circulated widely in the 1990s,
+* but no manufacturer release carrying this exact text has been located, and
+* the 2N5245 is long obsolete. Treat its numbers as representative of the part
+* rather than as the manufacturer's characterisation, and do not present a
+* simulated result from it as measured behaviour of a 2N5245.
+*
+* Vto = -2.442 V, Beta = 1.38 mA/V^2, which puts Idss near 8 mA, consistent
+* with the 2N5245's published 5 to 15 mA grade.
+.MODEL 2N5245 NJF(Beta=1.38m Betatce=-500m Rd=1 Rs=1 Lambda=8m Vto=-2.442
++ Vtotc=-2.5m Is=101.9f Isr=977.5f N=1 Nr=2 Xti=3 Alpha=13.92u Vk=88.13
++ Cgd=3p M=344.8m Pb=1 Fc=500m Cgs=3.383p Kf=2.168e-002f Af=1)
