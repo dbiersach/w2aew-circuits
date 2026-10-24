@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Unbypassed common emitter.net
-Start Time: Wed Oct 21 01:58:53 2026
+Start Time: Sat Oct 24 13:49:47 2026
 
 .step rseries=50
 solver = Normal
@@ -14,7 +14,7 @@ Direct Newton iteration succeeded in finding operating point.
 
 .step rseries=6500
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.252 seconds.
+Total elapsed time: 0.354 seconds.
 Total iterations: 20048
 
 Files loaded:

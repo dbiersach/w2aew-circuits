@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Emitter-follower buffered cascade.net
-Start Time: Mon Oct 19 15:57:31 2026
+Start Time: Fri Oct 23 15:58:35 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -9,7 +9,7 @@ method = modified trap
 Compress1stOrder = true
 Compress2ndOrder = true
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.134 seconds.
+Total elapsed time: 0.174 seconds.
 Total iterations: 20055
 
 Files loaded:
