@@ -5,7 +5,9 @@ Source: Alan Wolke (W2AEW), [Beware of test equipment loading effects!! Learn fr
 | Time | What Alan shows |
 | --- | --- |
 | [1:44](https://www.youtube.com/watch?v=JbCI4Lsnqho&t=104s) | The analog meter connection that caused the error, modeled by [Current-source voltmeter loading.asc](01%20-%20Current-source%20voltmeter%20loading/Current-source%20voltmeter%20loading.asc). |
+| [2:30](https://www.youtube.com/watch?v=JbCI4Lsnqho&t=150s) | The bench as it was for the original error: the Simpson 260 across the collector and a Fluke in series reading 0.420 mA. |
 | [4:31](https://www.youtube.com/watch?v=JbCI4Lsnqho&t=271s) | The same circuit measured again with a DMM, which is the comparison this chapter reproduces. |
+| [4:35](https://www.youtube.com/watch?v=JbCI4Lsnqho&t=275s) | The two Flukes together with the Simpson out of the loop: 10.09 V at the collector and 0.372 mA through the ammeter, against the 0.420 mA of a moment before. |
 
 ## What went wrong
 
@@ -50,6 +52,22 @@ These are the result lines from the LTspice output log. The image omits the log 
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Video #190: 200 kΩ analog VOM | 409.523 / 367.348 µA | 359.523 / 357.348 µA | 50 / 10 µA | 189,684 Ω | 3,677,542 Ω |
 | Video #191: 10 MΩ DMM | 360.523 / 357.548 µA | 359.523 / 357.348 µA | 1 / 0.2 µA | 2,688,740 Ω | 3,677,542 Ω |
+
+### Against Alan's meters
+
+Everything in that table has a counterpart on his bench, so the two can be set out together. His ammeter is a Fluke in series; his voltmeter is first a Simpson 260 on its 10 V range and then a second Fluke.
+
+| | Alan's ammeter at 10 V | at 2 V | Change | His implied resistance |
+| --- | ---: | ---: | ---: | ---: |
+| Simpson 260 on the collector | 419 µA | 377 µA | 42 µA | 190 kΩ |
+| Fluke DMM on the collector | 372 µA | 369 µA | 3 µA | 2.7 MΩ |
+
+| | Simulated at 10 V | at 2 V | Change | `ROUT_OHMS` |
+| --- | ---: | ---: | ---: | ---: |
+| 200 kΩ voltmeter | 409.5 µA | 367.3 µA | 42.2 µA | 189.7 kΩ |
+| 10 MΩ voltmeter | 360.5 µA | 357.5 µA | 3.0 µA | 2.689 MΩ |
+
+The absolute currents sit about 10 µA apart because the bundled `2N2222` model is not his transistor and his divider resistors are real parts, but the quantity the lesson turns on, the *change* in the ammeter reading, matches to better than half a microamp in both rows. That is why the apparent output resistance comes out at 190 kΩ with the analog meter and 2.7 MΩ with the digital one in the simulation just as it does on his bench, and it is the clearest possible demonstration that the error was the meter rather than the transistor.
 
 Video #190's log reports the ammeter-based values. Its Q1-only and voltmeter-current entries in this comparison follow from the same simulated Q1 and the 200 kΩ `RVOM`; the added measurements appear in video #191's log.
 

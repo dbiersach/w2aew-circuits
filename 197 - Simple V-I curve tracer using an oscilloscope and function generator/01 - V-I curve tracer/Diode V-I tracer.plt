@@ -3,22 +3,24 @@
    Npanes: 2
    {
       traces: 1 {34603011,0,"I(D1)"}
-      X: ('m',1,0,0.001,0.006)
-      Y[0]: ('m',1,-0.01,0.01,0.09)
+      X: ('m',1,0,0.0004,0.004)
+      Y[0]: ('m',1,-0.002,0.002,0.026)
       Y[1]: ('_',0,1e+308,0,-1e+308)
-      Amps: ('m',0,0,2,-0.01,0.01,0.09)
+      Amps: ('m',0,0,2,-0.002,0.002,0.026)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.0030,0.0815) ;Diode current. Y reads this as 0.70 V across the 10 ohm shunt.
+      Text: "A" 1 (0.002,0.0252) ;Diode current, peaking at 21.1 mA. Channel 2 reads this as 0.211 V across the 10 ohm shunt
+      Text: "A" 1 (0.002,0.0236) ;Alan has channel 2 at 20.0 mV per division, which is 2 mA per division here
    }
    {
       traces: 2 {524290,0,"V(scope_x)"} {524291,0,"V(scope_x)-V(scope_y)"}
-      X: ('m',1,0,0.001,0.006)
-      Y[0]: (' ',1,-6,1,3)
+      X: ('m',1,0,0.0004,0.004)
+      Y[0]: (' ',1,-0.2,0.2,1.4)
       Y[1]: ('_',0,1e+308,0,-1e+308)
-      Volts: (' ',0,0,2,-6,1,3)
+      Volts: (' ',0,0,2,-0.2,0.2,1.4)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.0030,2.45) ;Peaks: X reads 1.51 V, the diode is really at 0.82 V.
+      Text: "V" 1 (0.002,1.32) ;V(scope_x) is what channel 1 shows: 0.945 V at the peak of the ramp
+      Text: "V" 1 (0.002,1.16) ;V(scope_x)-V(scope_y) is the diode itself: 0.734 V. The 0.211 V between them is the shunt
    }
 }

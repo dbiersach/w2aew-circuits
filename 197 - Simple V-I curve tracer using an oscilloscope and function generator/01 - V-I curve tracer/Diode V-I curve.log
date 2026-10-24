@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Diode V-I curve.net
-Start Time: Fri Oct 23 00:49:17 2026
+Start Time: Sat Oct 24 18:07:06 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -9,11 +9,11 @@ method = modified trap
 Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
-Total elapsed time: 0.091 seconds.
-Total iterations: 5822
+Total elapsed time: 0.326 seconds.
+Total iterations: 11472
 
 Files loaded:
 Diode V-I curve.net
 standard.dio
 
-id_at_816mv: I(D1)=0.0696266144514 at 0.816
+id_at_734mv: I(D1)=0.0210872743279 at 0.7343

@@ -7,7 +7,9 @@ Source: Alan Wolke (W2AEW), [#10: AC / DC Coupling on an Oscilloscope](https://w
 | [0:40](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=40s) | A multimeter's AC and DC ranges, which is the comparison the whole video sets out to correct: a scope's AC and DC positions are not the meter's AC and DC functions. |
 | [1:58](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=118s) | Close-up of the breadboard and the clip leads feeding the scope probes. |
 | [2:30](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=150s) | The CH1 front panel, with the AC - GND - DC coupling switch and the 1 M / 50 ohm input selector beside it. This switch is what both circuits here model. |
-| [3:55](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=235s) | The rectifier's ripple on the screen as a sawtooth, which is only visible once the DC level has been coupled out. |
+| [3:16](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=196s) | DC coupled on the 2465A: the trace is parked several divisions above the center line and the ripple is no more than a thickening of it. |
+| [3:46](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=226s) | The same node AC coupled at the same setting: the trace drops to the baseline and is still almost flat, because the ripple is small. |
+| [3:55](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=235s) | The gain turned up on that baseline trace, and the rectifier's ripple finally appears as a sawtooth filling several divisions. |
 | [4:16](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=256s) | Draws "SIMPLE HALF-WAVE RECTIFIER, DC SUPPLY", the circuit in [01 - Half-wave rectifier supply](<01 - Half-wave rectifier supply/>). |
 | [5:00](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=300s) | Two sine traces on the screen together, the amplifier's input and its output. |
 | [5:06](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=306s) | Draws "SIMPLE AMPLIFIER - GAIN =~ -2.5", the circuit in [02 - Simple amplifier](<02 - Simple amplifier/>). |
@@ -55,7 +57,17 @@ The bottom pane is the AC-coupled view of the same node, on a 1.2 V window inste
 | `ac_avg` | 0.0004 V |
 | `ac_pp` | 0.801 V |
 
-The pair that matters is the last three. `ripple_pp` and `ac_pp` are both 0.801 V, so AC coupling has not attenuated or reshaped anything, and `ac_avg` is 0.4 mV against the DC-coupled 8.844 V, so the level really is gone rather than merely shifted. Alan's screen at [3:55](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=235s) shows the same sawtooth; his supply voltage, load and capacitor are not stated, so the ripple amplitude is not comparable, only its shape.
+The pair that matters is the last three. `ripple_pp` and `ac_pp` are both 0.801 V, so AC coupling has not attenuated or reshaped anything, and `ac_avg` is 0.4 mV against the DC-coupled 8.844 V, so the level really is gone rather than merely shifted.
+
+### Against Alan's screen
+
+His instrument is a Tektronix 2465A, an analog scope with no on-screen readout, and he neither states his supply voltage nor the load and smoothing capacitor he used, so the volts per division and the absolute ripple cannot be recovered from the video. What his screen does give is the sequence, and it is worth following frame by frame because the two panes above are that sequence:
+
+- At [3:16](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=196s), DC coupled, the trace is parked several divisions above the center line and the ripple is no more than a thickening of the line. That is the top pane here, where 0.801 V of sawtooth sits on 8.844 V and is a thin fuzz on an 11 V axis.
+- At [3:46](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=226s) he moves the switch to AC. The trace drops to the baseline and is still nearly flat, because removing the level does not make a small signal large.
+- At [3:55](https://www.youtube.com/watch?v=Hkq-fvb5-NI&t=235s) he turns the gain up on that baseline trace and the sawtooth fills several divisions. That is the bottom pane, and the change of vertical axis from 11 V to 1.2 V is the same act as his turning the volts-per-division knob.
+
+The ratio is the part that carries across even though the volts do not. Here the level is eleven times the ripple, which is why nothing useful is visible until the level is gone; on his screen the proportion is much the same, a trace several divisions up carrying a ripple that is a fraction of one division. Expanding a signal you cannot first center is the problem AC coupling exists to solve.
 
 ## 02 - Simple amplifier
 

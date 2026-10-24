@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Coil tester with the built-in capacitor.net
-Start Time: Sat Oct 24 16:18:03 2026
+Start Time: Sat Oct 24 18:11:24 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -10,16 +10,16 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 1.826 seconds.
-Total iterations: 433492
+Total elapsed time: 2.067 seconds.
+Total iterations: 432404
 
 Files loaded:
 Coil tester with the built-in capacitor.net
 standard.jft
 2N5245_standard_jft.lib
 
-t1: V(tank)=0 AT 0.000150063414416
-t2: V(tank)=0 AT 0.000151477499209
-fosc: 10/(t2-t1)=7071711.7157
-vtank_pp: PP(V(tank))=13.8352155685 FROM 0.00015 TO 0.0002
-vout_pp: PP(V(output))=5.86122369766 FROM 0.00015 TO 0.0002
+t1: V(tank)=0 AT 0.00015011436526
+t2: V(tank)=0 AT 0.000151496380242
+fosc: 10/(t2-t1)=7235811.57301
+vtank_pp: PP(V(tank))=13.7053151131 FROM 0.00015 TO 0.0002
+vout_pp: PP(V(output))=5.79275655746 FROM 0.00015 TO 0.0002

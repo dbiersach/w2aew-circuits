@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Coil tester on a parallel tuned circuit.net
-Start Time: Sat Oct 24 16:17:25 2026
+Start Time: Sat Oct 24 18:12:14 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -10,16 +10,16 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 1.334 seconds.
-Total iterations: 244637
+Total elapsed time: 1.311 seconds.
+Total iterations: 242996
 
 Files loaded:
 Coil tester on a parallel tuned circuit.net
 standard.jft
 2N5245_standard_jft.lib
 
-t1: V(tank)=0 AT 0.00150146440167
-t2: V(tank)=0 AT 0.00152342700276
-fosc: 10/(t2-t1)=455319.475013
-vtank_pp: PP(V(tank))=14.9763092995 FROM 0.0015 TO 0.002
-vout_pp: PP(V(output))=6.42228031158 FROM 0.0015 TO 0.002
+t1: V(tank)=0 AT 0.00150132720439
+t2: V(tank)=0 AT 0.00152358076534
+fosc: 10/(t2-t1)=449366.284449
+vtank_pp: PP(V(tank))=14.9684877396 FROM 0.0015 TO 0.002
+vout_pp: PP(V(output))=6.41664588451 FROM 0.0015 TO 0.002

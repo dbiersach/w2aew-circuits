@@ -10,6 +10,7 @@ Source: Alan Wolke (W2AEW), [#232: More Circuit Fun: Simple transistor curve tra
 | [4:30](https://www.youtube.com/watch?v=ZOLLoa2fH24&t=270s) | How the collector sweep is made: the 555's pulse discharges a 10 nF capacitor through a transistor, and a 100 kΩ resistor recharges it between pulses, so each clock period produces one sawtooth. |
 | [6:00](https://www.youtube.com/watch?v=ZOLLoa2fH24&t=360s) | The current mirror that carries the device's collector current and copies it into a sense resistor, so the current can be read as a voltage without putting a resistor in series with the device. |
 | [6:45](https://www.youtube.com/watch?v=ZOLLoa2fH24&t=405s) | The scope in X-Y mode showing the collector curves, with the schematic held up beside it. |
+| [9:16](https://www.youtube.com/watch?v=ZOLLoa2fH24&t=556s) | The finished family filling the X-Y box on his MDO4104C, with the readout giving 200 mV per division on channel 1 and 100 mV per division on channel 2, which he then expands to [50.0 mV](https://www.youtube.com/watch?v=ZOLLoa2fH24&t=564s) to spread the curves apart. |
 | [9:45](https://www.youtube.com/watch?v=ZOLLoa2fH24&t=585s) | The breadboarded tracer, and the curves it produces for a real transistor. |
 
 ## What the lesson establishes
@@ -70,6 +71,10 @@ The one artifact to ignore is the diagonal line crossing the family from the low
 
 ## Simulation against Alan's bench
 
-Alan quotes no numbers for his build, so there is nothing numerical to compare. What can be compared is the shape of the result, and the family here has the same character as his: a tight bundle of curves near the origin, a clear knee, and a fan of flat lines spreading with base current.
+Alan states no component measurements, but his scope readout is on screen while the family is, so the axes of his display can be compared with the axes here. In X-Y mode channel 1 is the horizontal axis and channel 2 the vertical, and at [9:16](https://www.youtube.com/watch?v=ZOLLoa2fH24&t=556s) the readout gives 200 mV per division on channel 1 and 100 mV per division on channel 2. A few seconds later he takes channel 2 to [50.0 mV per division](https://www.youtube.com/watch?v=ZOLLoa2fH24&t=564s) to spread the curves out, and that is the frame in which the graticule is easiest to read.
+
+Read against that graticule, his sweep occupies a little over nine of the ten horizontal divisions, so node `X` on his breadboard reaches roughly 1.8 V rather than the 7.80 V here, and his family spans five or six vertical divisions at 50 mV, putting his largest sense voltage near 0.3 V against the 1.587 V here. His tracer is therefore working over a much smaller corner of the device than the simulated one: the sweep capacitor on his board recharges only part way between clock pulses, and his mirror delivers proportionally less current into the sense resistor. The knee lands in the same place relative to the sweep in both, about the first tenth of it, which is why the two pictures look alike despite the scales.
+
+What else can be compared is the shape, and the family here has the same character as his: a tight bundle of curves near the origin, a clear knee, and a fan of flat lines spreading with base current, eleven or twelve of them in each.
 
 He is also candid about the circuit's limits, and the simulation shows the same ones. The sweep does not reach the supply rail, stopping at 7.80 V rather than 9 V, because the capacitor is still charging when the next pulse dumps it. The curve spacing is not even, because the staircase steps are even in voltage but the device's gain is not constant across that range. And the mirror is only approximate, so `V(Y)` over 270 Ω is close to the collector current rather than equal to it. None of that stops the circuit doing what it is for, which is comparing one transistor against another.

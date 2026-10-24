@@ -9,7 +9,7 @@
       Volts: (' ',0,0,2,-1,2,9)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.00151,8.2) ;6.42 Vpp at the output jack, the same harmonic-rich shape at a much lower frequency.
+      Text: "V" 1 (0.00151,8.2) ;6.42 Vpp at the output jack, the same harmonic-rich shape at a much lower frequency
    }
    {
       traces: 1 {524290,0,"V(tank)"}
@@ -19,6 +19,6 @@
       Volts: (' ',0,0,2,-10,2,10)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.00151,8.8) ;Tank voltage, 14.98 Vpp at 455.32 kHz, set by the transformer's own 680 uH and 180 pF.
+      Text: "V" 1 (0.00151,8.8) ;Tank voltage, 14.97 Vpp at 449.37 kHz, set by the can's 698.5 uH and 180 pF. Alan's scope reads 449.25 kHz
    }
 }
