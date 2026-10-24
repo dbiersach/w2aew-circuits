@@ -39,7 +39,7 @@ The shortcut [Video 216 - 01 - 555 relay one-shot.url](<01 - 555 relay one-shot/
 | `Dfly` | 1N914 | Flyback diode across the coil |
 | `Rled` / `Dled` | 180 Ω / LED | Switched by the relay contact |
 
-Two things stand in for hardware Alan does not specify. His trigger is a normally-open push switch against the 10 kΩ pull-up; here an ideal source produces the same voltage at pin 2, `PULSE(5 0 10m 1u 1u 1m 3s)`, a 1 ms dip at 10 ms. And he gives no relay coil resistance, inductance or contact rating, so the 100 Ω / 100 mH coil and the voltage-controlled switch are **illustrative**, labelled as such on the schematic. Their currents are not measurements of his relay. U1 is LTspice's NE555 macromodel rather than a verified model of his LM555.
+Two things stand in for hardware Alan does not specify. His trigger is a normally-open push switch against the 10 kΩ pull-up; here an ideal source produces the same voltage at pin 2, `PULSE(5 0 10m 1u 1u 1m 3s)`, a 1 ms dip at 10 ms. And he gives no relay coil resistance, inductance or contact rating, so the 100 Ω / 100 mH coil and the voltage-controlled switch are **illustrative**, labeled as such on the schematic. Their currents are not measurements of his relay. U1 is LTspice's NE555 macromodel rather than a verified model of his LM555.
 
 ![Trigger and output, timing capacitor, and coil and LED currents](<01 - 555 relay one-shot/555 relay one-shot waveforms.png>)
 

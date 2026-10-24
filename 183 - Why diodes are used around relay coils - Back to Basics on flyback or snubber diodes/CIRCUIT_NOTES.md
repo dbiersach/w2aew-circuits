@@ -29,7 +29,7 @@ The transistor model is `MPSA42_LEGACY` from [`LTspice/Models/Unverified/MPSA42_
 
 Two things are estimates because Alan never states them. `RCOIL` at 70 ohm and `LCOIL` at 50 mH stand for the relay winding. With the transistor and the 20 ohm dropping about 1.3 V, 70 ohm passes 53 mA, which sits inside the range his 10 mA per division current trace covers, so the resistance is at least the right size. The inductance sets how long the decay takes and nothing else in the lesson depends on its exact value.
 
-His drawing also puts an LED and resistor on the relay contacts, so you can see the relay actually pull in. The contact is not modelled here, so that branch is left out.
+His drawing also puts an LED and resistor on the relay contacts, so you can see the relay actually pull in. The contact is not modeled here, so that branch is left out.
 
 ## 01 - Relay without flyback diode
 

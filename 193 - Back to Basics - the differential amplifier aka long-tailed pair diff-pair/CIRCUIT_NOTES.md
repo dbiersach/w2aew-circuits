@@ -8,9 +8,9 @@ Source: Alan Wolke (W2AEW), [Back to Basics: the differential amplifier](https:/
 | [12:26](https://www.youtube.com/watch?v=mejPNuPAHBY&t=746s) | [02 - Differential pair with a transistor tail sink](#02---differential-pair-with-a-transistor-tail-sink) |
 | [17:03](https://www.youtube.com/watch?v=mejPNuPAHBY&t=1023s) | [03 - PNP current-mirror active load](#03---pnp-current-mirror-active-load) |
 
-Alan builds a two-transistor differential pair, replaces its shared emitter resistor with a transistor current sink, and then replaces the collector resistors with a PNP current-mirror load. The three schematics follow those stages in order. The LTspice 2N3904 and 2N3906 models and the 50 mV, 1 kHz test signal illustrate the behaviour; the test waveform is not a measured setting from Alan's bench.
+Alan builds a two-transistor differential pair, replaces its shared emitter resistor with a transistor current sink, and then replaces the collector resistors with a PNP current-mirror load. The three schematics follow those stages in order. The LTspice 2N3904 and 2N3906 models and the 50 mV, 1 kHz test signal illustrate the behavior; the test waveform is not a measured setting from Alan's bench.
 
-All three runs sweep the DC common-mode level with `.step param VCMSET list 2 2.5 3`, keeping the 50 mV differential drive on VIN1 unchanged. Each pane carries its own step legend, because LTspice assigns step colours separately in every pane and the same setting can be a different colour in the pane above. Circuits 01 and 02 use identical vertical scales so their plots can be laid side by side. After running a simulation, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window does not pick up the saved `.plt`.
+All three runs sweep the DC common-mode level with `.step param VCMSET list 2 2.5 3`, keeping the 50 mV differential drive on VIN1 unchanged. Each pane carries its own step legend, because LTspice assigns step colors separately in every pane and the same setting can be a different color in the pane above. Circuits 01 and 02 use identical vertical scales so their plots can be laid side by side. After running a simulation, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window does not pick up the saved `.plt`.
 
 ## 01 - Differential pair with a resistor tail
 
@@ -56,7 +56,7 @@ Across the 2 V to 3 V sweep the resistor-tail OUT1 average falls by **1.053 V**;
 
 [Open the schematic](03%20-%20PNP%20current%20mirror%20active%20load/PNP%20current%20mirror%20active%20load.asc) · [Saved plot settings](03%20-%20PNP%20current%20mirror%20active%20load/PNP%20current%20mirror%20active%20load.plt) · [Video at 17:03](https://www.youtube.com/watch?v=mejPNuPAHBY&t=1023s)
 
-Alan then replaces the collector resistors with a PNP current mirror. The diode-connected left PNP sets the mirror bias and the right PNP feeds the output collector, so the current Q1 takes away and the current Q2 delivers both act on the same node. The two halves reinforce instead of cancelling, and the stage becomes single-ended with a very high collector load impedance. Alan does not name a PNP, so this schematic uses LTspice's 2N3906 as an illustrative model.
+Alan then replaces the collector resistors with a PNP current mirror. The diode-connected left PNP sets the mirror bias and the right PNP feeds the output collector, so the current Q1 takes away and the current Q2 delivers both act on the same node. The two halves reinforce instead of canceling, and the stage becomes single-ended with a very high collector load impedance. Alan does not name a PNP, so this schematic uses LTspice's 2N3906 as an illustrative model.
 
 ![LTspice differential pair with PNP mirror active load](03%20-%20PNP%20current%20mirror%20active%20load/PNP%20current%20mirror%20active%20load%20schematic.png)
 

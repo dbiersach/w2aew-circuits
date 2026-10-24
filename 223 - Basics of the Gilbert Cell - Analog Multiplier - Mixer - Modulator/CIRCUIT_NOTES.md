@@ -4,7 +4,7 @@ Source: [Alan Wolke (W2AEW)](https://www.youtube.com/watch?v=7nmmb0pqTU0). His [
 
 | Time | What Alan shows |
 | --- | --- |
-| [10:24](https://www.youtube.com/watch?v=7nmmb0pqTU0&t=624s) | The circuit demonstration begins, on the six-transistor cell modelled in [01 - The six-transistor cell](#01---the-six-transistor-cell). |
+| [10:24](https://www.youtube.com/watch?v=7nmmb0pqTU0&t=624s) | The circuit demonstration begins, on the six-transistor cell modeled in [01 - The six-transistor cell](#01---the-six-transistor-cell). |
 | [11:16](https://www.youtube.com/watch?v=7nmmb0pqTU0&t=676s) | The physical breadboard. |
 | [14:20](https://www.youtube.com/watch?v=7nmmb0pqTU0&t=860s) | The two-collector comparison. |
 
@@ -46,4 +46,4 @@ Multiplying 10 kHz by 500 Hz should give the difference and sum, 9.5 kHz and 10.
 
 The two wanted products are equal to within 0.01 dB, and both input frequencies are suppressed: that is what makes this a *double-balanced* mixer rather than a simple one. Neither input appears at the output on its own, only their products.
 
-The suppression figures belong to the simulation, not to Alan's breadboard. They are this good because all six modelled transistors are identical and the resistors are exact. A physical cell is limited by how well its transistors and bias components match, so a real build shows considerably more carrier feedthrough and more distortion products than the table above.
+The suppression figures belong to the simulation, not to Alan's breadboard. They are this good because all six modeled transistors are identical and the resistors are exact. A physical cell is limited by how well its transistors and bias components match, so a real build shows considerably more carrier feedthrough and more distortion products than the table above.

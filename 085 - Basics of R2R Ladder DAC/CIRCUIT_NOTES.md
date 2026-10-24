@@ -26,7 +26,7 @@ Introduced at [1:20](https://www.youtube.com/watch?v=AulX1OM7RwE&t=80s). File: [
 
 *The resistor ladder Alan draws, with R = 1 k and 2R = 2 k. R4 is the 2R termination at the left end; R0 to R3 are the 2R bit resistors; R5 to R7 are the R steps between them. Below the ladder, four D flip-flops are wired as a ripple counter so the four bit inputs walk through codes 0 to 15 on their own.*
 
-The counter is a simulation convenience, not part of Alan's drawing: he drives his board from an Arduino. The flip-flops are LTspice's behavioural `Digital\dflop` primitives (Vhigh = 3.3 V, Vlow = 0, 10 ns edges), clocked by a 100 us pulse train from V1, and C1 (1 nF) rounds off the glitches that a ripple counter produces when its stages change at slightly different times. A real design would clock all the bits together instead.
+The counter is a simulation convenience, not part of Alan's drawing: he drives his board from an Arduino. The flip-flops are LTspice's behavioral `Digital\dflop` primitives (Vhigh = 3.3 V, Vlow = 0, 10 ns edges), clocked by a 100 us pulse train from V1, and C1 (1 nF) rounds off the glitches that a ripple counter produces when its stages change at slightly different times. A real design would clock all the bits together instead.
 
 ![Four-bit staircase](<01 - Four-bit R-2R illustration/Four-bit R-2R staircase.png>)
 

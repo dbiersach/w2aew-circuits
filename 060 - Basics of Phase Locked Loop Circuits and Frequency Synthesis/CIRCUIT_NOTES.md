@@ -173,7 +173,7 @@ Top pane: V(ctrl) over the whole 150 ms. Bottom pane: the current ROFS pushes in
 
 ![Injected tune offset phase detail](<05 - Injected tune offset/Injected tune offset phase detail plot.png>)
 
-The phase detail view shows 90.0 to 90.5 ms, in the middle of the 5 V injection. Top pane: V(ref) and V(fb). Bottom pane: PC2. The feedback edges now arrive about 13.5 us before the reference edges, and PC2 pulls down to 0 V for that interval on every cycle, sinking the injected current through RFILT. The phase offset is the price the loop pays for cancelling the extra current.
+The phase detail view shows 90.0 to 90.5 ms, in the middle of the 5 V injection. Top pane: V(ref) and V(fb). Bottom pane: PC2. The feedback edges now arrive about 13.5 us before the reference edges, and PC2 pulls down to 0 V for that interval on every cycle, sinking the injected current through RFILT. The phase offset is the price the loop pays for canceling the extra current.
 
 ![Injected tune offset measurements](<05 - Injected tune offset/Injected tune offset SPICE measurements.png>)
 
@@ -183,7 +183,7 @@ The phase detail view shows 90.0 to 90.5 ms, in the middle of the 5 V injection.
 | 90 ms | 5 V | about +23 uA | -29.3 degrees (FB leads) | pulls down each cycle |
 | 140 ms | 0 V | about -27 uA | +45.7 degrees (FB lags) | pulls up each cycle |
 
-F_VCO measures 12.00 kHz at 58 ms, during the ringing that follows the first step: the loop holds the VCO on frequency even while the control node is being disturbed. The sign pattern is the one Alan describes at 20:36: when the VCO (and therefore FB) leads, PD2 pulls down; when it lags, PD2 pulls up. The small positive offset at 40 ms is the same effect in miniature: even with VOFS at 2.5 V, ROFS and the 470 k divider together draw a few microamps out of the 2.73 V control node, and the loop holds a 2 degree lag to replace it. The two larger angles are not proportional to the injected currents because CTRL sits at 2.73 V, not at midrail. A pull-down pulse drives 2.73 V across RFILT (about 270 uA) while a pull-up pulse drives only 2.27 V across it (about 220 uA), so cancelling 23 uA with pull-downs needs about an 8 percent duty cycle (29 degrees) while cancelling 28 uA with pull-ups needs about 13 percent (46 degrees).
+F_VCO measures 12.00 kHz at 58 ms, during the ringing that follows the first step: the loop holds the VCO on frequency even while the control node is being disturbed. The sign pattern is the one Alan describes at 20:36: when the VCO (and therefore FB) leads, PD2 pulls down; when it lags, PD2 pulls up. The small positive offset at 40 ms is the same effect in miniature: even with VOFS at 2.5 V, ROFS and the 470 k divider together draw a few microamps out of the 2.73 V control node, and the loop holds a 2 degree lag to replace it. The two larger angles are not proportional to the injected currents because CTRL sits at 2.73 V, not at midrail. A pull-down pulse drives 2.73 V across RFILT (about 270 uA) while a pull-up pulse drives only 2.27 V across it (about 220 uA), so canceling 23 uA with pull-downs needs about an 8 percent duty cycle (29 degrees) while canceling 28 uA with pull-ups needs about 13 percent (46 degrees).
 
 ## Model notes
 

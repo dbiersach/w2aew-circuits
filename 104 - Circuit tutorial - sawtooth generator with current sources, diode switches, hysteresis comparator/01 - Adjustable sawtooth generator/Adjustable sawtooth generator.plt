@@ -20,6 +20,6 @@
       Log: 0 0 0
       GridStyle: 1
       Text: "V" 1 (0.00275,7.3) ;V(RAMP) on the timing capacitor and V(OUT) from the buffer, 2.98 V to 6.02 V at 1651 Hz
-      Text: "V" 1 (0.00275,6.8) ;with both adjustments centred the rise and fall slopes match at about 10 kV/s
+      Text: "V" 1 (0.00275,6.8) ;with both adjustments centered the rise and fall slopes match at about 10 kV/s
    }
 }

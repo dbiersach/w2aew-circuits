@@ -4,7 +4,7 @@ Source: Alan Wolke (W2AEW), [How a Diode Ring Mixer works](https://www.youtube.c
 
 | Time | What Alan shows |
 | --- | --- |
-| [0:26](https://www.youtube.com/watch?v=junuEwmQVQ8&t=26s) | He draws the passive diode ring mixer and holds up the physical module, which is the circuit modelled in [01 - Diode ring mixer](<01 - Diode ring mixer/>). |
+| [0:26](https://www.youtube.com/watch?v=junuEwmQVQ8&t=26s) | He draws the passive diode ring mixer and holds up the physical module, which is the circuit modeled in [01 - Diode ring mixer](<01 - Diode ring mixer/>). |
 | [1:39](https://www.youtube.com/watch?v=junuEwmQVQ8&t=99s) | The handwritten product-to-sum identity behind the sum and difference frequencies. |
 | [1:50](https://www.youtube.com/watch?v=junuEwmQVQ8&t=110s) | The bench setup: the mixer board driven by two generators, with the scope on the IF port. |
 

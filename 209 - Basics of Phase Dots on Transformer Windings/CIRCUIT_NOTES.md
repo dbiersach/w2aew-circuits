@@ -7,7 +7,7 @@ Source: Alan Wolke (W2AEW), [#209: Basics of Phase Dots on Transformer Windings]
 | [0:30](https://www.youtube.com/watch?v=LuZh1QnegC4&t=30s) | What the dots are for. They are used when the phase relationship between mutually coupled inductors matters, and they mark the polarity of the input and output signals. |
 | [1:20](https://www.youtube.com/watch?v=LuZh1QnegC4&t=80s) | The two small figures that make it concrete: dots on the same side of the pair gives in-phase signals, dots on opposite sides gives signals 180 degrees out of phase. |
 | [3:00](https://www.youtube.com/watch?v=LuZh1QnegC4&t=180s) | The trifilar example, and his rule for homebrew transformers: be consistent with your winding method and direction, and then every wire end on the same side of the core is in phase. Pick a side to be dotted and you are done. |
-| [4:40](https://www.youtube.com/watch?v=LuZh1QnegC4&t=280s) | The actual trifilar wound toroid in his hand, with its three colour-coded wires. |
+| [4:40](https://www.youtube.com/watch?v=LuZh1QnegC4&t=280s) | The actual trifilar wound toroid in his hand, with its three color-coded wires. |
 | [6:20](https://www.youtube.com/watch?v=LuZh1QnegC4&t=380s) | The bench measurement from the bottom of his page, with a generator on one winding and three scope probes. Built as [01 - Trifilar transformer on the scope](<01 - Trifilar transformer on the scope/>). |
 | [6:50](https://www.youtube.com/watch?v=LuZh1QnegC4&t=410s) | All three channels on the screen at once: two tracking each other and the third inverted, which is the point of the whole lesson. |
 

@@ -21,7 +21,7 @@ Ordinary AM is the same thing with a constant added to the baseband. Multiply th
 The thing to watch is whether the lower pair's differential input crosses zero:
 
 - If the offset keeps one side of the pair always ahead of the other, the cell's gain keeps the same sign, the carrier never vanishes, and the result is AM. The envelope traces the baseband.
-- If the offset is trimmed so the input swings either side of zero, the gain reverses sign each time it crosses. The output collapses at the crossing and comes back in antiphase. The envelope looks similar at a glance, but the carrier has been cancelled and only the sidebands remain.
+- If the offset is trimmed so the input swings either side of zero, the gain reverses sign each time it crosses. The output collapses at the crossing and comes back in antiphase. The envelope looks similar at a glance, but the carrier has been canceled and only the sidebands remain.
 
 That phase reversal is the real signature, and it is why Alan brings up the spectrum display: in the time domain a fully modulated AM signal and a DSB-SC signal are easy to confuse, while in the frequency domain the difference is a line that is either there or not.
 
@@ -36,7 +36,7 @@ Both files are the **same circuit with one different number**. They differ only 
 
 The six 2N3904 transistors, the 12 V supply, the 270 Ω collector loads and tail resistor, the 3.9 kΩ / 3.3 kΩ / 2.2 kΩ divider, the 2.2 kΩ base feeds, the 0.1 µF coupling and bias capacitors, the 2.2 µF divider bypass and the 50 Ω generator terminations all follow Alan's drawing. His notes give 50 mVpp drives and a 1.5 kHz modulating tone, and the bench carrier in the video is 18 kHz.
 
-Two things are simulation choices rather than reported values. The LTspice 2N3904 model stands in for six physical transistors, which matters because carrier suppression depends on how well the quad matches. And **Alan never states the DC voltage on his bias control**, so the two `VBIAS` values here were found by simulating the input balance. They are not claims about his bench setting; what is claimed is the behaviour either side of the balance point.
+Two things are simulation choices rather than reported values. The LTspice 2N3904 model stands in for six physical transistors, which matters because carrier suppression depends on how well the quad matches. And **Alan never states the DC voltage on his bias control**, so the two `VBIAS` values here were found by simulating the input balance. They are not claims about his bench setting; what is claimed is the behavior either side of the balance point.
 
 ## 01 - AM bias
 

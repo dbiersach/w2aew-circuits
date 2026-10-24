@@ -21,10 +21,10 @@ A scope's AC position puts a capacitor in series with the vertical input, ahead 
 
 Both schematics here model that switch literally, as `Cscope` into `Rscope`, and probe the same node twice: once directly and once through the capacitor. That is the whole comparison.
 
-Two notes on the modelling, which apply to both circuits:
+Two notes on the modeling, which apply to both circuits:
 
 - A real scope couples through roughly 1 uF, which against 1 Mohm is a time constant of about a second. Simulating until that has settled is impractical, so `Cscope` is 100 nF here, giving 100 ms. At 1 kHz its reactance is about 1.6 kohm against a 1 Mohm load, so it still passes the signal essentially untouched; only the settling time changes.
-- Each run is `.tran 0 1 990m 1u`, which simulates a full second but saves only the last 10 ms. That is long enough for the coupling capacitor to finish charging, so the AC-coupled trace is genuinely centred rather than still drifting down toward zero. Because the saved window starts at 990 ms, the waveform viewer's horizontal axis runs 0 to 10 ms rather than 990 ms to 1 s.
+- Each run is `.tran 0 1 990m 1u`, which simulates a full second but saves only the last 10 ms. That is long enough for the coupling capacitor to finish charging, so the AC-coupled trace is genuinely centered rather than still drifting down toward zero. Because the saved window starts at 990 ms, the waveform viewer's horizontal axis runs 0 to 10 ms rather than 990 ms to 1 s.
 
 If the waveform window opens autoscaled instead of using the saved panes, press Ctrl+Space (Plot Settings > Reload Plot Settings).
 

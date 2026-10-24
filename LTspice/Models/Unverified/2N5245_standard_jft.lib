@@ -5,8 +5,8 @@
 * the Siliconix/Vishay PSpice JFET series that circulated widely in the 1990s,
 * but no manufacturer release carrying this exact text has been located, and
 * the 2N5245 is long obsolete. Treat its numbers as representative of the part
-* rather than as the manufacturer's characterisation, and do not present a
-* simulated result from it as measured behaviour of a 2N5245.
+* rather than as the manufacturer's characterization, and do not present a
+* simulated result from it as measured behavior of a 2N5245.
 *
 * Vto = -2.442 V, Beta = 1.38 mA/V^2, which puts Idss near 8 mA, consistent
 * with the 2N5245's published 5 to 15 mA grade.

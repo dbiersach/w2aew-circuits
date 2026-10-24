@@ -34,7 +34,7 @@ The model is the single-channel MCP6001 from Microchip's MCP6001/2/4 family libr
 
 ![Sensor signal conditioner transfer](<01 - Sensor signal conditioner/Sensor signal conditioner transfer.png>)
 
-A straight line between two flat ends, which is what a conditioner should look like. The output saturates at the rails outside the sensor's range, which is the behaviour the rail-to-rail part was chosen for.
+A straight line between two flat ends, which is what a conditioner should look like. The output saturates at the rails outside the sensor's range, which is the behavior the rail-to-rail part was chosen for.
 
 ![Sensor signal conditioner SPICE output log](<01 - Sensor signal conditioner/Sensor signal conditioner SPICE output log.png>)
 

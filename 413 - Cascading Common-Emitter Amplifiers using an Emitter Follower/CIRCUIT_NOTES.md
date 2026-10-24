@@ -67,7 +67,7 @@ The middle pane carries both the first collector and the buffer emitter. They si
 
 Three numbers tell the story. The first stage's swing has gone from 65.144 mV to 129.933 mV, which is 6.55 V/V, its unloaded figure recovered almost exactly. The follower passes 126.652 of those 129.933 mV, or 97.5%, which is the small price of its lack of voltage gain. And the complete circuit reaches 41.83 V/V against Alan's approximate 43, nearly double the unbuffered result.
 
-## Modelling and measurement scope
+## Modeling and measurement scope
 
 Both schematics use LTspice's bundled 2N2222, since Alan's handout does not name the transistor. The 10 mV 1 kHz source, its 50 Ω source resistance, the 4.7 µF coupling capacitors and the 1 MΩ scope load are simulation choices where his handout gives no values. Measurements are taken over the last five milliseconds of the run, after the coupling capacitors have settled.
 

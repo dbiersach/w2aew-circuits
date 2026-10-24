@@ -14,7 +14,7 @@ A Vbe multiplier is one transistor and two resistors that behaves like an adjust
 
 The three circuits below follow Alan's order: the multiplier on its own, the multiplier as a DC level shift in a common-emitter stage, and the multiplier biasing a complementary output pair.
 
-Each circuit steps the potentiometer wiper with `.step param W` and every pane carries its own step legend, because LTspice assigns step colours separately in each pane. After running a simulation, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window does not pick up the saved `.plt`.
+Each circuit steps the potentiometer wiper with `.step param W` and every pane carries its own step legend, because LTspice assigns step colors separately in each pane. After running a simulation, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window does not pick up the saved `.plt`.
 
 ## 01 - The adjustable multiplier on its own
 
@@ -56,7 +56,7 @@ That is the whole point of the application. The multiplier passes the signal thr
 
 ![Measured mean offset](02%20-%20Common-emitter%20DC%20level%20shift/Common-emitter%20DC%20level%20shift%20measurements.png)
 
-The measured mean separation is 0.693 V, 0.962 V and 1.544 V for `W` = 0, 0.5 and 1, within a few per cent of the standalone values from circuit 01.
+The measured mean separation is 0.693 V, 0.962 V and 1.544 V for `W` = 0, 0.5 and 1, within a few percent of the standalone values from circuit 01.
 
 ## 03 - Biasing a push-pull output stage
 

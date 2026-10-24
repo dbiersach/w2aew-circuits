@@ -24,7 +24,7 @@ Every component value is Alan's. The source is a 1 kHz sine of 0.25 V amplitude 
 
 ![Amplifier class distortion collector waveforms](<01 - Bias and distortion test/Amplifier class distortion collector waveforms.png>)
 
-Four panes, one run each, top to bottom from class A down to class C, each labelled with its bias so no colour has to be decoded.
+Four panes, one run each, top to bottom from class A down to class C, each labeled with its bias so no color has to be decoded.
 
 Reading down the four is reading Alan's conduction-angle table in reverse. At 1.10 V the collector traces a clean sine through most of the range available to it, which is 360 degrees of conduction. At 0.70 V the top of the waveform has flattened against the 12 V rail, because the transistor is cutting off for part of the cycle. At 0.65 V the flat region takes about half the cycle. At 0.45 V the transistor only conducts in short bursts near the peaks of the drive, and the collector sits at the supply for most of the period. The collector is inverted relative to the base, so cut-off appears as the waveform pressing up against 12 V rather than down against ground.
 

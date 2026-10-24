@@ -8,7 +8,7 @@ Source: Alan Wolke (W2AEW), [#157: Circuit fun: Automatic audio leveling circuit
 | [1:00](https://www.youtube.com/watch?v=1h0FZJYXQ_w&t=60s) | The circuit drawn out, reproduced in [01 - Discrete audio leveler](#01---discrete-audio-leveler). |
 | [3:00](https://www.youtube.com/watch?v=1h0FZJYXQ_w&t=180s) | The six diodes identified as 1N34A germanium, which matters because their low forward drop is what lets the shunt work on audio-sized signals. |
 | [5:20](https://www.youtube.com/watch?v=1h0FZJYXQ_w&t=320s) | The circuit working on the bench, with the output holding steady while the input is varied. |
-| [7:36](https://www.youtube.com/watch?v=1h0FZJYXQ_w&t=456s) | The control voltage settling after the input jumps, which is the attack behaviour rather than the steady-state compression. |
+| [7:36](https://www.youtube.com/watch?v=1h0FZJYXQ_w&t=456s) | The control voltage settling after the input jumps, which is the attack behavior rather than the steady-state compression. |
 | [11:34](https://www.youtube.com/watch?v=1h0FZJYXQ_w&t=694s) | The input stepped between two levels at 200 ms per division, so attack and release can both be seen in one picture. |
 
 ## What the lesson establishes
@@ -59,4 +59,4 @@ A twenty to one change at the input becomes a 1.3 to one change at the output, a
 
 The output is not monotonic in the input, and that is worth noticing rather than smoothing over: it peaks at 1 V of drive and comes back down on either side. Below that the shunt is barely conducting and the output follows the input; above it the loop is well into compression and tightens slightly as the drive grows. The 1 V point is where the loop is just taking hold.
 
-What this figure does not show is the dynamics. The four steps are each a steady tone, so the control voltage has settled in every one of them. Alan's attack and release behaviour at 7:36 and 11:34 needs an input that changes level, which is a different stimulus from the one used here.
+What this figure does not show is the dynamics. The four steps are each a steady tone, so the control voltage has settled in every one of them. Alan's attack and release behavior at 7:36 and 11:34 needs an input that changes level, which is a different stimulus from the one used here.

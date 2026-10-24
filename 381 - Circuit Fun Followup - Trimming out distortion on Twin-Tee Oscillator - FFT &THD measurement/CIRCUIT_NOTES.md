@@ -31,7 +31,7 @@ Open [Twin-tee oscillator distortion trim.asc](01%20-%20Twin-tee%20oscillator%20
 
 ### The op amp is a documented substitute
 
-Alan's drawing names an MCP6002 and then adds "or any R-R I/O op amp (others will work)". That permission matters here, because the MCP6001-family macromodel used for the oscillator in video 380 states in its own header that detailed distortion behaviour is not supported, so it cannot answer the question this video asks. `U1` is therefore an LT1810, a rail-to-rail input and output part whose manufacturer model ships with LTspice in `LTC.lib`. Everything passive is Alan's.
+Alan's drawing names an MCP6002 and then adds "or any R-R I/O op amp (others will work)". That permission matters here, because the MCP6001-family macromodel used for the oscillator in video 380 states in its own header that detailed distortion behavior is not supported, so it cannot answer the question this video asks. `U1` is therefore an LT1810, a rail-to-rail input and output part whose manufacturer model ships with LTspice in `LTC.lib`. Everything passive is Alan's.
 
 Read the absolute distortion figures below as what this model does with his network, not as a measurement of an MCP6002. The model's output also reaches within 2.4 mV of the ground rail, which is closer than any real part will manage into a load, so the amplitudes at the three low trim settings are optimistic.
 
@@ -80,6 +80,6 @@ Alan's trimmed output and the 295 ohm step also agree about where the amplitude 
 
 ## Models and assumptions
 
-The LT1810 subcircuit comes from `LTC.lib`, which is installed with LTspice; nothing in this folder depends on a model from outside it. `RTRIM` is a fixed resistor standing in for the wiper position of Alan's 500 ohm pot, and the four values are chosen to bracket the behaviour, because his knob position is never read out on screen. The 0.1 uF bypass is drawn as he draws it, across a 5 V ideal source.
+The LT1810 subcircuit comes from `LTC.lib`, which is installed with LTspice; nothing in this folder depends on a model from outside it. `RTRIM` is a fixed resistor standing in for the wiper position of Alan's 500 ohm pot, and the four values are chosen to bracket the behavior, because his knob position is never read out on screen. The 0.1 uF bypass is drawn as he draws it, across a 5 V ideal source.
 
 After pressing Run, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window opens autoscaled with all four steps overlaid instead of the saved view. The spectrum is a second view of the same data and is not reached by Ctrl+Space: run the simulation, open View > FFT, select `V(out)`, set the windowing function to Hann, and then load [Twin-tee oscillator distortion trim spectrum.plt](01%20-%20Twin-tee%20oscillator%20distortion%20trim/Twin-tee%20oscillator%20distortion%20trim%20spectrum.plt) with Plot Settings > Open Plot Settings File.

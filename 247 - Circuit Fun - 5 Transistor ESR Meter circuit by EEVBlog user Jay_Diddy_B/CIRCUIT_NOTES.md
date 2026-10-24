@@ -27,11 +27,11 @@ Open [Five transistor ESR meter.asc](01%20-%20Five%20transistor%20ESR%20meter/Fi
 
 ### How it works
 
-**Q1 and Q2** form the oscillator. Their collector and emitter networks with `C1` across them make an astable pair, and `R6` gives `Q2` a square-wave collector output at the node labelled `OSC`.
+**Q1 and Q2** form the oscillator. Their collector and emitter networks with `C1` across them make an astable pair, and `R6` gives `Q2` a square-wave collector output at the node labeled `OSC`.
 
 **Q3**, the 2N3906, is driven from `OSC` and acts as the bridge driver, switching the 5 V rail into two resistive arms through its collector.
 
-The **bridge** is the heart of it. One arm is `R7` at 150 ohms down to `R8` at 3 ohms, and the capacitor under test hangs on that 3 ohm node, which is labelled `SENSE`. The other arm is `R9` at 1500 ohms down to `R10` at 30 ohms, labelled `BR_RET`, and has nothing on it. The two arms have the same ten to one ratio, so with no capacitor connected they produce the same waveform and there is nothing to measure.
+The **bridge** is the heart of it. One arm is `R7` at 150 ohms down to `R8` at 3 ohms, and the capacitor under test hangs on that 3 ohm node, which is labeled `SENSE`. The other arm is `R9` at 1500 ohms down to `R10` at 30 ohms, labeled `BR_RET`, and has nothing on it. The two arms have the same ten to one ratio, so with no capacitor connected they produce the same waveform and there is nothing to measure.
 
 Connect a capacitor and the sense arm changes. A good capacitor is nearly a short circuit at the oscillator frequency, so it holds `SENSE` almost still while `BR_RET` keeps swinging, and the two arms disagree by a lot. A capacitor with high ESR cannot hold the node down, so `SENSE` swings nearly as much as `BR_RET` and the two arms agree. **The meter reads the disagreement, so a low ESR gives a large reading.** `D1` and `D2`, back to back across `SENSE`, protect the input from a charged capacitor being connected.
 

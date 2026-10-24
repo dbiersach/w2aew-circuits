@@ -58,7 +58,7 @@ The through signal is 345.0 mV rather than the undisturbed 353.6 mV, so the tap 
 
 Here the through signal is 353.4 mV against the undisturbed 353.6 mV, a loss of 0.0045 dB, which is the point of the capacitive tap: at 10 MHz a 5 pF coupling is about 3.2 kohm of reactance and the line hardly sees it.
 
-The trade is frequency flatness. The reactance of `Ctap` falls as frequency rises, so the same fitting couples more at 30 MHz than at 10 MHz, and a capacitive sampler is specified for a band. The resistive divider in circuit 01 has no such slope. In the coaxial fittings Alan shows from 5:40, the coupling capacitance is set by how large the internal probe is and how close it sits to the centre conductor, which is why those samplers are built rather than assembled from discrete parts.
+The trade is frequency flatness. The reactance of `Ctap` falls as frequency rises, so the same fitting couples more at 30 MHz than at 10 MHz, and a capacitive sampler is specified for a band. The resistive divider in circuit 01 has no such slope. In the coaxial fittings Alan shows from 5:40, the coupling capacitance is set by how large the internal probe is and how close it sits to the center conductor, which is why those samplers are built rather than assembled from discrete parts.
 
 ## Running these in LTspice
 

@@ -14,11 +14,11 @@ A mixer multiplies two signals, and the product contains the sum and difference 
 
 From about [5:50](https://www.youtube.com/watch?v=Mm7WfVzr1ao&t=350s) Alan drives an NE602A mixer board with a **28.4 MHz RF signal at about -30 dBm** and an external **17.7 MHz local oscillator at about 0 dBm**. The difference, 28.4 - 17.7 = **10.7 MHz**, is the standard FM intermediate frequency; the sum is 46.1 MHz. On the spectrum analyser he also points out 7 MHz (2 fLO - fRF), 24.7 MHz (3 fLO - fRF) and 35.4 MHz (2 fLO), the products that come from the mixer and LO not being perfectly linear or perfectly balanced.
 
-His notes specify a 5 V supply, a 0.01 uF supply bypass, and a 50 ohm LO termination, with the RF and IF ports transformer-coupled to the differential pin pairs. They do not give transformer winding ratios, inductances or load impedances, so those are modelling choices here and are labelled as such on the schematics.
+His notes specify a 5 V supply, a 0.01 uF supply bypass, and a 50 ohm LO termination, with the RF and IF ports transformer-coupled to the differential pin pairs. They do not give transformer winding ratios, inductances or load impedances, so those are modeling choices here and are labeled as such on the schematics.
 
 ## The NE602A model
 
-Both NE602A circuits place [LTspice/Symbols/sa612.asy](<../LTspice/Symbols/sa612.asy>), whose implementation is [LTspice/Symbols/SA612.asc](<../LTspice/Symbols/SA612.asc>): a schematic-level model of the NE602/SA612 written by **Joe Rocci, W3JDR**, included here with his readme ([`SA612 model readme - Joe Rocci W3JDR.txt`](<../LTspice/Symbols/SA612 model readme - Joe Rocci W3JDR.txt>)). His readme states the model was built by analysing the datasheet schematic and measuring DC pin voltages and currents, filling in the unknown blocks from informed assumptions, and that it is not fully AC tested. [NXP has stated it does not provide an SA612A SPICE model](https://community.nxp.com/t5/Other-NXP-Products/SPICE-model-for-the-SA612A/m-p/714734), so there is no manufacturer alternative.
+Both NE602A circuits place [LTspice/Symbols/sa612.asy](<../LTspice/Symbols/sa612.asy>), whose implementation is [LTspice/Symbols/SA612.asc](<../LTspice/Symbols/SA612.asc>): a schematic-level model of the NE602/SA612 written by **Joe Rocci, W3JDR**, included here with his readme ([`SA612 model readme - Joe Rocci W3JDR.txt`](<../LTspice/Symbols/SA612 model readme - Joe Rocci W3JDR.txt>)). His readme states the model was built by analyzing the datasheet schematic and measuring DC pin voltages and currents, filling in the unknown blocks from informed assumptions, and that it is not fully AC tested. [NXP has stated it does not provide an SA612A SPICE model](https://community.nxp.com/t5/Other-NXP-Products/SPICE-model-for-the-SA612A/m-p/714734), so there is no manufacturer alternative.
 
 Treat the levels below as what this model does, not as measurements of Alan's board. The relative comparisons between the two connection styles are the useful part.
 
@@ -30,7 +30,7 @@ Introduced at [5:50](https://www.youtube.com/watch?v=Mm7WfVzr1ao&t=350s). File: 
 
 ![Transformer-coupled NE602A mixer](<01 - NE602A transformer-coupled mixer/NE602A transformer-coupled schematic.png>)
 
-*The RF generator feeds a 1:1 transformer whose secondary drives pins 1 and 2 differentially. Pins 4 and 5 drive the IF transformer primary, and its secondary feeds the 1 kohm load. The LO reaches pin 6 through a 1 nF capacitor with its 50 ohm termination on the generator side, pin 3 is grounded, pin 7 is left open because the oscillator is driven externally, and pin 8 sits at 5 V behind a 10 nF bypass. The 1 uH and 100 uH winding inductances, the 0.99 coupling and the 1 kohm load are modelling assumptions; Alan gives no winding values.*
+*The RF generator feeds a 1:1 transformer whose secondary drives pins 1 and 2 differentially. Pins 4 and 5 drive the IF transformer primary, and its secondary feeds the 1 kohm load. The LO reaches pin 6 through a 1 nF capacitor with its 50 ohm termination on the generator side, pin 3 is grounded, pin 7 is left open because the oscillator is driven externally, and pin 8 sits at 5 V behind a 10 nF bypass. The 1 uH and 100 uH winding inductances, the 0.99 coupling and the 1 kohm load are modeling assumptions; Alan gives no winding values.*
 
 The source amplitudes set Alan's levels into matched 50 ohm terminations: 20 mV peak open circuit is -30 dBm of RF, and 0.63246 V peak open circuit is 0 dBm of LO.
 

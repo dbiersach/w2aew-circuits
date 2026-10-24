@@ -10,7 +10,7 @@ string the editor will draw. Then it reports overlapping pairs.
 The text boxes are estimates: LTspice's exact glyph metrics are not public,
 so character width is approximated and deliberately generous. The tool is
 triage, not proof. It is meant to say which drawings to look at and where,
-so a human or a capture is not the first line of defence. Over-reporting is
+so a human or a capture is not the first line of defense. Over-reporting is
 expected; a clean report is the thing worth having.
 
 Usage:

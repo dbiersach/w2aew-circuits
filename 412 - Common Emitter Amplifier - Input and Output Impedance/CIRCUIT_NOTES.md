@@ -12,7 +12,7 @@ Alan uses a 12 V rail, a 47 kΩ/8.2 kΩ base divider, a 6.8 kΩ collector resist
 
 The measurement method is Alan's: put a known resistance in series with the source and watch how much the base signal shrinks. When the base signal halves, the series resistance equals the amplifier's input impedance. Each simulation steps that series resistance between 50 Ω and the comparison value, and `.meas` reports the peak-to-peak base and output voltages for both steps.
 
-Every pane carries its own step legend, because LTspice assigns step colours separately in each pane. Note also that the base pane is centred on the divider's 1.746 V DC bias while the output pane sits at 0 V, because the output is taken through a coupling capacitor. After running a simulation, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window does not pick up the saved `.plt`.
+Every pane carries its own step legend, because LTspice assigns step colors separately in each pane. Note also that the base pane is centered on the divider's 1.746 V DC bias while the output pane sits at 0 V, because the output is taken through a coupling capacitor. After running a simulation, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window does not pick up the saved `.plt`.
 
 ## 01 - Unbypassed common emitter: measuring the input impedance
 

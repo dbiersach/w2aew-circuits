@@ -4,7 +4,7 @@ Source: Alan Wolke (W2AEW), [Beware of test equipment loading effects!! Learn fr
 
 | Time | What Alan shows |
 | --- | --- |
-| [1:44](https://www.youtube.com/watch?v=JbCI4Lsnqho&t=104s) | The analog meter connection that caused the error, modelled by [Current-source voltmeter loading.asc](01%20-%20Current-source%20voltmeter%20loading/Current-source%20voltmeter%20loading.asc). |
+| [1:44](https://www.youtube.com/watch?v=JbCI4Lsnqho&t=104s) | The analog meter connection that caused the error, modeled by [Current-source voltmeter loading.asc](01%20-%20Current-source%20voltmeter%20loading/Current-source%20voltmeter%20loading.asc). |
 | [4:31](https://www.youtube.com/watch?v=JbCI4Lsnqho&t=271s) | The same circuit measured again with a DMM, which is the comparison this chapter reproduces. |
 
 ## What went wrong

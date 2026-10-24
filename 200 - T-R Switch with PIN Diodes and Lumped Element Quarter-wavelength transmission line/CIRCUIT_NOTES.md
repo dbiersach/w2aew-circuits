@@ -9,7 +9,7 @@ Source: Alan Wolke (W2AEW), [#200: T/R Switch w/ PIN Diodes and Lumped Element Q
 | [3:10](https://www.youtube.com/watch?v=A1BAq0KxIdc&t=190s) | The two PIN diodes: one in series with the transmit path to pass power to the antenna, one shunting the receiver input to protect it. |
 | [6:10](https://www.youtube.com/watch?v=A1BAq0KxIdc&t=370s) | Why a quarter-wave line sits between them. A short circuit at one end of a quarter wave looks like an open at the other, so the shunt diode protects the receiver without loading the transmitter. |
 | [8:28](https://www.youtube.com/watch?v=A1BAq0KxIdc&t=508s) | The lumped equivalent and its arithmetic, reproduced in [01 - Two PIN diode T R switch](#01---two-pin-diode-t-r-switch). Setting the reactances equal to the 50 Ω line impedance at 10.1 MHz gives `L = 50/(2*pi*f)`, about 790 nH, and `C = 1/(2*pi*f*50)`, about 315 pF. |
-| [10:03](https://www.youtube.com/watch?v=A1BAq0KxIdc&t=603s) | The board itself, labelled "10.1 MHz T/R switch PIN diodes 1/4 wave". |
+| [10:03](https://www.youtube.com/watch?v=A1BAq0KxIdc&t=603s) | The board itself, labeled "10.1 MHz T/R switch PIN diodes 1/4 wave". |
 | [12:06](https://www.youtube.com/watch?v=A1BAq0KxIdc&t=726s) | Measuring it, driven from a function generator at 10.100 MHz and 1.0000 Vpp. |
 
 ## What the lesson establishes
@@ -42,9 +42,9 @@ The topology is his: the transmitter couples in through `CTX` to a node fed with
 
 The model, kept with the collection's other unverified files as [`LTspice/Models/Unverified/SMP1320_APN1011_approx.lib`](<../LTspice/Models/Unverified/SMP1320_APN1011_approx.lib>), is **a model built here from Skyworks' published application-note figures**, not a manufacturer LTspice file. It uses `IS=2.4e-10`, `RS=2.6`, `N=1.75`, about 0.45 pF of junction capacitance, and treats the quoted 0.4 µs carrier lifetime as a transit time.
 
-Its limitation is the same one that applies to any ordinary SPICE diode standing in for a PIN: SPICE has no element for the conductivity of the intrinsic region, so the forward resistance does not fall with bias the way a real PIN's does. The figures below therefore demonstrate the network's behaviour. They are not a measurement of any particular diode, and they are not Alan's bench numbers.
+Its limitation is the same one that applies to any ordinary SPICE diode standing in for a PIN: SPICE has no element for the conductivity of the intrinsic region, so the forward resistance does not fall with bias the way a real PIN's does. The figures below therefore demonstrate the network's behavior. They are not a measurement of any particular diode, and they are not Alan's bench numbers.
 
-A search for a manufacturer model found candidates but nothing directly usable: Skyworks' APN1008 gives device parameters inside a Libra IV deck rather than a SPICE netlist, and Infineon's BAR64 page references a SPICE model that is not exposed for download. Two local libraries contain named PIN subcircuits, but neither carries a verified revision or licence, so they sit outside this collection's rules on provenance.
+A search for a manufacturer model found candidates but nothing directly usable: Skyworks' APN1008 gives device parameters inside a Libra IV deck rather than a SPICE netlist, and Infineon's BAR64 page references a SPICE model that is not exposed for download. Two local libraries contain named PIN subcircuits, but neither carries a verified revision or license, so they sit outside this collection's rules on provenance.
 
 ### What the simulation shows
 

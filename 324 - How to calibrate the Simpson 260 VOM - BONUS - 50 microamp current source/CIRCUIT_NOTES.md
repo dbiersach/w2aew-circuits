@@ -32,7 +32,7 @@ Open [50 microamp Wilson current source.asc](01%20-%2050%20microamp%20current%20
 
 ### How it works
 
-The left-hand leg sets up the reference voltage. `Dref` is reverse biased from the 9 V rail, so the node labelled `REF` sits about 6.4 V below it, near 2.6 V, and `Rref` at 1.3 kilohms draws the 2 mA of zener current that holds it there.
+The left-hand leg sets up the reference voltage. `Dref` is reverse biased from the 9 V rail, so the node labeled `REF` sits about 6.4 V below it, near 2.6 V, and `Rref` at 1.3 kilohms draws the 2 mA of zener current that holds it there.
 
 The three transistors form a Wilson current mirror built from PNPs, with the emitters at the top. `Q3` is diode connected, its collector tied to its own base, and it shares that base node with `Q1`; those two are the mirror pair, each with a 10 kilohm emitter resistor to the rail. `Q2` sits below `Q3` with its emitter on the shared base node, its base on `Q1`'s collector, and its collector as the output. The reference current is the one leaving `Q1`'s collector, which flows through `Rtrim` and `Rbias` down to the 2.6 V `REF` node, so the 91 kilohm resistor plus the trim setting is what sets the scale of the whole thing.
 

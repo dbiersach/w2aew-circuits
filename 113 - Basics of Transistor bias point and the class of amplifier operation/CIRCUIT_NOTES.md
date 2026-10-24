@@ -21,7 +21,7 @@ The `.dc Vbias 0 12 0.02` analysis sweeps the *supply* feeding the divider, so t
 
 ![LTspice sweep of collector, base, and emitter voltages against the bias supply](01%20-%20BJT%20DC%20operating%20regions/BJT%20DC%20operating%20regions%20sweep.png)
 
-The single pane carries all three node voltages against the bias supply, with the three operating regions labelled where they occur:
+The single pane carries all three node voltages against the bias supply, with the three operating regions labeled where they occur:
 
 - **Cutoff**, below about 1.3 V of bias supply. No base current flows, the emitter sits at ground, and the collector rests at the full 5 V supply.
 - **Active region**, from about 1.3 V to 7.9 V. Collector voltage falls almost linearly as base drive grows, while base and emitter rise together one diode drop apart. This is the region an amplifier is biased into.
@@ -41,7 +41,7 @@ Alan couples a 2 V peak-to-peak, 10 kHz sine wave through 470 nF into the base. 
 
 ![Collector and base waveforms for the three bias settings](02%20-%20Amplifier%20classes%20A%20B%20C/Amplifier%20classes%20A%20B%20C%20waveforms.png)
 
-The plot shows three cycles of the 10 kHz drive. The top pane holds collector voltage and the bottom pane base voltage, and each pane carries its own step legend, because LTspice assigns step colours independently in each pane: the 10 kΩ run is drawn blue above and green below. Read each pane against the legend printed inside it.
+The plot shows three cycles of the 10 kHz drive. The top pane holds collector voltage and the bottom pane base voltage, and each pane carries its own step legend, because LTspice assigns step colors independently in each pane: the 10 kΩ run is drawn blue above and green below. Read each pane against the legend printed inside it.
 
 - **10 kΩ, class A.** The base idles near 1.55 V and the collector swings continuously between about 3.1 V and 5.0 V. The transistor conducts through the whole cycle, a conduction angle of about 360°.
 - **36 kΩ, class B.** The base idles near 0.55 V. The collector sits flat at the 5 V supply for roughly half of each cycle and only falls to about 4.1 V on the conducting half: a conduction angle near 180°.

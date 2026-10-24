@@ -6,7 +6,7 @@ Source: Alan Wolke (W2AEW), [#215: Basics of crossover distortion | LM358 op amp
 | --- | --- |
 | [0:31](https://www.youtube.com/watch?v=VgodYtiD_F0&t=31s) | The top of his notes page and the condition that causes it: crossover distortion appears when the output has to alternate between sourcing and sinking current, which happens as soon as the load is AC coupled and the output swings either side of the load's reference point. |
 | [1:33](https://www.youtube.com/watch?v=VgodYtiD_F0&t=93s) | The test circuit itself, with its two jumpers. Both [01 - AC-coupled load and crossover notch](<01 - AC-coupled load and crossover notch/>) and [02 - DC output bias suppresses notch](<02 - DC output bias suppresses notch/>) come from this one drawing; the jumpers are what choose between them. |
-| [2:34](https://www.youtube.com/watch?v=VgodYtiD_F0&t=154s) | At the bench with the circuit built, looking at the output on an analogue scope. |
+| [2:34](https://www.youtube.com/watch?v=VgodYtiD_F0&t=154s) | At the bench with the circuit built, looking at the output on an analog scope. |
 | [3:16](https://www.youtube.com/watch?v=VgodYtiD_F0&t=196s) | His answer to "why?": the schematic of the LM358's own output stage, worked through over the next couple of minutes. |
 | [6:41](https://www.youtube.com/watch?v=VgodYtiD_F0&t=401s) | Back at the bench, working through what changes the notch and what does not. |
 

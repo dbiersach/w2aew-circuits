@@ -62,7 +62,7 @@ The `vtip_min` column in the log is worth a look on its own. It only moves from 
 
 ![RF detector probe with AM input schematic](<01 - RF detector probe/RF detector probe with AM input schematic.png>)
 
-The same probe, with the generator replaced by a behavioural source producing an amplitude-modulated carrier, which stands in for the AM mode of Alan's generator. He does not state his carrier frequency, modulation rate or depth, so the 1 MHz carrier, 20 kHz tone and 50 percent depth are all choices. The 20 kHz is the one that matters: the output time constant is 1 nF into 10 kohm, which is 10 us, so the envelope has to be slower than that for the detector to follow it. A 20 kHz tone has a 50 us period, comfortably slower.
+The same probe, with the generator replaced by a behavioral source producing an amplitude-modulated carrier, which stands in for the AM mode of Alan's generator. He does not state his carrier frequency, modulation rate or depth, so the 1 MHz carrier, 20 kHz tone and 50 percent depth are all choices. The 20 kHz is the one that matters: the output time constant is 1 nF into 10 kohm, which is 10 us, so the envelope has to be slower than that for the detector to follow it. A 20 kHz tone has a 50 us period, comfortably slower.
 
 ![RF detector probe with AM input demodulation](<01 - RF detector probe/RF detector probe with AM input demodulation.png>)
 
@@ -82,4 +82,4 @@ Those two extremes can be checked against the first schematic's table. With a 1.
 
 ## Reloading the saved plots
 
-The calibration sweep is a stepped run, so its waveform window opens autoscaled with all seven steps overlaid. Press Ctrl+Space, or Plot Settings > Reload Plot Settings, to pick up the saved panes and their labelled traces.
+The calibration sweep is a stepped run, so its waveform window opens autoscaled with all seven steps overlaid. Press Ctrl+Space, or Plot Settings > Reload Plot Settings, to pick up the saved panes and their labeled traces.

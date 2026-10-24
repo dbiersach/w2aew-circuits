@@ -6,7 +6,7 @@ Source: Alan Wolke (W2AEW), [#7: Monitor your Ham Radio transmitter with an osci
 | --- | --- |
 | [0:23](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=23s) | The finished board: a strip of copper-clad with three BNC connectors, marked demod, RF in and out, and sample. |
 | [0:47](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=47s) | The drawing, starting at the sampler end: 47 k and 690 ohm, then 0.01 uF out to the scope. |
-| [1:33](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=93s) | The whole thing, labelled RF sampler plus detector and demod, with the 10 pF, two 1N34A diodes, 1000 pF and 1 k of the detector branch. This is the circuit in [01 - RF sampler and AM detector](#01---rf-sampler-and-am-detector). |
+| [1:33](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=93s) | The whole thing, labeled RF sampler plus detector and demod, with the 10 pF, two 1N34A diodes, 1000 pF and 1 k of the detector branch. This is the circuit in [01 - RF sampler and AM detector](#01---rf-sampler-and-am-detector). |
 | [2:20](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=140s) | The same parts on the board, pointed out one at a time. |
 | [3:07](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=187s) | The board connected to his Tektronix scope. |
 | [3:30](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=210s) | The unmodulated carrier, resolved into individual cycles. |
@@ -18,7 +18,7 @@ Source: Alan Wolke (W2AEW), [#7: Monitor your Ham Radio transmitter with an osci
 
 A transmitter's output is far too large to put on a scope, and the interesting part of it is usually the envelope rather than the carrier. Alan's board answers both problems at once from a line he can leave in place between the transmitter and its load. One branch is a resistive divider that hands the scope a small copy of the RF itself. The other takes a much smaller bite through a 10 pF capacitor, rectifies it and smooths it, so a second scope channel sees the modulation on its own.
 
-The three connectors on the board are the two ends of the through line plus the two outputs. In the schematic the centre conductors are named nodes, `RF_LINE`, `SAMPLE_OUT` and `DEMOD_OUT`, and every connector shield is ground.
+The three connectors on the board are the two ends of the through line plus the two outputs. In the schematic the center conductors are named nodes, `RF_LINE`, `SAMPLE_OUT` and `DEMOD_OUT`, and every connector shield is ground.
 
 ## 01 - RF sampler and AM detector
 
@@ -38,7 +38,7 @@ Open [RF transmitter sampler and detector.asc](01%20-%20RF%20sampler%20and%20AM%
 | 1000 pF and 1 k to ground | `Cenvelope`, written 1 nF, and `RdetLoad` |
 | AM demod output | `DEMOD_OUT` |
 
-The transmitter itself is the one thing that cannot be a part: `Btransmitter` is a behavioural source whose expression is written out on the schematic, `200*(1+0.5*sin(2*pi*1k*t))*sin(2*pi*7.1Meg*t)`, a 7.1 MHz carrier with 50 percent modulation at 1 kHz. The amplitude is a choice, not a measurement of his rig.
+The transmitter itself is the one thing that cannot be a part: `Btransmitter` is a behavioral source whose expression is written out on the schematic, `200*(1+0.5*sin(2*pi*1k*t))*sin(2*pi*7.1Meg*t)`, a 7.1 MHz carrier with 50 percent modulation at 1 kHz. The amplitude is a choice, not a measurement of his rig.
 
 ### What the two outputs look like
 

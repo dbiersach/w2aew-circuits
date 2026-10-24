@@ -81,4 +81,4 @@ The mirror of circuit 03: the positive lead goes to the **collector** and the **
 | 03 NPN | Base | Collector | 331 µA | 2 pA |
 | 04 PNP | Collector | Base | 341 µA | 1 pA |
 
-The forward currents differ by only a few per cent, so the useful information is in which *pin combination and polarity* conducts, not in the exact reading. These fixtures illustrate that polarity lesson; they do not model the behaviour or calibration of Alan's individual meters or Heathkit testers.
+The forward currents differ by only a few percent, so the useful information is in which *pin combination and polarity* conducts, not in the exact reading. These fixtures illustrate that polarity lesson; they do not model the behavior or calibration of Alan's individual meters or Heathkit testers.

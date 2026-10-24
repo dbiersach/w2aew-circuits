@@ -97,10 +97,10 @@ Every figure below is a `PP(V(vout))` measurement from the run, against a 50.0 m
 
 Both diodes pass the signal equally well when biased on, so the on state tells you almost nothing about which part to choose. The off state is where they separate, and the separation grows with frequency: at 455 kHz the rectifier is already about 17 dB worse than the switching diode, and at 8.83 MHz it is about 16 dB worse and no longer usable as a switch. That is the lesson of the video.
 
-The on-state figures sit within a few percent of the generator; the small excess over 50.0 mV comes from the start of the window, where the coupling capacitors are still settling. These are simulated results from the installed library models. They show the same device behaviour Alan measures, not the exact numbers his particular parts produce.
+The on-state figures sit within a few percent of the generator; the small excess over 50.0 mV comes from the start of the window, where the coupling capacitors are still settling. These are simulated results from the installed library models. They show the same device behavior Alan measures, not the exact numbers his particular parts produce.
 
 ## Reproducing the plots
 
 Open a schematic, press **Run**, and if the waveform window opens autoscaled press **Ctrl+Space** (Plot Settings > Reload Plot Settings) to load the saved `.plt`. Each plot puts the on state on top, the off state in the middle, and the generator at the bottom, all on one vertical scale.
 
-Because `V2` is stepped, the output traces are written as `V(vout)@2` (on) and `V(vout)@1` (off), one per pane. LTspice draws such a trace once per step, which makes it look speckled; open **Plot Settings > Select Steps**, clear **Auto Range**, select a single step and click OK to get the clean single-colour traces shown above. The saved vertical limits then stay as they are in these captures.
+Because `V2` is stepped, the output traces are written as `V(vout)@2` (on) and `V(vout)@1` (off), one per pane. LTspice draws such a trace once per step, which makes it look speckled; open **Plot Settings > Select Steps**, clear **Auto Range**, select a single step and click OK to get the clean single-color traces shown above. The saved vertical limits then stay as they are in these captures.

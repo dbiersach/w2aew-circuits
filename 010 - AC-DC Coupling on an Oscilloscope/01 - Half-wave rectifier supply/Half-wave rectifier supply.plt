@@ -9,7 +9,7 @@
       Volts: ('_',0,0,2,-0.6,0.2,0.6)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.005,0.5) ;AC coupled: the 8.84 V level is gone and the same 0.80 V ripple is centred on zero
+      Text: "V" 1 (0.005,0.5) ;AC coupled: the 8.84 V level is gone and the same 0.80 V ripple is centered on zero
    },
    {
       traces: 1 {524290,0,"V(supply)"}

@@ -10,7 +10,7 @@ Source: Alan Wolke (W2AEW), [#75: Basics of Opamp circuits - a tutorial on how t
 
 ## What Alan teaches
 
-The video is not about designing op amp circuits; it is about reading them. Alan starts from two idealisations - the inputs draw no current, and the voltage gain is huge - and turns them into one rule that does nearly all the work:
+The video is not about designing op amp circuits; it is about reading them. Alan starts from two idealizations - the inputs draw no current, and the voltage gain is huge - and turns them into one rule that does nearly all the work:
 
 > The output will do whatever it can to make the two input voltages equal.
 
@@ -20,7 +20,7 @@ Once you accept that, a circuit is solved with Ohm's law and nothing else. Both 
 
 The op amp model is Texas Instruments' [LMx58B/LM2904B macromodel](<../LTspice/Models/Texas-Instruments/lmx58b_lm2904b.lib>), the manufacturer's model for the B-grade member of the LM358 family. Alan does not draw the op amp's supply pins, but the 2.2k pair runs from +10 V to ground to make the 5 V reference, so both schematics run the part from a single +10 V rail, which is how an LM358 is normally used.
 
-Everything else comes straight from his drawing: 10 k and 20 k around the first amplifier, 2.2 k and 2.2 k for the reference, and 20 k with 0.01 uF for the integrator. The one value he does not give is the resistor across the integrating capacitor, which he draws circled and tells us to ignore because it only sets the DC bias point; 1 Meg is a modelling choice.
+Everything else comes straight from his drawing: 10 k and 20 k around the first amplifier, 2.2 k and 2.2 k for the reference, and 20 k with 0.01 uF for the integrator. The one value he does not give is the resistor across the integrating capacitor, which he draws circled and tells us to ignore because it only sets the DC bias point; 1 Meg is a modeling choice.
 
 ## 01 - Inverting amplifier around a 5 V reference
 

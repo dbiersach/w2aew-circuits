@@ -16,7 +16,7 @@ Source: Alan Wolke (W2AEW), [#232: More Circuit Fun: Simple transistor curve tra
 
 A curve tracer answers a question a single measurement cannot: not "what is the gain at this bias" but "what does this device do everywhere". It needs three things working together, and the elegance of this circuit is that two of them come from a generator that already existed.
 
-- **A stepped base current.** The staircase from video 231 drives the device's base through a large resistor, so each step is a different base current. Because the staircase is already synchronised to the 555, no extra timing is needed.
+- **A stepped base current.** The staircase from video 231 drives the device's base through a large resistor, so each step is a different base current. Because the staircase is already synchronized to the 555, no extra timing is needed.
 - **A fast collector voltage sweep, one per step.** The same 555 pulse that advances the staircase also dumps a small capacitor, which then recharges through a resistor. That gives one sawtooth per step, sweeping the device's collector from near zero up to the supply.
 - **A way to see the collector current.** Putting a sense resistor in series with the collector would corrupt the voltage being swept. Instead a current mirror carries the collector current and reproduces it in a separate branch, where a resistor can turn it into a voltage without disturbing the device.
 
@@ -66,7 +66,7 @@ This is the X-Y view, and it is the picture the whole circuit exists to produce.
 
 Each trace is one base-current step. The steep rise at the left is saturation, where the device cannot support much collector-emitter voltage yet; the knee is where it enters the active region; and the long, nearly flat run to the right is the active region proper, where collector current depends mostly on base current and only weakly on collector voltage. That weak dependence is visible as the slight upward slope of each curve, which is the Early effect.
 
-The one artefact to ignore is the diagonal line crossing the family from the lower left to the upper right. That is the trace between sweeps, when the sweep capacitor is being dumped while the staircase steps. LTspice draws every simulated point, so the transition shows up; a real scope in X-Y mode draws it too, usually faintly.
+The one artifact to ignore is the diagonal line crossing the family from the lower left to the upper right. That is the trace between sweeps, when the sweep capacitor is being dumped while the staircase steps. LTspice draws every simulated point, so the transition shows up; a real scope in X-Y mode draws it too, usually faintly.
 
 ## Simulation against Alan's bench
 

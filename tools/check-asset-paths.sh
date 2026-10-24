@@ -29,7 +29,7 @@ problems=0
 say() { printf '  %s\n' "$1"; problems=$((problems + 1)); }
 
 # Backslashes to forward slashes, then squeeze the doubled separators.
-normalise() { printf '%s' "$1" | tr '\134' '/' | tr -s '/'; }
+normalize() { printf '%s' "$1" | tr '\134' '/' | tr -s '/'; }
 
 is_absolute() { case "$1" in [A-Za-z]:/*) return 0 ;; /*) return 0 ;; *) return 1 ;; esac; }
 
@@ -47,7 +47,7 @@ ref_target=""
 check_ref() {
     local kind=$1 owner=$2 from=$3 raw=$4 suffix=${5-} rel target
     ref_target=""
-    rel=$(normalise "$raw")
+    rel=$(normalize "$raw")
     if is_absolute "$rel"; then
         say "$owner: $kind uses an absolute path: $raw"
         return 1
@@ -86,7 +86,7 @@ while IFS= read -r -d '' asc; do
     # supplies itself.
     while IFS= read -r name; do
         [[ -n "$name" ]] || continue
-        nrm=$(normalise "$name")
+        nrm=$(normalize "$name")
         if is_project_ref "$nrm"; then
             check_ref SYMBOL "$rel_asc" "$dir" "$name" .asy || continue
             sym=$ref_target
@@ -126,7 +126,7 @@ while IFS= read -r -d '' asc; do
     # .include / .inc / .lib directives, wherever they sit in a TEXT line
     while IFS= read -r path; do
         [[ -n "$path" ]] || continue
-        norm_inc=$(normalise "$path")
+        norm_inc=$(normalize "$path")
         if ! is_project_ref "$norm_inc"; then
             # A bare library name with no path at all is a library LTspice
             # supplies itself, the same way a bare SYMBOL name is. Flag it only

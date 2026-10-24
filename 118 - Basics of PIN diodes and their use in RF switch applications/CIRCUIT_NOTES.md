@@ -82,7 +82,7 @@ Step 1 is where it breaks down, and the arithmetic says exactly why. `ID_PP` is 
 
 The agreement is good where it can be checked. His scope at 1 V/div shows roughly four divisions peak to peak with the bias on, against a simulated 4.66 Vpp. His clean trace is at 2.003 mA and the simulation is clean at 2.01 mA. His distorted trace is at 0.367 mA and the simulation distorts at 0.70 mA, the same side of the same transition, with the difference falling well inside the carrier lifetime assumed for the model: a diode with twice the lifetime would store twice the charge and would hold out to half the current.
 
-One thing the simulation does not attempt is the off state. With no bias the diode is reduced to its 1 pF junction capacitance, which at 10 MHz is about 16 kΩ of reactance and blocks the signal almost completely. That is the switching action, and it is demonstrated directly in [video 82's chapter](<../082 - Basics of Diode Switches - How to use a Diode as a Switch/CIRCUIT_NOTES.md>) with a small signal, where it can be shown without the large-signal behaviour studied here getting in the way.
+One thing the simulation does not attempt is the off state. With no bias the diode is reduced to its 1 pF junction capacitance, which at 10 MHz is about 16 kΩ of reactance and blocks the signal almost completely. That is the switching action, and it is demonstrated directly in [video 82's chapter](<../082 - Basics of Diode Switches - How to use a Diode as a Switch/CIRCUIT_NOTES.md>) with a small signal, where it can be shown without the large-signal behavior studied here getting in the way.
 
 ## Configurations drawn but not built
 

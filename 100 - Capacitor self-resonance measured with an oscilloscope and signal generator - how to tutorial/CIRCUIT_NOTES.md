@@ -52,7 +52,7 @@ The bottom pane is the same run expressed as the capacitor's own impedance, `V(o
 | `vout_hf` at 30 MHz | -5.324 dB | 0.542 V peak |
 | `zdut_sr` at 3.262 MHz | 6.025 dB | 2.00 ohm |
 
-Two of these are worth reading together. `vout_sr` and `vout_min` agree to six figures, which says the notch really does sit at 3.262 MHz rather than near it, and `zdut_sr` comes out at 2.00 ohm, which is `Resr` exactly. At resonance the inductive and capacitive reactances have cancelled completely and the resistance is all that remains, which is the claim the whole lesson rests on.
+Two of these are worth reading together. `vout_sr` and `vout_min` agree to six figures, which says the notch really does sit at 3.262 MHz rather than near it, and `zdut_sr` comes out at 2.00 ohm, which is `Resr` exactly. At resonance the inductive and capacitive reactances have canceled completely and the resistance is all that remains, which is the claim the whole lesson rests on.
 
 ### How this relates to Alan's reading
 

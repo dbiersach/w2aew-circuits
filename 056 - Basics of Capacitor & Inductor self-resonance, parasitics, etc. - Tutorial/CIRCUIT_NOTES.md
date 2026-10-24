@@ -40,7 +40,7 @@ The sweep is `.ac dec 200 10k 1G`, so the horizontal axis is logarithmic frequen
 | Frequency | Simulated `V(Z)` | As impedance | What sets it |
 | --- | ---: | ---: | --- |
 | 100 kHz | 44.03 dB | 159.1 ohm | the 10 nF, since `1/(2*pi*f*C)` is 159.2 ohm |
-| 6.666 MHz | -19.91 dB | 0.101 ohm | `Rs`, because the reactances have cancelled |
+| 6.666 MHz | -19.91 dB | 0.101 ohm | `Rs`, because the reactances have canceled |
 | 100 MHz | 31.04 dB | 35.7 ohm | the 57 nH, since `2*pi*f*L` is 35.8 ohm |
 
 The minimum lands at 6.67 MHz, which is `1 / (2*pi*sqrt(57 nH * 10 nF))`, and its value is the series resistance, matching the "approximately Rs" that Alan writes at the bottom of his sketched curve. Above that frequency the part is no longer usable as a 10 nF capacitor: at 100 MHz it presents 35.7 ohm and rising, which is what makes lead length matter for a bypass capacitor.
@@ -65,7 +65,7 @@ Alan gives no values for this model at all, so every value here is illustrative 
 
 Below about 100 kHz the trace is flat at 25 ohm, because `Rs` is larger than the reactance of 10 uH down there. It then rises as `2*pi*f*L`, peaks at 79.7 kohm, and falls again along the capacitive line. The peak is the mirror image of the capacitor's notch, and it is why a choke stops choking above its self-resonance.
 
-The `Rs` value is doing visible work in this plot. With a 1 ohm winding resistance the Q would be about 1400 and the resonance would be narrower than the frequency steps of the sweep, so the peak LTspice drew would be an artefact of where the sweep points happened to fall rather than a result. At 25 ohm the peak is resolved by the `.ac dec 500` sweep and can be read honestly.
+The `Rs` value is doing visible work in this plot. With a 1 ohm winding resistance the Q would be about 1400 and the resonance would be narrower than the frequency steps of the sweep, so the peak LTspice drew would be an artifact of where the sweep points happened to fall rather than a result. At 25 ohm the peak is resolved by the `.ac dec 500` sweep and can be read honestly.
 
 Alan also notes at 17:00 that a magnetic core adds a further frequency-dependent and current-dependent loss, drawn as `Rp` across `Cw`. That variation is not simulated here.
 

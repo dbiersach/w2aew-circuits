@@ -4,7 +4,7 @@ Source: Alan Wolke (W2AEW), [#147: Basics of Varactor Diodes | Voltage Controlle
 
 | Time | What Alan shows |
 | --- | --- |
-| [0:10](https://www.youtube.com/watch?v=icw8terKP-M&t=10s) | What a varactor is. Every diode behaves as a voltage-dependent capacitor when reverse biased; a varactor is one optimised for the job, with lower loss and higher Q. |
+| [0:10](https://www.youtube.com/watch?v=icw8terKP-M&t=10s) | What a varactor is. Every diode behaves as a voltage-dependent capacitor when reverse biased; a varactor is one optimized for the job, with lower loss and higher Q. |
 | [0:45](https://www.youtube.com/watch?v=icw8terKP-M&t=45s) | The mechanism, drawn on the junction: the depletion region is the insulating gap, and the P and N regions either side of it are the plates. |
 | [1:20](https://www.youtube.com/watch?v=icw8terKP-M&t=80s) | Reverse bias widens that depletion region, which moves the plates further apart, so the capacitance falls as the control voltage rises. |
 | [1:54](https://www.youtube.com/watch?v=icw8terKP-M&t=114s) | The bias arrangement used to measure it, reproduced in [02 - Varactor reverse-bias demonstration](#02---varactor-reverse-bias-demonstration). Note that his page 1 marks this drawing "was drawn with wrong polarity in the video". |
@@ -40,7 +40,7 @@ Reading left to right, exactly as Alan draws it:
 | Oscillator | 100 pF, 100 kΩ, J310, 220 pF / 220 pF, 2.2 kΩ, 22 Ω | A Colpitts, with the capacitive divider providing the feedback |
 | Buffer | 10 pF, 100 kΩ, J310, 1 kΩ, 22 Ω, 0.1 µF | A source follower so the load does not pull the oscillator |
 
-The two varactors share a cathode on purpose. With the control voltage on the common cathode and the anodes going to ground and to the signal, the RF swing drives them in opposite directions, so the capacitance change it causes in one is cancelled by the other. That keeps the tank linear at signal levels where a single varactor would distort.
+The two varactors share a cathode on purpose. With the control voltage on the common cathode and the anodes going to ground and to the signal, the RF swing drives them in opposite directions, so the capacitance change it causes in one is canceled by the other. That keeps the tank linear at signal levels where a single varactor would distort.
 
 Three things are simulation choices. The 100 kΩ scope load stands in for Alan's probe, since he does not state its impedance. The J310 is InterFET's `J310-M` model, and the MV209 is a legacy model whose provenance is discussed below. The supply is 5 V; his drawing marks only `VCC`.
 
@@ -58,7 +58,7 @@ If the waveform window opens autoscaled with all three steps overlaid, press Ctr
 | 12.39 V | 18.094 MHz | 16.621 MHz | -8.1% |
 | 24.79 V | 18.196 MHz | 16.785 MHz | -7.8% |
 
-The tuning behaviour is right: frequency rises with control voltage, most steeply at the bottom of the range and flattening off above about 12 V, which is what a varactor's capacitance curve predicts. Alan covers 973 kHz across that span and the simulation covers 1107 kHz.
+The tuning behavior is right: frequency rises with control voltage, most steeply at the bottom of the range and flattening off above about 12 V, which is what a varactor's capacitance curve predicts. Alan covers 973 kHz across that span and the simulation covers 1107 kHz.
 
 What is wrong is the absolute frequency, by a consistent 8%. Since frequency goes as the inverse square root of the LC product, 8% low means the simulated tank has about 17% more LC than his. Two things contribute, and both are visible without guessing.
 

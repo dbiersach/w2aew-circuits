@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Half-wave rectifier supply.net
-Start Time: Thu Oct 22 19:22:36 2026
+Start Time: Sat Oct 24 14:48:44 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -10,7 +10,7 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 2.172 seconds.
+Total elapsed time: 2.267 seconds.
 Total iterations: 2002072
 
 Files loaded:

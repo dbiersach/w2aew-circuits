@@ -29,7 +29,7 @@ Three pieces make that work:
 
 Every value on Alan's page-4 drawing is used as he gives it: the two 1 kohm adjustments with their 180 ohm series resistors, the 1 kohm reference resistor in the diode string, three 3.9 kohm resistors around the comparator, 0.1 uF of timing capacitance, and 1N4148 bridge diodes.
 
-Two points about the parts. Alan writes "all diodes: 1N4198" on his sheet, which is not a catalogue number; 1N4148 is the evident reading and is what the simulation uses. And he does say something about the amplifiers, which is easy to miss: "I used rail-rail o/p op amp, OK for lower speed". He names no part, so `UniversalOpAmp2` stands in for both the comparator and the buffer. The 9 V rail, the 2N3904 and 2N3906, and the 100 kohm load are simulation choices.
+Two points about the parts. Alan writes "all diodes: 1N4198" on his sheet, which is not a catalog number; 1N4148 is the evident reading and is what the simulation uses. And he does say something about the amplifiers, which is easy to miss: "I used rail-rail o/p op amp, OK for lower speed". He names no part, so `UniversalOpAmp2` stands in for both the comparator and the buffer. The 9 V rail, the 2N3904 and 2N3906, and the 100 kohm load are simulation choices.
 
 `RRISE` and `RFALL` are parameters standing for the two 1 kohm adjustments, set to their mid positions at 500 ohm each.
 
@@ -45,7 +45,7 @@ The top pane carries `V(RAMP)` on the timing capacitor and `V(OUT)` from the buf
 | `RISE_SLOPE` | 10.06 kV/s |
 | `FALL_SLOPE` | 10.08 kV/s |
 
-With both adjustments centred the two slopes match to within 0.2 percent, so the output is a symmetrical triangle. The slope figure also recovers the current: `I = C dV/dt` is `0.1 uF x 10.06 kV/s`, or about 1.01 mA in each source.
+With both adjustments centered the two slopes match to within 0.2 percent, so the output is a symmetrical triangle. The slope figure also recovers the current: `I = C dV/dt` is `0.1 uF x 10.06 kV/s`, or about 1.01 mA in each source.
 
 ### The adjustment actually is independent
 
