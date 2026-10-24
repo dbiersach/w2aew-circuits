@@ -1,8 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Unbypassed common emitter.net
-Start Time: Sat Oct 24 13:49:47 2026
-
-.step rseries=50
+Start Time: Sat Oct 24 17:09:09 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -11,23 +9,15 @@ method = modified trap
 Compress1stOrder = true
 Compress2ndOrder = true
 Direct Newton iteration succeeded in finding operating point.
-
-.step rseries=6500
-Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.354 seconds.
-Total iterations: 20048
+Total elapsed time: 0.219 seconds.
+Total iterations: 40065
 
 Files loaded:
 Unbypassed common emitter.net
 standard.bjt
 
-
-Measurement: base_pp
-  step	PP(V(BASE))	FROM	TO
-     1	0.0198458433151	0.015	0.02
-     2	0.0101802349091	0.015	0.02
-
-Measurement: out_pp
-  step	PP(V(OUTPUT))	FROM	TO
-     1	0.0779463723302	0.015	0.02
-     2	0.0399809852242	0.015	0.02
+ch1_pp: PP(V(base))=0.694116195869 FROM 0.016 TO 0.02
+ch2_pp: PP(V(collector))=4.54159066236 FROM 0.016 TO 0.02
+gain: CH2_PP/CH1_PP=6.54298327771
+vb_dc: AVG(V(base))=1.74463939647 FROM 0.016 TO 0.02
+vc_dc: AVG(V(collector))=4.63443756512 FROM 0.016 TO 0.02

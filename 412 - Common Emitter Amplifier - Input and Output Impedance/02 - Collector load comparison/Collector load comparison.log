@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Collector load comparison.net
-Start Time: Wed Oct 21 01:59:28 2026
+Start Time: Sat Oct 24 17:10:00 2026
 
 .step rl=10000
 solver = Normal
@@ -14,20 +14,35 @@ Direct Newton iteration succeeded in finding operating point.
 
 .step rl=1000000
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.250 seconds.
-Total iterations: 20048
+Total elapsed time: 0.372 seconds.
+Total iterations: 40065
 
 Files loaded:
 Collector load comparison.net
 standard.bjt
 
 
-Measurement: base_pp
-  step	PP(V(BASE))	FROM	TO
-     1	0.0198458433151	0.015	0.02
-     2	0.0198528766632	0.015	0.02
+Measurement: ch1_pp
+  step	PP(V(base))	FROM	TO
+     1	0.694356918335	0.016	0.02
+     2	0.69396853447	0.016	0.02
 
-Measurement: out_pp
-  step	PP(V(OUTPUT))	FROM	TO
-     1	0.0779463723302	0.015	0.02
-     2	0.129997067153	0.015	0.02
+Measurement: ch2_pp
+  step	PP(V(collector))	FROM	TO
+     1	2.72466206551	0.016	0.02
+     2	4.54051089287	0.016	0.02
+
+Measurement: gain
+  step	CH2_PP/CH1_PP
+     1	3.92400794686
+     2	6.54281954777
+
+Measurement: vb_dc
+  step	AVG(V(base))	FROM	TO
+     1	1.74467212533	0.016	0.02
+     2	1.74464750483	0.016	0.02
+
+Measurement: vc_dc
+  step	AVG(V(collector))	FROM	TO
+     1	4.63197798538	0.016	0.02
+     2	4.63439036453	0.016	0.02

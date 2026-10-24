@@ -2,25 +2,25 @@
 {
    Npanes: 2
    {
-      traces: 1 {524291,0,"V(base)"}
-      Text: "V" 1 (0.00195,1.776) ;The base signal is unchanged: the load acts on the collector, not the input
-      X: ('m',1,0,0.0005,0.003)
-      Y[0]: (' ',2,1.725,0.01,1.785)
+      traces: 2 {524290,0,"V(base)@2-1.745"} {524291,0,"V(base)@1-1.745"}
+      Text: "V" 1 (0.002,0.70) ;V(base)@1 and V(base)@2 lie on top of each other at 694 mV p-p
+      Text: "V" 1 (0.002,0.52) ;A load on the collector does nothing to the signal arriving at the input
+      X: ('m',1,0,0.0004,0.004)
+      Y[0]: ('m',2,-0.8,0.2,0.8)
       Y[1]: ('_',0,1e+308,0,-1e+308)
-      Volts: (' ',0,0,2,1.725,0.01,1.785)
+      Volts: ('m',0,0,2,-0.8,0.2,0.8)
       Log: 0 0 0
       GridStyle: 1
-      StepLegend: (0.0002,1.782)
    },
    {
-      traces: 1 {524290,0,"V(output)"}
-      Text: "V" 2 (0.00195,0.112) ;Alan's 10 k load cuts the output from 130 mV to 78 mV p-p
-      X: ('m',1,0,0.0005,0.003)
-      Y[0]: ('m',2,-0.08,0.02,0.12)
+      traces: 2 {524290,0,"V(collector)@2-4.634"} {524291,0,"V(collector)@1-4.632"}
+      Text: "V" 2 (0.002,2.88) ;V(collector)@2, output open: 4.54 V p-p, gain 6.54
+      Text: "V" 2 (0.002,2.58) ;V(collector)@1, Alan's 10k load: 2.72 V p-p, gain 3.92, and his scope reads 3.94
+      X: ('m',1,0,0.0004,0.004)
+      Y[0]: (' ',2,-3,0.5,3)
       Y[1]: ('_',0,1e+308,0,-1e+308)
-      Volts: ('m',0,0,2,-0.08,0.02,0.12)
+      Volts: (' ',0,0,2,-3,0.5,3)
       Log: 0 0 0
       GridStyle: 1
-      StepLegend: (0.0002,0.117)
    }
 }

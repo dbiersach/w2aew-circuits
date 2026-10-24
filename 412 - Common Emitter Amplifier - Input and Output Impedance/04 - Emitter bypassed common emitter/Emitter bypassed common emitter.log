@@ -1,0 +1,38 @@
+LTspice 26.1.1 for Windows
+Circuit: Emitter bypassed common emitter.net
+Start Time: Sat Oct 24 17:11:44 2026
+
+.step cbyp=4.7e-06
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration succeeded in finding operating point.
+
+.step cbyp=0.0001
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.485 seconds.
+Total iterations: 80048
+
+Files loaded:
+Emitter bypassed common emitter.net
+standard.bjt
+
+
+Measurement: ch1_pp
+  step	PP(V(base))	FROM	TO
+     1	0.0370053052902	0.036	0.04
+     2	0.026038646698	0.036	0.04
+
+Measurement: ch2_pp
+  step	PP(V(collector))	FROM	TO
+     1	5.66027021408	0.036	0.04
+     2	6.42637360096	0.036	0.04
+
+Measurement: gain
+  step	CH2_PP/CH1_PP
+     1	152.958343937
+     2	246.801367041
