@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: NE602A transformer-coupled mixer.net
-Start Time: Wed Oct 21 11:41:20 2026
+Start Time: Sat Oct 24 16:26:39 2026
 Options:plotwinsize=0
 solver = Normal
 Maximum thread count: 32
@@ -10,7 +10,7 @@ method = modified trap
 Compress1stOrder = true
 Compress2ndOrder = true
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.512 seconds.
+Total elapsed time: 1.486 seconds.
 Total iterations: 130588
 
 Files loaded:

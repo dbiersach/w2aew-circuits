@@ -4,7 +4,7 @@
    Active Pane: 1
    {
       traces: 1 {3,0,"V(out)/I(Cdut)"}
-      Text: "" 1 (40000,4) ;Below resonance the part behaves as a capacitor, |Z| falling as 1/(2 pi f C)
+      Text: "" 1 (130000,4) ;Below resonance the part behaves as a capacitor, |Z| falling as 1/(2 pi f C)
       Text: "" 1 (14000000,4) ;Above it, as an inductor, |Z| rising as 2 pi f L
       Text: "" 1 (280000,1.35) ;|Z| bottoms out at 2.00 ohm, which is Resr and nothing else
       Arrow: "" 1 2 (1100000,1.4) (3100000,1.9)

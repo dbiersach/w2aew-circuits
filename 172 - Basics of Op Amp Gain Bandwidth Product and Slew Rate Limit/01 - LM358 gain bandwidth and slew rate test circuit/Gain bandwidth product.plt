@@ -12,6 +12,6 @@
       Log: 1 1 0
       GridStyle: 1
       PltMag: 1
-      StepLegend: (20,220)
+      StepLegend: (600000,220)
    }
 }

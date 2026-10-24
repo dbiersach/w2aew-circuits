@@ -1,4 +1,45 @@
 LTspice 26.1.1 for Windows
 Circuit: Op amp peak detector.net
-Start Time: Wed Oct 21 11:41:19 2026
-Unable to open "Op amp peak detector.raw" for writing.
+Start Time: Sat Oct 24 16:12:41 2026
+
+.step amp=0.25
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Compress1stOrder = true
+Compress2ndOrder = true
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step amp=1.5
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 11.634 seconds.
+Total iterations: 1071852
+
+Files loaded:
+Op amp peak detector.net
+standard.dio
+lmx58b_lm2904b.lib
+
+
+Measurement: vout_pk
+  step	MAX(V(vout))	FROM	TO
+     1	0.29098713398	0.036	0.04
+     2	1.4321167469	0.036	0.04
+
+Measurement: vout_min
+  step	MIN(V(vout))	FROM	TO
+     1	0.165976420045	0.036	0.04
+     2	0.889698088169	0.036	0.04
+
+Measurement: vin_pk
+  step	MAX(V(vin))	FROM	TO
+     1	0.249953985214	0.036	0.04
+     2	1.49993813038	0.036	0.04

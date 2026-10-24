@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Diode peak detector.net
-Start Time: Wed Oct 21 00:02:07 2026
+Start Time: Sat Oct 24 16:12:03 2026
 
 .step amp=0.25
 solver = Normal
@@ -16,7 +16,7 @@ Compress2ndOrder = true
 .step amp=1.5
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 2.099 seconds.
+Total elapsed time: 2.683 seconds.
 Total iterations: 800040
 
 Files loaded:

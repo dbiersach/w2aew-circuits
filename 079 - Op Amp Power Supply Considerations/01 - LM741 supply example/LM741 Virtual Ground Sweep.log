@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: LM741 Virtual Ground Sweep.net
-Start Time: Wed Oct 21 23:14:05 2026
+Start Time: Sat Oct 24 16:13:28 2026
 
 .step vref=2
 solver = Normal
@@ -17,7 +17,7 @@ Direct Newton iteration succeeded in finding operating point.
 
 .step vref=8
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.206 seconds.
+Total elapsed time: 0.253 seconds.
 Total iterations: 1572
 
 Files loaded:

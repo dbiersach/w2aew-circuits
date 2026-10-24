@@ -9,7 +9,7 @@
       Log: 0 2 0
       GridStyle: 1
       PltMag: 1
-      Text: "dB" 1 (2985631.74114022,0.0300574930876948) ;IF difference: 3 MHz
+      Text: "dB" 1 (3600000,0.0300574930876948) ;IF difference: 3 MHz
       Text: "dB" 1 (6997149.46070878,1.95941299612882) ;LO input: 7 MHz
       Text: "dB" 1 (9994260.40061633,0.123630602077742) ;RF input: 10 MHz
       Text: "dB" 1 (17018258.8597843,0.0300574930876948) ;IF sum: 17 MHz

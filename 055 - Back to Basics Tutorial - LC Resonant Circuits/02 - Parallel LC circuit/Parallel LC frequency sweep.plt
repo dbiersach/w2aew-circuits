@@ -4,13 +4,13 @@
    Active Pane: 1
    {
       traces: 1 {3,0,"-V(ch1)/I(V1)"}
-      Text: "" 1 (33930,7000) ;Impedance of the L1 || C1 tank, Z = CH1 / generator current: magnitude (solid, left axis) and phase (dashed, right axis)
+      Text: "" 1 (33930,10000) ;Impedance of the L1 || C1 tank, Z = CH1 / generator current: magnitude (solid, left axis) and phase (dashed, right axis)
       Text: "" 1 (95000,1500) ;|Z| = 2.19 kohm at f0 = 33.9 kHz
       Arrow: "" 1 2 (70000,1700) (36000,2150)
-      Text: "" 1 (11000,3) ;below f0: phase +90 degrees, inductive
-      Text: "" 1 (110000,3) ;above f0: phase -90 degrees, capacitive
+      Text: "" 1 (11000,200) ;below f0: phase +90 degrees, inductive
+      Text: "" 1 (110000,200) ;above f0: phase -90 degrees, capacitive
       X: ('K',0,5000,0,200000)
-      Y[0]: ('_',0,1,0,10000)
+      Y[0]: ('_',0,1,0,100000)
       Y[1]: (' ',0,-100,20,100)
       Volts: (' ',0,0,1,0,0.25,2.5)
       Log: 1 1 0

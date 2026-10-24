@@ -13,7 +13,7 @@
       Text: "dB" 1 (44000000,0.07) ;46.1 MHz sum product, -30.9 dBV
       Text: "dB" 1 (35000000,0.009) ;28.4 MHz RF leakage, only 23 dB below the IF
       Arrow: "dB" 1 2 (31500000,0.0072) (28400000,0.0025)
-      Text: "dB" 1 (11000000,0.0013) ;17.7 MHz LO leakage, 34 dB below the IF: nothing cancels it here
-      Arrow: "dB" 1 2 (15000000,0.00108) (17700000,0.00070)
+      Text: "dB" 1 (25000000,0.09) ;17.7 MHz LO leakage, 34 dB below the IF: nothing cancels it here
+      Arrow: "dB" 1 2 (24000000,0.07) (17700000,0.0009)
    }
 }

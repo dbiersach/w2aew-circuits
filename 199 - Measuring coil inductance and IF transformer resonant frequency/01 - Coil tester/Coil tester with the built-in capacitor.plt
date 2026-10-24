@@ -4,12 +4,12 @@
    {
       traces: 1 {524291,0,"V(output)"}
       X: ('u',1,0.000148,5e-07,0.00015)
-      Y[0]: (' ',1,-1,1,7)
+      Y[0]: (' ',1,-1,2,9)
       Y[1]: ('_',0,1e+308,0,-1e+308)
-      Volts: (' ',0,0,2,-1,1,7)
+      Volts: (' ',0,0,2,-1,2,9)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.000149,6.5) ;At the output jack, 5.86 Vpp: the half sine waves the article calls rich in harmonics.
+      Text: "V" 1 (0.000149,8.2) ;At the output jack, 5.86 Vpp: the half sine waves the article calls rich in harmonics.
    }
    {
       traces: 1 {524290,0,"V(tank)"}

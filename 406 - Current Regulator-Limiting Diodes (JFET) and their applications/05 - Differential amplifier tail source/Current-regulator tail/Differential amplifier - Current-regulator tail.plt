@@ -30,6 +30,6 @@
       GridStyle: 1
       PltMag: 1
       Text: "V" 1 (3000,78) ;VCM = 3.54 V: 33.26 dB at 5 kHz
-      Text: "V" 1 (300,11.5) ;Differential gain of the current-regulator tail, same three settings and the same axes: the three panes agree within 0.06 dB
+      Text: "V" 1 (3000,60) ;Differential gain of the current-regulator tail, same three settings and the same axes: the three panes agree within 0.06 dB
    }
 }

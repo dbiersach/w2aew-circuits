@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Differential amplifier - Current-regulator tail.net
-Start Time: Wed Oct 21 22:41:03 2026
+Start Time: Sat Oct 24 16:22:35 2026
 
 .step vcm_val=3.54
 solver = Normal
@@ -17,7 +17,7 @@ Direct Newton iteration succeeded in finding operating point.
 
 .step vcm_val=5.61
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.132 seconds.
+Total elapsed time: 0.134 seconds.
 Total iterations: 9
 
 Files loaded:

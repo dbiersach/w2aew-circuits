@@ -9,7 +9,7 @@
       Volts: ('_',0,0,2,0,1,5.5)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.0025,5.2) ;ADD with INVERT CH2 subtracts: 1.94 Vpp, twice either channel on its own
+      Text: "V" 1 (0.0025,4.9) ;ADD with INVERT CH2 subtracts: 1.94 Vpp, twice either channel on its own
    },
    {
       traces: 1 {524291,0,"V(collector)+V(emitter)"}
@@ -30,6 +30,6 @@
       Log: 0 0 0
       GridStyle: 1
       Text: "V" 1 (0.0025,4.95) ;V(collector): 0.97 Vpp riding on 3.99 V
-      Text: "V" 1 (0.0025,0.3) ;V(emitter): the same 0.97 Vpp, opposite phase, riding on 1.02 V
+      Text: "V" 1 (0.0025,2.4) ;V(emitter): the same 0.97 Vpp, opposite phase, riding on 1.02 V
    }
 }

@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Gain bandwidth product.net
-Start Time: Wed Oct 21 01:12:23 2026
+Start Time: Sat Oct 24 16:16:47 2026
 
 .step rfeedback=1000
 solver = Normal
@@ -26,7 +26,7 @@ Direct Newton iteration failed to find operating point.
 Starting Gmin stepping
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.148 seconds.
+Total elapsed time: 0.153 seconds.
 Total iterations: 623
 
 Files loaded:

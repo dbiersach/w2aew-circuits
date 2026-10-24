@@ -15,6 +15,7 @@
       Arrow: "dB" 1 2 (22500000,0.016) (24700000,0.0085)
       Text: "dB" 1 (34000000,0.0007) ;28.4 MHz RF leakage, 45 dB below the IF
       Arrow: "dB" 1 2 (31500000,0.00055) (28400000,0.00023)
-      Text: "dB" 1 (19000000,2.5e-06) ;17.7 MHz LO leakage, 109 dB below the IF: the balanced mixer cancels it
+      Text: "dB" 1 (27000000,0.09) ;17.7 MHz LO leakage, 109 dB below the IF: the balanced mixer cancels it
+      Arrow: "dB" 1 2 (26000000,0.07) (17700000,1.2e-05)
    }
 }

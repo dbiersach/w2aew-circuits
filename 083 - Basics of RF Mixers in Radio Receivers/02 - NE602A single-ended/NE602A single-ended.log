@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: NE602A single-ended.net
-Start Time: Wed Oct 21 11:41:22 2026
+Start Time: Sat Oct 24 16:29:22 2026
 Options:plotwinsize=0
 solver = Normal
 Maximum thread count: 32
@@ -10,7 +10,7 @@ method = modified trap
 Compress1stOrder = true
 Compress2ndOrder = true
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.424 seconds.
+Total elapsed time: 1.480 seconds.
 Total iterations: 117617
 
 Files loaded:

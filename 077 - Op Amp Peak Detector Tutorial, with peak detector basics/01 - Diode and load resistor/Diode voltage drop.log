@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Diode voltage drop.net
-Start Time: Wed Oct 21 00:00:06 2026
+Start Time: Sat Oct 24 16:11:25 2026
 
 .step amp=0.5
 solver = Normal
@@ -16,7 +16,7 @@ Compress2ndOrder = true
 .step amp=1.5
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 0.783 seconds.
+Total elapsed time: 1.378 seconds.
 Total iterations: 160040
 
 Files loaded:

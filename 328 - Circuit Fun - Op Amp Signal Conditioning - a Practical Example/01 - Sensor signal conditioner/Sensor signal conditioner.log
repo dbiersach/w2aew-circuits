@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Sensor signal conditioner.net
-Start Time: Fri Oct 23 02:49:55 2026
+Start Time: Sat Oct 24 16:21:13 2026
 Options:gminsteps=0
 solver = Normal
 Maximum thread count: 32
@@ -84,7 +84,7 @@ Starting source stepping with srcstepmethod=1, level 2
 Starting source stepping with srcstepmethod=0, level 2
 Source stepping level 2 failed to find operating point. Use ".options srcsteps=0" to skip all source stepping.
 Pseudo Transient succeeded in finding the operating point at 216.435 ms
-Total elapsed time: 7.656 seconds.
+Total elapsed time: 7.553 seconds.
 Total iterations: 587251
 
 Files loaded:

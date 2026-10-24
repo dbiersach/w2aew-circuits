@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Parallel LC below at and above resonance.net
-Start Time: Tue Oct 20 20:27:49 2026
+Start Time: Sat Oct 24 16:10:00 2026
 
 .step f=20000
 solver = Normal
@@ -20,7 +20,7 @@ Compress2ndOrder = true
 .step f=50000
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 0.224 seconds.
+Total elapsed time: 0.282 seconds.
 Total iterations: 12054
 
 Files loaded:

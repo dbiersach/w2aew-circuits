@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Coil tester on a parallel tuned circuit.net
-Start Time: Fri Oct 23 01:31:01 2026
+Start Time: Sat Oct 24 16:17:25 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -10,7 +10,7 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 1.348 seconds.
+Total elapsed time: 1.334 seconds.
 Total iterations: 244637
 
 Files loaded:

@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Parallel LC frequency sweep.net
-Start Time: Tue Oct 20 20:37:25 2026
+Start Time: Sat Oct 24 16:09:22 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -10,7 +10,7 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 0.008 seconds.
+Total elapsed time: 0.099 seconds.
 Total iterations: 0
 
 Files loaded:

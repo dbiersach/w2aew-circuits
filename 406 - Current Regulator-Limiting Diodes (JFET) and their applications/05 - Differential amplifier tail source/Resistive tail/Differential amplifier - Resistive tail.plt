@@ -30,6 +30,6 @@
       GridStyle: 1
       PltMag: 1
       Text: "V" 1 (3000,78) ;VCM = 3.54 V: 31.62 dB at 5 kHz
-      Text: "V" 1 (300,11.5) ;Differential gain of the 3.9k tail, one pane per common-mode setting: it climbs 2.7 dB from top to bottom
+      Text: "V" 1 (3000,60) ;Differential gain of the 3.9k tail, one pane per common-mode setting: it climbs 2.7 dB from top to bottom
    }
 }

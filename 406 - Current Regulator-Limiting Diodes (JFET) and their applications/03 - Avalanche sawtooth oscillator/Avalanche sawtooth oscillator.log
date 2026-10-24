@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Avalanche sawtooth oscillator.net
-Start Time: Wed Oct 21 22:42:55 2026
+Start Time: Sat Oct 24 16:21:57 2026
 Options:plotwinsize=0
 solver = Normal
 Maximum thread count: 32
@@ -10,7 +10,7 @@ method = modified trap
 Compress1stOrder = true
 Compress2ndOrder = true
 Per .tran options, skipping operating point for transient analysis.
-Total elapsed time: 0.300 seconds.
+Total elapsed time: 0.365 seconds.
 Total iterations: 10087
 
 Files loaded:

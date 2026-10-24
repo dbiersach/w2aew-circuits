@@ -4,7 +4,7 @@
    Active Pane: 1
    {
       traces: 1 {3,0,"V(ch1)/I(C1)"}
-      Text: "" 1 (33930,4500) ;Impedance of the C1 + L1 stack, Z = CH1 / I(C1): magnitude (solid, left axis) and phase (dashed, right axis)
+      Text: "" 1 (33930,1800) ;Impedance of the C1 + L1 stack, Z = CH1 / I(C1): magnitude (solid, left axis) and phase (dashed, right axis)
       Text: "" 1 (85000,2.2) ;|Z| = 1.0 ohm at f0 = 33.9 kHz (L1's winding resistance)
       Arrow: "" 1 2 (60000,1.9) (35500,1.1)
       Text: "" 1 (11000,25) ;below f0: phase -90 degrees, capacitive

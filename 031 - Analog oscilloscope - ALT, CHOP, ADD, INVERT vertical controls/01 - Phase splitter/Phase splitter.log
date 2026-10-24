@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Phase splitter.net
-Start Time: Thu Oct 22 20:24:59 2026
+Start Time: Sat Oct 24 16:07:28 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -9,7 +9,7 @@ method = modified trap
 Compress1stOrder = true
 Compress2ndOrder = true
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.272 seconds.
+Total elapsed time: 0.381 seconds.
 Total iterations: 100050
 
 Files loaded:

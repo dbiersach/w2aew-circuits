@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: RC time constant.net
-Start Time: Wed Oct 21 16:04:25 2026
+Start Time: Sat Oct 24 16:15:31 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -10,7 +10,7 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 0.267 seconds.
+Total elapsed time: 0.268 seconds.
 Total iterations: 10068
 
 Files loaded:

@@ -14,21 +14,21 @@
    {
       traces: 1 {524290,0,"V(timing)"}
       X: (' ',1,0,0.2,1.4)
-      Y[0]: (' ',1,0,1,5.5)
+      Y[0]: (' ',1,0,1,7)
       Y[1]: ('_',0,1e+308,0,-1e+308)
-      Volts: (' ',0,0,1,0,1,5.5)
+      Volts: (' ',0,0,2,0,1,7)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.7,5.1) ;V(TIMING): the 2.2u charges through 470k until it reaches two thirds of 5 V, which ends the pulse
+      Text: "V" 1 (0.7,6.3) ;V(TIMING): the 2.2u charges through 470k until it reaches two thirds of 5 V, which ends the pulse
    },
    {
       traces: 2 {524290,0,"V(trig)"} {524291,0,"V(out)"}
       X: (' ',1,0,0.2,1.4)
-      Y[0]: (' ',1,0,1,5.5)
+      Y[0]: (' ',1,0,1,7)
       Y[1]: ('_',0,1e+308,0,-1e+308)
-      Volts: (' ',0,0,1,0,1,5.5)
+      Volts: (' ',0,0,2,0,1,7)
       Log: 0 0 0
       GridStyle: 1
-      Text: "V" 1 (0.7,5.1) ;V(TRIG) dips for 1 ms at 10 ms; V(OUT) then stays high for 1.1376 s, which is 1.1 x 470k x 2.2u
+      Text: "V" 1 (0.7,6.3) ;V(TRIG) dips for 1 ms at 10 ms; V(OUT) then stays high for 1.1376 s, which is 1.1 x 470k x 2.2u
    }
 }

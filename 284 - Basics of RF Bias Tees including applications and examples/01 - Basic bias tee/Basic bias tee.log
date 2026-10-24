@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Basic bias tee.net
-Start Time: Fri Oct 23 02:34:32 2026
+Start Time: Sat Oct 24 16:19:57 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -9,7 +9,7 @@ method = modified trap
 Compress1stOrder = true
 Compress2ndOrder = true
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.090 seconds.
+Total elapsed time: 0.097 seconds.
 Total iterations: 3
 
 Files loaded:

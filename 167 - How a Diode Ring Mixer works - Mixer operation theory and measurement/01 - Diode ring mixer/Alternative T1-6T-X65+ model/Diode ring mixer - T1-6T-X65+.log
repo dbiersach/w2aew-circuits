@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Diode ring mixer - T1-6T-X65+.net
-Start Time: Wed Oct 21 11:41:24 2026
+Start Time: Sat Oct 24 16:30:41 2026
 Options:plotwinsize=0
 solver = Normal
 Maximum thread count: 32
@@ -11,7 +11,7 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 10.796 seconds.
+Total elapsed time: 22.273 seconds.
 Total iterations: 8000040
 
 Files loaded:

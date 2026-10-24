@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Coil tester with the built-in capacitor.net
-Start Time: Fri Oct 23 01:30:11 2026
+Start Time: Sat Oct 24 16:18:03 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -10,7 +10,7 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 1.934 seconds.
+Total elapsed time: 1.826 seconds.
 Total iterations: 433492
 
 Files loaded:
