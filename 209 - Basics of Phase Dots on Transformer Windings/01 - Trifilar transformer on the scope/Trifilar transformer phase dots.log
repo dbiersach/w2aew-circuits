@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: Trifilar transformer phase dots.net
-Start Time: Fri Oct 23 01:56:36 2026
+Start Time: Sat Oct 24 18:53:47 2026
 Options:plotwinsize=0
 solver = Normal
 Maximum thread count: 32
@@ -11,15 +11,15 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 0.306 seconds.
+Total elapsed time: 0.569 seconds.
 Total iterations: 10034
 
 Files loaded:
 Trifilar transformer phase dots.net
 
-vch1: V(ch1)=0.957108765846 at 2.25e-06
-vch2: V(ch2)=0.952237943016 at 2.25e-06
-vch3: V(ch3)=-0.952237943016 at 2.25e-06
-ch1_pp: PP(V(ch1))=1.96544319391 FROM 2e-06 TO 3e-06
-ch2_pp: PP(V(ch2))=1.9556030035 FROM 2e-06 TO 3e-06
-ch3_pp: PP(V(ch3))=1.9556030035 FROM 2e-06 TO 3e-06
+vch1: V(ch1)=0.987725195847 at 3.25e-07
+vch2: V(ch2)=0.982762182103 at 3.25e-07
+vch3: V(ch3)=-0.982762182103 at 3.25e-07
+ch1_pp: PP(V(ch1))=1.99899476767 FROM 2e-07 TO 3e-07
+ch2_pp: PP(V(ch2))=1.98899847269 FROM 2e-07 TO 3e-07
+ch3_pp: PP(V(ch3))=1.98899847269 FROM 2e-07 TO 3e-07

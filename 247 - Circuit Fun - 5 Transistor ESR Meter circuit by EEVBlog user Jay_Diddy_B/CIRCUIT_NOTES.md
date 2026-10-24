@@ -9,6 +9,7 @@ Source: Alan Wolke (W2AEW), [#247: Circuit Fun: 5 Transistor ESR Meter circuit b
 | [4:23](https://www.youtube.com/watch?v=3fiUZZlveS0&t=263s) | The start of the stage-by-stage walkthrough of the complete schematic, which is where [circuit 01](#01---five-transistor-esr-meter) begins. |
 | [5:20](https://www.youtube.com/watch?v=3fiUZZlveS0&t=320s) | The oscillator pair at the left of the drawing, which generates the square wave everything else works from. |
 | [7:00](https://www.youtube.com/watch?v=3fiUZZlveS0&t=420s) | The schematic held up beside the scope so the traces can be matched to the nodes, which is how he spends most of the rest of the video. |
+| [8:40](https://www.youtube.com/watch?v=3fiUZZlveS0&t=520s) | The four traces with the readout clear of his hand: every channel on 1.00 V per division, 2.00 us per division, 500 MS/s into 10k points. The square wave's period can be counted off that graticule, which is what [the frequency section](#frequency-and-what-the-measurement-actually-is) does. |
 | [14:30](https://www.youtube.com/watch?v=3fiUZZlveS0&t=870s) | Back to the breadboard for closing comments on the build. |
 
 ## What the circuit is for
@@ -63,7 +64,11 @@ Two things are worth drawing out of the table. The first is that the scale is de
 
 ### Frequency, and what the measurement actually is
 
-Alan's description of the video gives the drive as a 100 kHz square wave, and that is the design intent. Run in LTspice 26.1.1, the designer's oscillator comes out at **85.9 kHz**: `.meas tran OSC_PERIOD` gives a period of 11.65 µs, and it holds that to within 0.1 percent across all fifteen resistance steps. Real astables of this kind are sensitive to transistor storage time and to the particular devices, so the gap between 86 and 100 kHz is the sort of thing that moves between a model and a breadboard. It does not change any of the conclusions above, and the plot's time axis is read directly from this model rather than from the nominal figure.
+Alan's description of the video gives the drive as a 100 kHz square wave, and that is the design intent. Run in LTspice 26.1.1, the designer's oscillator comes out at **85.9 kHz**: `.meas tran OSC_PERIOD` gives a period of 11.65 µs, and it holds that to within 0.1 percent across all fifteen resistance steps.
+
+His own build settles the question between those two figures. At [8:40](https://www.youtube.com/watch?v=3fiUZZlveS0&t=520s) his MDO4104C is on **2.00 µs per division** and the square wave on channel 1 runs a full period in a little under five and a half divisions, so his oscillator is near **11 µs, about 92 kHz**. That is 7 percent above the model and 8 percent below the nominal 100 kHz, which is the right order for an astable of this kind: the period depends on transistor storage time and on the particular devices, and neither a model nor a datasheet pins that down. It does not change any of the conclusions above, and the plot's time axis is read directly from this model rather than from the nominal figure.
+
+The other thing his readout gives is the scale of what he is looking at. All four channels are on **1.00 V per division**, so the traces he matches to the drawing are the volt-level nodes, the oscillator and the amplified arms, not the bridge arms themselves. `V(br_ret)` swings 95 mV, a tenth of a division on his setting, which is why the amplifier stages exist at all.
 
 At 85.9 kHz the 47 µF under test has a reactance of about 39 mΩ. That is small against the 1 Ω or more that marks a failing electrolytic, which is why the reading approximates ESR, but it is not zero: for a smaller capacitor, or with real lead inductance in the test leads, the reactance stops being negligible and the meter is plainly reading impedance rather than resistance. Short test leads matter for the same reason, and the capacitor must be discharged before it is connected.
 

@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: RF detector probe with AM input.net
-Start Time: Thu Oct 22 21:22:29 2026
+Start Time: Sat Oct 24 19:00:11 2026
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -10,14 +10,14 @@ Compress1stOrder = true
 Compress2ndOrder = true
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 1.081 seconds.
-Total iterations: 165995
+Total elapsed time: 2.646 seconds.
+Total iterations: 906612
 
 Files loaded:
 RF detector probe with AM input.net
 standard.dio
 1N34A_legacy.lib
 
-vdet_avg: AVG(V(detected))=2.03428698308 FROM 0.0002 TO 0.0004
-vdet_max: MAX(V(detected))=3.27157258987 FROM 0.0002 TO 0.0004
-vdet_min: MIN(V(detected))=0.884345173836 FROM 0.0002 TO 0.0004
+vdet_avg: AVG(V(detected))=2.11299360952 FROM 0.0002 TO 0.0004
+vdet_max: MAX(V(detected))=3.29178380966 FROM 0.0002 TO 0.0004
+vdet_min: MIN(V(detected))=0.932606637478 FROM 0.0002 TO 0.0004

@@ -38,7 +38,7 @@ Open [RF transmitter sampler and detector.asc](01%20-%20RF%20sampler%20and%20AM%
 | 1000 pF and 1 k to ground | `Cenvelope`, written 1 nF, and `RdetLoad` |
 | AM demod output | `DEMOD_OUT` |
 
-The transmitter itself is the one thing that cannot be a part: `Btransmitter` is a behavioral source whose expression is written out on the schematic, `200*(1+0.5*sin(2*pi*1k*t))*sin(2*pi*7.1Meg*t)`, a 7.1 MHz carrier with 50 percent modulation at 1 kHz. The amplitude is a choice, not a measurement of his rig.
+The transmitter itself is the one thing that cannot be a part: `Btransmitter` is a behavioral source whose expression is written out on the schematic, `200*(1+0.5*sin(2*pi*1k*t))*sin(2*pi*7.1Meg*t)`, a 7.1 MHz carrier with 50 percent modulation at 1 kHz. The amplitude is a choice, not a measurement of his rig, and it cannot be made into one: his scope is an analog Tektronix with no readout, the knob settings never face the camera legibly, and he states neither his output power nor his modulation depth. What his screen does establish is the shape at each stage, and that is what the plots below are matched against: a resolved carrier at [3:30](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=210s), a solid band with a visible envelope along its edge once modulation is applied at [3:53](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=233s), and the trapezoid in X-Y at [5:50](https://www.youtube.com/watch?v=y4Zt_LJX1Tc&t=350s).
 
 ### What the two outputs look like
 

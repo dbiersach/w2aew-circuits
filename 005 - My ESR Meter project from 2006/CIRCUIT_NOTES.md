@@ -12,7 +12,8 @@ Source: Alan Wolke (W2AEW), [#5: My ESR Meter project from 2006](https://www.you
 | [3:05](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=185s) | A closer look at the board, including the 8032. |
 | [3:40](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=220s) | The front panel: a 0 to 200 microampere movement, the calibration knob, and the BNC. |
 | [4:10](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=250s) | Connecting a capacitor to the BNC and watching the needle. |
-| [7:25](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=445s) | The needle sitting near 100 microamperes with a capacitor on the test leads. |
+| [6:20](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=380s) | The capacitor he is about to measure, held to the camera long enough to read the sleeve: a Rubycon KY series, 470 uF, 16 V. That is the part `Cdut` carries. |
+| [7:25](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=445s) | The needle sitting near 100 microamperes with that capacitor on the test leads. |
 
 ## What the instrument measures
 
@@ -30,7 +31,7 @@ Open [Alan drawing ESR meter.asc](01%20-%20ESR%20meter/Alan%20drawing%20ESR%20me
 
 ### What the simulation varies
 
-`Resr` is stepped through 0.1, 1 and 10 ohm in series with a 100 uF test capacitor. That pair is the test fixture rather than anything Alan specifies: he plugs in whatever part he is measuring, and the drawing gives no value. `.tran 0 10m 8m 1u uic` runs for 10 ms and saves the last 2 ms, because the 0.1 uF smoothing capacitor and the meter network take several milliseconds to settle; measurements are taken over the final millisecond, by which time all three steps are steady.
+`Resr` is stepped through 0.1, 1 and 10 ohm in series with a **470 uF** test capacitor. The capacitance is Alan's: at [6:20](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=380s) he turns the part he is measuring to the camera and the sleeve reads Rubycon KY, 470 uF, 16 V. The series resistance is the thing being varied, because that is what the instrument is for and no healthy capacitor would show all three values. `.tran 0 10m 8m 1u uic` runs for 10 ms and saves the last 2 ms, because the 0.1 uF smoothing capacitor and the meter network take several milliseconds to settle; measurements are taken over the final millisecond, by which time all three steps are steady.
 
 ![Meter current and sense voltage at three ESR values](01%20-%20ESR%20meter/ESR%20meter%20sweep.png)
 
@@ -40,22 +41,24 @@ Open [Alan drawing ESR meter.asc](01%20-%20ESR%20meter/Alan%20drawing%20ESR%20me
 
 | Series resistance | Oscillator frequency | Sense voltage, peak to peak | Meter current |
 | --- | --- | --- | --- |
-| 0.1 ohm | 158.3 kHz | 174.8 mV | 149.2 uA |
-| 1 ohm | 177.0 kHz | 171.1 mV | 142.5 uA |
-| 10 ohm | 158.8 kHz | 134.0 mV | 86.9 uA |
+| 0.1 ohm | 142.1 kHz | 172.7 mV | 149.2 uA |
+| 1 ohm | 167.4 kHz | 169.1 mV | 142.5 uA |
+| 10 ohm | 159.8 kHz | 131.7 mV | 86.8 uA |
 
-The frequency is the first thing worth noticing. Alan's 47 k, 2.2 k and 0.001 uF put the 4049 oscillator between about 158 and 177 kHz, which is the right region for an ESR meter: high enough that a 100 uF capacitor is a fraction of an ohm and its series resistance dominates. The frequency moves a little with the capacitor under test because the gates see a different load.
+The frequency is the first thing worth noticing. Alan's 47 k, 2.2 k and 0.001 uF put the 4049 oscillator between about 142 and 167 kHz, which is the right region for an ESR meter: at 150 kHz a 470 uF capacitor is two milliohms of reactance, so anything the meter sees is series resistance. The frequency moves with the part under test because the gates see a different load, and it moves most at the low-ESR step, where the capacitor is closest to a short across them.
 
 The meter current then falls from 149 uA to 87 uA as the series resistance goes from 0.1 ohm to 10 ohm, against a 200 uA movement. That is the whole instrument in one line.
 
 ### Against Alan's bench
 
-At [7:25](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=445s) the needle sits close to 100 microamperes with a capacitor on the leads, which falls inside the 87 to 149 uA the simulation spans. That is as far as the comparison can honestly go: the video does not say which capacitor is connected at that moment, and the calibration control is set by hand, so no ESR value can be read back out of the needle position. What the agreement does show is that the model lands in the right part of the scale rather than off the end of it.
+The part is now known, so the comparison can be made properly. At [7:25](https://www.youtube.com/watch?v=bmYAgat-sOQ&t=445s), with the 470 uF Rubycon KY on the leads, his needle sits close to **100 microamperes** on a 200 microampere movement, about half scale. The simulation with the same capacitance gives 149 uA at 0.1 ohm of series resistance and 143 uA at 1 ohm, so a healthy part of that size should be sitting nearer three quarters of scale here.
+
+The gap is the calibration control, not the sensing. His front-panel knob sets where full scale falls and he turns it to suit the part and the battery; this model fixes that rheostat at 10 kohm because the drawing gives no setting, and that one resistor moves the meter current directly. Nothing else in the chain can account for a difference of that size when the capacitance matches. So read the table for its span and its direction, which do describe his instrument, and not for the absolute needle position, which only he can set.
 
 ## Models and assumptions
 
 The 4049 is TI's CD4049UB model, kept in this folder with the symbol that wraps it. The op amp symbol is named for the AD8032 Alan draws, but the model behind it is LTspice's AD8031 section, which is the nearest part in the installed library; the two are not the same device, and the rectified levels depend on which one is used. The 7805 is a generic legacy model, and the switch is a 1 milliohm resistor.
 
-Three numbers in the meter network are assumptions rather than Alan's: the movement is represented by a 1 kohm coil resistance, the calibration rheostat is fixed at 10 kohm, and the test capacitor is 100 uF. His drawing marks the movement as 200 uA full scale but gives neither its coil resistance nor a rheostat setting, and those two choices move the meter current directly. Read the table as a demonstration of the sensing principle and its direction, not as a calibration of his instrument.
+Two numbers in the meter network are assumptions rather than Alan's: the movement is represented by a 1 kohm coil resistance, and the calibration rheostat is fixed at 10 kohm. His drawing marks the movement as 200 uA full scale but gives neither its coil resistance nor a rheostat setting, and those two choices move the meter current directly. The test capacitor is no longer among them, because he shows it on camera. Read the table as a demonstration of the sensing principle and its direction, not as a calibration of his instrument.
 
 After pressing Run, press Ctrl+Space (Plot Settings > Reload Plot Settings) if the waveform window opens autoscaled instead of showing the saved panes; the stepped run otherwise arrives with all three steps overlaid.
