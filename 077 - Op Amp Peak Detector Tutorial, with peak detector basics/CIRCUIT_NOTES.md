@@ -100,6 +100,6 @@ Against the same 500 Hz source, measured at the held output:
 
 Open a schematic, press **Run**, and if the waveform window opens autoscaled press **Ctrl+Space** (Plot Settings > Reload Plot Settings) to load the saved `.plt`.
 
-Each circuit steps the source amplitude, so the traces are written with the `@n` step selector: `@1` is the small input and `@2` the 3 V p-p one. The two panes use different vertical scales, because the small-signal case would be invisible at the scale the large one needs.
+Each circuit steps the source amplitude, so the traces are written with the `@n` step selector: `@1` is the small input and `@2` the 3 V p-p one. Circuits 02 and 03 write that list as `1.5 0.25`, following the order Alan demonstrates, but **LTspice reorders a `.step` list into ascending order of value before running it**, so the run order is the reverse of the written one and the schematics say so beside the directive. The `.log` is where it is visible, as a `.step` line per run ahead of that run's results. The two panes use different vertical scales, because the small-signal case would be invisible at the scale the large one needs.
 
 The two circuits with a capacitor run for 40 ms and save only the last 4 ms. The hold network needs several time constants to settle before the pattern repeats cleanly.
