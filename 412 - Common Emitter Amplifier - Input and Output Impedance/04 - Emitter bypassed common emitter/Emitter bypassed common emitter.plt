@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 2 {589828,0,"V(base)@1-1.745"} {589829,0,"V(base)@2-1.745"}
+      traces: 2 {589830,0,"V(base)@1-1.745"} {589826,0,"V(base)@2-1.745"}
       Text: "V" 1 (0.002,0.0345) ;V(base)@1, 4.7u bypass: 37.0 mV p-p.  V(base)@2, 100u bypass: 26.0 mV p-p
       Text: "V" 1 (0.002,0.0285) ;Drawn 10 mV per division as Alan sets channel 1, where his screen reads 18 mV
       X: ('m',1,0,0.0004,0.004)

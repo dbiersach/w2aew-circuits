@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 2 {589828,0,"V(collector)@1-4.634"} {589829,0,"V(collector)@2-4.634"}
+      traces: 2 {589826,0,"V(collector)@1-4.634"} {589830,0,"V(collector)@2-4.634"}
       Text: "V" 1 (0.002,2.88) ;CH2 follows the base down: V(collector)@1 is 4.54 V p-p, V(collector)@2 is 2.32 V p-p
       Text: "V" 1 (0.002,2.58) ;Base-to-collector gain is 6.54 in both runs, so the stage itself has not changed
       X: ('m',1,0,0.0004,0.004)
