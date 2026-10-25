@@ -73,7 +73,7 @@ RSER is the substitution box, stepped between 1 milliohm and 6.5k. The first ste
 
 With the box at 0 the base reads 694 mV; with 6.5k in series it reads 355 mV, which is 51 percent. That is the same 6.5k Alan dials in, and it agrees with his arithmetic: 47k in parallel with 8.2k is about 7k, beta times the 1k emitter resistor is about 100k, and 7k in parallel with 100k is about 6.5k.
 
-The lower pane carries the lesson that is easy to miss. The collector amplitude falls in exactly the same proportion, 4.54 V to 2.32 V, and the measured gain is 6.54 in both runs. The series resistance has not reduced the gain of the amplifier. It has attenuated the signal before the amplifier ever sees it, which is why input impedance matters when one stage drives another.
+The lower pane carries the lesson that is easy to miss. The collector amplitude falls in exactly the same proportion, 4.54 V to 2.32 V, and the measured gain is 6.54 in both runs, because CH1 is probed at the base, downstream of RSER, so the attenuation falls outside both probes rather than between them. The series resistance has not reduced the gain of the amplifier. It has attenuated the signal before the amplifier ever sees it, which is why input impedance matters when one stage drives another.
 
 ## 04 - Bypassing the emitter resistor
 
