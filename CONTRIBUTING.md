@@ -69,6 +69,24 @@ of the collection is that every picture is something you can reproduce by pressi
 
 **No em dashes or en dashes** in prose. Commas and colons instead.
 
+## What I am likely to accept
+
+**Corrections, always.** A wrong value, a measurement that does not match the video, a
+circuit that is not set up the way Alan sets his up, a sentence that says something
+untrue. Send those and I will be grateful, whether as an issue or as a pull request.
+
+**Clarity fixes, usually.** If an explanation left you stuck, saying so is useful even
+when you do not have better wording to offer.
+
+**Rewrites, probably not.** The chapters are written in one voice on purpose, and that
+consistency is part of what makes them readable end to end. A pull request that reworks a
+chapter's structure or style, however much better it might be on its own, is one I am
+likely to decline. I would far rather say that here than after you have spent an evening
+on it.
+
+If you are planning something large, open an issue first and ask. That costs you one
+message and can save you a wasted evening.
+
 ## If you are not comfortable with any of this
 
 Open an issue describing the fix instead. That is genuinely just as useful, and I would
