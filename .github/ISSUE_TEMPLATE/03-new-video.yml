@@ -1,0 +1,26 @@
+name: Ask for a video to be added
+description: A W2AEW video you would like to see built in LTspice
+labels: ["status: triage", "kind: new chapter"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Alan has published more than 400 videos and this collection covers a fraction of
+        them, so requests are genuinely useful for deciding what comes next.
+
+  - type: input
+    id: video
+    attributes:
+      label: Video number and title
+      placeholder: "412 - Common Emitter Amplifier - Input and Output Impedance"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: What makes it worth building
+      description: >
+        Is there a measurement a simulation would show well, or a circuit that is hard to
+        follow on the bench? Not every video gains from being simulated, and knowing what
+        you would want to see helps.

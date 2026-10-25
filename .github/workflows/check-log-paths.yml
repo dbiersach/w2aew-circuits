@@ -1,0 +1,31 @@
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  log-paths:
+    name: No local paths in LTspice logs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # LTspice records the absolute path of the machine it ran on in every .log.
+      # The ltspicelog clean filter strips those as a file is staged, but Git ignores
+      # the filter silently when a clone has not enabled it, so a contributor can commit
+      # their own username without noticing. A fresh checkout holds the cleaned content,
+      # so this only fires on a log that was committed without the filter.
+      - name: Look for absolute Windows paths in tracked .log files
+        run: |
+          if grep -rIlE '[A-Za-z]:[\]' --include='*.log' --exclude-dir=.git . ; then
+            echo "::error::The .log files listed above carry an absolute path."
+            echo "Run this once from the root of your clone, then re-stage and re-commit them:"
+            echo '  git config filter.ltspicelog.clean "sh tools/strip-ltspice-log-paths.sh"'
+            exit 1
+          fi
+          echo "All tracked logs are clean."

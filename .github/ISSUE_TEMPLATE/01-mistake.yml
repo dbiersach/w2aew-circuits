@@ -1,0 +1,54 @@
+name: Something is wrong
+description: A schematic, plot, measurement or explanation that does not hold up
+labels: ["status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. If the video and this repository disagree, the repository is wrong.
+        You do not need to be certain, and you do not need to know the fix.
+
+  - type: input
+    id: video
+    attributes:
+      label: Which video
+      description: The number at the start of the folder name, and the sub-folder if you know it.
+      placeholder: "412, circuit 02"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part of it
+      options:
+        - The schematic (.asc)
+        - The plot or its saved view (.plt, the captured PNG)
+        - The chapter notes (CIRCUIT_NOTES.md)
+        - A measurement or a number
+        - The shared models or symbols (LTspice/)
+        - Something else, or not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong
+      description: What you expected, and what you found instead.
+    validations:
+      required: true
+
+  - type: input
+    id: timestamp
+    attributes:
+      label: Where in Alan's video, if that is the disagreement
+      placeholder: "6:09"
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Anything that would help
+      description: >
+        A screenshot, a measurement from the SPICE log, a correction to the arithmetic.
+        Drag images straight into this box. None of this is required.

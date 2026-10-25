@@ -1,0 +1,38 @@
+name: Suggest an improvement
+description: Not wrong, but it could be clearer, better modelled, or easier to read
+labels: ["status: triage", "kind: clarity"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These are welcome. A chapter can be entirely correct and still leave a reader
+        stuck, and that is worth fixing.
+
+  - type: input
+    id: video
+    attributes:
+      label: Which video
+      description: The number at the start of the folder name, and the sub-folder if you know it.
+      placeholder: "412, circuit 02"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: part
+    attributes:
+      label: What would you improve
+      options:
+        - An explanation in the chapter notes
+        - A plot, its scales, or its trace labels
+        - Schematic layout or label placement
+        - How the circuit is modelled
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you change, and why is it better
+    validations:
+      required: true

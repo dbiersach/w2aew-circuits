@@ -66,6 +66,8 @@ So if the video and this repository ever disagree, trust Alan. The mistake will 
 
 I would genuinely like to hear about it when that happens. If something looks wrong, or you know a better way to model it, or an explanation just does not make sense, open an issue and say so. If you would rather fix it yourself, even better: clone the repository, make the change, and send a pull request. I will read every one. Schematics, chapter notes, plots, model assumptions, anything at all.
 
+[CONTRIBUTING.md](CONTRIBUTING.md) has the practical details, including the one piece of local setup a clone needs before you commit a simulation log.
+
 ## Videos
 
 | Alan's YouTube video | Folder in this repository |
