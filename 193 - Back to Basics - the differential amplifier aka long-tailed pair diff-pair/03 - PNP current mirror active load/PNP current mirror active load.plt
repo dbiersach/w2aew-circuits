@@ -2,7 +2,7 @@
 {
    Npanes: 1
    {
-      traces: 2 {524290,0,"V(out2)"} {524291,0,"V(mirror)"}
+      traces: 2 {589826,0,"V(out2)"} {589830,0,"V(mirror)"}
       Text: "V" 1 (0.0025,10.7) ;OUT2 swings 6.93 V p-p and flattens at both limits: the 50 mV drive overloads this stage
       Text: "V" 1 (0.0025,10.1) ;MIRROR sits at 8.38 V, one PNP base-emitter drop below the 9 V rail
       X: ('m',1,0,0.0005,0.005)

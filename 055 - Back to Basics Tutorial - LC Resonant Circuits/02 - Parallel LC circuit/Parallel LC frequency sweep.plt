@@ -19,7 +19,7 @@
       PltPhi: 1 0
    },
    {
-      traces: 1 {524290,0,"V(ch1)"}
+      traces: 1 {589826,0,"V(ch1)"}
       Text: "V" 1 (33930,2.38) ;CH1, the voltage across the parallel tank (generator: 2 V peak behind 50 ohms)
       Text: "V" 1 (90000,2.12) ;peaks at 1.96 V at f0 = 33.9 kHz: the tank is nearly an open circuit
       Arrow: "V" 1 2 (62000,2.08) (35000,1.98)

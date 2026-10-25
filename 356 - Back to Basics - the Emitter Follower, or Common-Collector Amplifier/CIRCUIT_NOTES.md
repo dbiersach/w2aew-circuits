@@ -20,13 +20,13 @@ An emitter follower takes its output from the transistor's emitter. As the base 
 
 Alan uses a 9 V collector supply, a 2N2222A NPN transistor, a 1 kΩ emitter resistor, and a 1 kHz generator set to 1 V peak to peak. He varies the generator's DC offset. The two LTspice files keep the same topology and show the offset settings in separate plots. LTspice's built-in 2N2222 is a documented substitute for the 2N2222A in Alan's notes. The 1.5 V offset is an illustrative setting for Alan's adjustable control.
 
-**Zero offset.** The blue input, `V(in)`, swings from -0.5 V to +0.5 V. That is below the roughly 0.6 to 0.7 V needed to turn Q1 on. The green emitter output, `V(out)`, stays nearly at 0 V because the 1 kΩ emitter resistor connects it to ground. The flat output is the point of this first plot: without suitable DC bias, this NPN follower does not reproduce the small input signal.
+**Zero offset.** The magenta input, `V(in)`, swings from -0.5 V to +0.5 V. That is below the roughly 0.6 to 0.7 V needed to turn Q1 on. The green emitter output, `V(out)`, stays nearly at 0 V because the 1 kΩ emitter resistor connects it to ground. The flat output is the point of this first plot: without suitable DC bias, this NPN follower does not reproduce the small input signal.
 
 ![Zero-bias emitter follower schematic copied from LTspice](01%20-%20Basic%20emitter%20follower/Basic%20emitter%20follower%20schematic.png)
 
 ![Zero-bias emitter follower waveforms copied from LTspice](01%20-%20Basic%20emitter%20follower/Basic%20emitter%20follower%20waveforms.png)
 
-**With 1.5 V DC offset.** The blue input now swings from 1.0 V to 2.0 V, so Q1 conducts throughout the cycle. The green emitter output swings at approximately the same amplitude, about one base-emitter drop below the input. The output is not an amplified voltage; it follows the input at a lower DC level. Compare this plot with the flat zero-offset output above. Both plots show one offset setting only, so no color or curve represents a hidden simulation step.
+**With 1.5 V DC offset.** The magenta input now swings from 1.0 V to 2.0 V, so Q1 conducts throughout the cycle. The green emitter output swings at approximately the same amplitude, about one base-emitter drop below the input. The output is not an amplified voltage; it follows the input at a lower DC level. Compare this plot with the flat zero-offset output above. Both plots show one offset setting only, so no color or curve represents a hidden simulation step.
 
 ![DC-biased emitter follower schematic copied from LTspice](01%20-%20Basic%20emitter%20follower/Basic%20emitter%20follower%20DC%20biased%20schematic.png)
 
@@ -52,7 +52,7 @@ Alan's page 8 circuit keeps the single NPN follower and 1 kΩ emitter resistor, 
 
 ![AC-coupled speaker-load schematic copied from LTspice](03%20-%20AC%20coupled%20speaker%20load/AC%20coupled%20speaker%20load%20schematic.png)
 
-The **top pane** is the voltage across the speaker, `V(speaker)`. It contains small positive pulses rather than a complete sine wave. The **lower pane** compares the green generator `V(in)` with the blue transistor emitter `V(emitter)`. The input still makes a full sine wave, but the emitter stays close to its bias voltage for much of the cycle under the heavy load. The coupling capacitor removes DC from the speaker; it does not give the single NPN the ability to sink the speaker current required for a symmetric AC waveform.
+The **top pane** is the voltage across the speaker, `V(speaker)`. It contains small positive pulses rather than a complete sine wave. The **lower pane** compares the magenta generator `V(in)` with the red transistor emitter `V(emitter)`. The input still makes a full sine wave, but the emitter stays close to its bias voltage for much of the cycle under the heavy load. The coupling capacitor removes DC from the speaker; it does not give the single NPN the ability to sink the speaker current required for a symmetric AC waveform.
 
 ![Speaker voltage above input and emitter voltages, copied from LTspice](03%20-%20AC%20coupled%20speaker%20load/AC%20coupled%20speaker%20load%20waveforms.png)
 
@@ -78,7 +78,7 @@ This second schematic is an **extension**, not a circuit shown in video 356. It 
 
 The tied-base circuit leaves both transistors nearly off while the signal crosses zero. In the extension, `QMULT`, `RTOP`, and `RBOT` form a VBE multiplier with fixed 1 kΩ and 820 Ω resistors. They hold the NPN base above the PNP base by about **1.468 V** on average. This provides roughly one forward junction drop for each output transistor, allowing both to conduct lightly near the zero crossing. The two 10 Ω emitter resistors limit current and provide local negative feedback: rising transistor current increases the resistor drop, which reduces that transistor's effective base-emitter drive. Too little base-to-base bias brings back the notch; too much wastes power and can overheat the transistors. A practical build also needs bias adjustment and thermal tracking of the output devices.
 
-In the LTspice plot, the **top green trace** is the voltage across the 16 Ω load, `V(load_out)`. It now passes smoothly through zero, without the broad flat dead band of the original plot. The **lower blue trace** is the voltage from `UPPER_BASE` to `LOWER_BASE`; its small variation about 1.468 V reflects signal-dependent operation of the bias stage. The plotted time is the final 5 ms of the 10 ms run. LTspice reports `VBIAS_AVG = 1.46799591386 V`, `ISUPPLY_AVG = 8.12771908613 mA`, and approximately **2.00% total harmonic distortion** for `V(load_out)` at 1 kHz. A smooth crossing does not imply zero distortion; the remaining distortion includes the complete driver and output stage.
+In the LTspice plot, the **top green trace** is the voltage across the 16 Ω load, `V(load_out)`. It now passes smoothly through zero, without the broad flat dead band of the original plot. The **lower magenta trace** is the voltage from `UPPER_BASE` to `LOWER_BASE`; its small variation about 1.468 V reflects signal-dependent operation of the bias stage. The plotted time is the final 5 ms of the 10 ms run. LTspice reports `VBIAS_AVG = 1.46799591386 V`, `ISUPPLY_AVG = 8.12771908613 mA`, and approximately **2.00% total harmonic distortion** for `V(load_out)` at 1 kHz. A smooth crossing does not imply zero distortion; the remaining distortion includes the complete driver and output stage.
 
 ![VBE-biased speaker waveform and base-to-base voltage copied from LTspice](04%20-%20Complementary%20push-pull%20follower/Complementary%20push-pull%20follower%20Vbe%20bias%20waveforms.png)
 
@@ -95,7 +95,7 @@ Follow the negative half-cycle step by step:
 1. As the base goes negative, the emitter initially follows.
 2. The NPN turns off when it can no longer supply current into the emitter node. A lone NPN follower cannot pull that node farther negative by sinking current.
 3. With the transistor off, the two 1 kΩ resistors form a divider from ground to -10 V. Because they are equal, their junction, `OUT`, sits at -5 V.
-4. The input keeps falling toward -10 V, but the output stays near -5 V. That is the flat bottom of the green output trace. The blue input trace continues to -10 V.
+4. The input keeps falling toward -10 V, but the output stays near -5 V. That is the flat bottom of the green output trace. The magenta input trace continues to -10 V.
 
 ![Negative output clipping near -5 V, copied from LTspice](05%20-%20Negative%20clipping%20limit/Negative%20clipping%20limit%20waveforms.png)
 

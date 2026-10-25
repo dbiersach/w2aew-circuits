@@ -3,7 +3,7 @@
    Npanes: 4
    Active Pane: 3
    {
-      traces: 3 {34603011,0,"I(L1)@2"} {34603012,0,"I(C1)@2"} {34603013,0,"-I(V1)@2"}
+      traces: 3 {34668549,0,"I(L1)@2"} {34668547,0,"I(C1)@2"} {34668551,0,"-I(V1)@2"}
       Text: "A" 1 (5e-05,0.079) ;Branch currents at resonance (33.9 kHz): I(L1) and I(C1) are equal (83 mA p-p) and opposite
       Text: "A" 1 (2.1e-05,0.062) ;I(L1) peak
       Arrow: "A" 1 2 (2.1e-05,0.058) (2.1e-05,0.043)
@@ -19,7 +19,7 @@
       GridStyle: 1
    },
    {
-      traces: 1 {524290,0,"V(ch1)@3"}
+      traces: 1 {589828,0,"V(ch1)@3"}
       Text: "V" 1 (5e-05,2.9) ;50 kHz, above resonance: the tank is capacitive and loads the 50 ohm generator; CH1 = 3.03 V p-p
       X: ('µ',0,0,1e-05,0.0001)
       Y[0]: (' ',0,-3,1,3.5)
@@ -29,7 +29,7 @@
       GridStyle: 1
    },
    {
-      traces: 1 {524290,0,"V(ch1)@2"}
+      traces: 1 {589830,0,"V(ch1)@2"}
       Text: "V" 1 (5e-05,2.9) ;33.9 kHz, at resonance: the tank is nearly an open circuit; CH1 = 3.91 V p-p, almost the 4 V p-p open-circuit generator voltage
       X: ('µ',0,0,1e-05,0.0001)
       Y[0]: (' ',0,-3,1,3.5)
@@ -39,7 +39,7 @@
       GridStyle: 1
    },
    {
-      traces: 1 {524290,0,"V(ch1)@1"}
+      traces: 1 {589826,0,"V(ch1)@1"}
       Text: "V" 1 (5e-05,2.9) ;20 kHz, below resonance: the tank is inductive and loads the generator; CH1 = 2.52 V p-p
       X: ('µ',0,0,1e-05,0.0001)
       Y[0]: (' ',0,-3,1,3.5)

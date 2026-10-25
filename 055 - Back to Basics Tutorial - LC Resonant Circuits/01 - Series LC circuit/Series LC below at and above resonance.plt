@@ -3,7 +3,7 @@
    Npanes: 3
    Active Pane: 2
    {
-      traces: 3 {524290,0,"V(ch2)@3"} {524291,0,"V(ch1)@3-V(ch2)@3"} {524292,0,"V(ch1)@3"}
+      traces: 3 {589832,0,"V(ch2)@3"} {589833,0,"V(ch1)@3-V(ch2)@3"} {589834,0,"V(ch1)@3"}
       Text: "V" 1 (5e-05,3.9) ;50 kHz, above resonance: the circuit is inductive.  V(L1) 4.38 V p-p is larger than V(C1) 2.01 V p-p; stack CH1 = 2.36 V p-p
       Text: "V" 1 (6.2e-05,2.9) ;V(L1) = CH2, the larger voltage
       Arrow: "V" 1 2 (6.2e-05,2.75) (6.21e-05,2.25)
@@ -19,7 +19,7 @@
       GridStyle: 1
    },
    {
-      traces: 3 {524290,0,"V(ch2)@2"} {524291,0,"V(ch1)@2-V(ch2)@2"} {524292,0,"V(ch1)@2"}
+      traces: 3 {589829,0,"V(ch2)@2"} {589827,0,"V(ch1)@2-V(ch2)@2"} {589831,0,"V(ch1)@2"}
       Text: "V" 1 (5e-05,3.9) ;33.9 kHz, at resonance: V(L1) and V(C1) are equal (3.68 V p-p) and opposite, so they cancel
       Text: "V" 1 (2.1e-05,2.9) ;V(C1) peak
       Arrow: "V" 1 2 (2.1e-05,2.75) (2.1e-05,1.9)
@@ -35,7 +35,7 @@
       GridStyle: 1
    },
    {
-      traces: 3 {524290,0,"V(ch2)@1"} {524291,0,"V(ch1)@1-V(ch2)@1"} {524292,0,"V(ch1)@1"}
+      traces: 3 {589826,0,"V(ch2)@1"} {589830,0,"V(ch1)@1-V(ch2)@1"} {589828,0,"V(ch1)@1"}
       Text: "V" 1 (5e-05,3.9) ;20 kHz, below resonance: the circuit is capacitive.  V(C1) 4.37 V p-p is larger than V(L1) 1.52 V p-p; stack CH1 = 2.85 V p-p
       Text: "V" 1 (8.2e-05,2.9) ;V(C1) = CH1 - CH2, the larger voltage
       Arrow: "V" 1 2 (7.6e-05,2.75) (6.87e-05,2.25)

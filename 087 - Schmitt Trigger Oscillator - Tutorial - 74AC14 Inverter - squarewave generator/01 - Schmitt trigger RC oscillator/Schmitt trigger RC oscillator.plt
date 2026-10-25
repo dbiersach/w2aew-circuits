@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524290,0,"V(rc)"}
+      traces: 1 {589830,0,"V(rc)"}
       X: ('m',1,0.001,0.0003,0.0025)
       Y[0]: (' ',0,0,1,6)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (0.00175,5.6) ;V(RC): the timing capacitor ramping between the proxy's 1.8 V and 3.2 V thresholds
    }
    {
-      traces: 1 {524290,0,"V(out)"}
+      traces: 1 {589826,0,"V(out)"}
       X: ('m',1,0.001,0.0003,0.0025)
       Y[0]: (' ',0,-0.5,1,6)
       Y[1]: ('_',0,1e+308,0,-1e+308)

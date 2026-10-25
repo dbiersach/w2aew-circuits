@@ -42,7 +42,7 @@ Both panes show it, which is the point of plotting them together. The lower pane
 
 ![DC output bias notch removed](<02 - DC output bias suppresses notch/DC output bias notch removed.png>)
 
-The lower pane makes the mechanism visible. The load current, in blue, still swings plus and minus half a milliamp exactly as before; nothing about the AC-coupled load changed. The red trace is the sum of both load currents, which is what the op amp output actually has to supply, and it never comes near zero: it swings between 0.66 mA and 2.67 mA, all in the same direction. The 1.67 mA standing current is more than three times the 0.5 mA peak the signal demands, so the sourcing transistor stays on through the whole cycle and the handover never happens.
+The lower pane makes the mechanism visible. The load current, in magenta, still swings plus and minus half a milliamp exactly as before; nothing about the AC-coupled load changed. The red trace is the sum of both load currents, which is what the op amp output actually has to supply, and it never comes near zero: it swings between 0.66 mA and 2.67 mA, all in the same direction. The 1.67 mA standing current is more than three times the 0.5 mA peak the signal demands, so the sourcing transistor stays on through the whole cycle and the handover never happens.
 
 ![DC output bias SPICE output log](<02 - DC output bias suppresses notch/DC output bias SPICE output log.png>)
 

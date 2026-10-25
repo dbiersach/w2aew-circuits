@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524290,0,"V(l_sig)-V(l_ref)"}
+      traces: 1 {589830,0,"V(l_sig)-V(l_ref)"}
       X: ('m',1,0.01,0.001,0.014)
       Y[0]: ('m',1,-0.02,0.01,0.045)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (0.012,0.041) ;Lower-pair drive swings -14.4 mV to +13.8 mV, crossing zero twice per modulation cycle
    },
    {
-      traces: 1 {524290,0,"V(col_a)-V(col_b)"}
+      traces: 1 {589826,0,"V(col_a)-V(col_b)"}
       X: ('m',1,0.01,0.001,0.014)
       Y[0]: ('m',1,-0.45,0.1,0.45)
       Y[1]: ('_',0,1e+308,0,-1e+308)

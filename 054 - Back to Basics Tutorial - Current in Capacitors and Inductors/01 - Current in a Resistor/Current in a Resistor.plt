@@ -2,7 +2,7 @@
 {
    Npanes: 1
    {
-      traces: 2 {524290,0,"V(ch1)"} {524291,0,"V(ch2)*10"}
+      traces: 2 {589826,0,"V(ch1)"} {589830,0,"V(ch2)*10"}
       Text: "V" 1 (1.75e-05,1.45) ;Resistor: the current (CH2) and the voltage (CH1) rise and fall together; LEAD_DEG = 0
       Text: "V" 1 (1.788e-05,1.15) ;voltage and current peak together
       Arrow: "V" 1 2 (1.788e-05,1.1) (1.788e-05,0.86)

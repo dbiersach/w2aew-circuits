@@ -16,7 +16,7 @@
       PltMag: 1
    },
    {
-      traces: 1 {524290,0,"V(out)/0.5"}
+      traces: 1 {589826,0,"V(out)/0.5"}
       Text: "" 1 (3000000,1.2) ;Output relative to the same path without the bead: flat through the low end of Alan's sweep
       Text: "" 1 (150000000,0.78) ;0.44 at 40 MHz, the top of Alan's sweep: 7.1 dB of loss
       Arrow: "" 1 2 (150000000,0.74) (40000000,0.46)

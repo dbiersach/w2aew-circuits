@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524291,0,"V(output)"}
+      traces: 1 {589830,0,"V(output)"}
       X: ('u',1,0.000148,5e-07,0.00015)
       Y[0]: (' ',1,-1,2,9)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (0.000149,8.2) ;At the output jack, 5.79 Vpp: the half sine waves the article calls rich in harmonics
    }
    {
-      traces: 1 {524290,0,"V(tank)"}
+      traces: 1 {589826,0,"V(tank)"}
       X: ('u',1,0.000148,5e-07,0.00015)
       Y[0]: (' ',1,-10,2,10)
       Y[1]: ('_',0,1e+308,0,-1e+308)

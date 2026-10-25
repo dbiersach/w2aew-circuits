@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524293,0,"V(clamped)@6"}
+      traces: 1 {589829,0,"V(clamped)@6"}
       X: ('u',1,0,2e-07,1e-06)
       Y[0]: ('_',1,-0.5,0.5,2.5)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (5e-07,2.35) ;The probe tip at 1.0 Vrms drive: DCLAMP holds the troughs near zero so the peaks reach 2.35 V
    },
    {
-      traces: 3 {524290,0,"V(detected)@2"} {524291,0,"V(detected)@4"} {524292,0,"V(detected)@6"}
+      traces: 3 {589826,0,"V(detected)@2"} {589830,0,"V(detected)@4"} {589828,0,"V(detected)@6"}
       X: ('u',1,0,2e-07,1e-06)
       Y[0]: ('_',1,0,0.5,2.6)
       Y[1]: ('_',0,1e+308,0,-1e+308)

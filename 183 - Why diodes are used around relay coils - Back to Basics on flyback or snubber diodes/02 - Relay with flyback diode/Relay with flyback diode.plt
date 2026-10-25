@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524291,0,"I(LCOIL)"}
+      traces: 1 {589830,0,"I(LCOIL)"}
       X: ('m',1,0.0099,0.0005,0.013)
       Y[0]: ('m',1,-0.01,0.01,0.06)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "A" 1 (0.01145,0.045) ;The same 52.5 mA keeps flowing, now round through the diode, decaying with L over R
    },
    {
-      traces: 1 {524290,0,"V(collector)"}
+      traces: 1 {589826,0,"V(collector)"}
       X: ('m',1,0.0099,0.0005,0.013)
       Y[0]: ('_',1,0,1,7)
       Y[1]: ('_',0,1e+308,0,-1e+308)

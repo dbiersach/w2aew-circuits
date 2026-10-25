@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524290,0,"V(scope_ac)"}
+      traces: 1 {589830,0,"V(scope_ac)"}
       X: ('m',1,0,0.002,0.01)
       Y[0]: ('_',1,-0.6,0.2,0.6)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (0.005,0.5) ;AC coupled: the 8.84 V level is gone and the same 0.80 V ripple is centered on zero
    },
    {
-      traces: 1 {524290,0,"V(supply)"}
+      traces: 1 {589826,0,"V(supply)"}
       X: ('m',1,0,0.002,0.01)
       Y[0]: ('_',1,0,2,11)
       Y[1]: ('_',0,1e+308,0,-1e+308)

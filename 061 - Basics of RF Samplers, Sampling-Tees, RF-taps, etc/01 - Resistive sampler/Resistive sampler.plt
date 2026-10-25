@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {589828,0,"V(SAMPLE_OUT)"}
+      traces: 1 {589830,0,"V(SAMPLE_OUT)"}
       X: ('u',0,0,1e-07,1e-06)
       Y[0]: ('m',0,-0.014,0.005,0.019)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (5e-07,0.0168) ;V(SAMPLE_OUT), the tap: about 8.5 mV RMS into the 50 ohm sampling load
    }
    {
-      traces: 1 {524290,0,"V(RF_THROUGH)"}
+      traces: 1 {589826,0,"V(RF_THROUGH)"}
       X: ('u',0,0,1e-07,1e-06)
       Y[0]: (' ',0,-0.55,0.1,0.75)
       Y[1]: ('_',0,1e+308,0,-1e+308)

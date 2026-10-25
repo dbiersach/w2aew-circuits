@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {34603011,0,"I(D1)"}
+      traces: 1 {34668548,0,"I(D1)"}
       X: ('m',1,0,0.0004,0.004)
       Y[0]: ('m',1,-0.002,0.002,0.026)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -13,7 +13,7 @@
       Text: "A" 1 (0.002,0.0236) ;Alan has channel 2 at 20.0 mV per division, which is 2 mA per division here
    }
    {
-      traces: 2 {524290,0,"V(scope_x)"} {524291,0,"V(scope_x)-V(scope_y)"}
+      traces: 2 {589826,0,"V(scope_x)"} {589830,0,"V(scope_x)-V(scope_y)"}
       X: ('m',1,0,0.0004,0.004)
       Y[0]: (' ',1,-0.2,0.2,1.4)
       Y[1]: ('_',0,1e+308,0,-1e+308)

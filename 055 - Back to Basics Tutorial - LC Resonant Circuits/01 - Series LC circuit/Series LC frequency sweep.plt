@@ -19,7 +19,7 @@
       PltPhi: 1 0
    },
    {
-      traces: 1 {524290,0,"V(ch1)"}
+      traces: 1 {589826,0,"V(ch1)"}
       Text: "V" 1 (33930,2.38) ;CH1, the voltage across the series stack (generator: 2 V peak behind 50 ohms)
       Text: "V" 1 (90000,0.5) ;dips to 39 mV at f0 = 33.9 kHz: the series LC is nearly a short circuit
       Arrow: "V" 1 2 (60000,0.42) (35000,0.07)

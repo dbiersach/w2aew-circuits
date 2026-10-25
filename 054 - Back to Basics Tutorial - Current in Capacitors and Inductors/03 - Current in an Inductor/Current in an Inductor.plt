@@ -2,7 +2,7 @@
 {
    Npanes: 1
    {
-      traces: 2 {524290,0,"V(ch1)"} {524291,0,"V(ch2)*10"}
+      traces: 2 {589826,0,"V(ch1)"} {589830,0,"V(ch2)*10"}
       Text: "V" 1 (1.75e-05,1.45) ;Inductor: the current peaks 0.32 us AFTER the voltage, so the current LAGS by 84 degrees
       Text: "V" 1 (1.7521e-05,1.15) ;voltage peak
       Arrow: "V" 1 2 (1.7671e-05,1.1) (1.7871e-05,0.88)

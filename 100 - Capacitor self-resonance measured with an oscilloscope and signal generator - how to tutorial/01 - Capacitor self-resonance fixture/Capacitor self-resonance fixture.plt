@@ -16,7 +16,7 @@
       PltMag: 1
    },
    {
-      traces: 1 {524290,0,"V(out)"}
+      traces: 1 {589826,0,"V(out)"}
       Text: "V" 1 (250000,0.85) ;0.751 V peak well below resonance: the capacitor barely loads the pad
       Text: "V" 1 (12000000,0.3) ;30 mV peak at 3.262 MHz, the self-resonant frequency
       Arrow: "V" 1 2 (8000000,0.26) (3350000,0.06)

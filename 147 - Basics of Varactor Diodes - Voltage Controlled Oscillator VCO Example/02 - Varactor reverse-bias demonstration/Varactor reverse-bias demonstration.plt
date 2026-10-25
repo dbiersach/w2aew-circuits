@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524290,0,"V(out)@4"}
+      traces: 1 {589830,0,"V(out)@4"}
       X: ('u',1,0,2e-07,1e-06)
       Y[0]: ('m',1,-0.016,0.004,0.016)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (5e-07,0.0145) ;25 V of reverse bias: only 2.68 mV gets through, because the junction capacitance has shrunk
    },
    {
-      traces: 1 {524290,0,"V(out)@1"}
+      traces: 1 {589826,0,"V(out)@1"}
       X: ('u',1,0,2e-07,1e-06)
       Y[0]: ('m',1,-0.016,0.004,0.016)
       Y[1]: ('_',0,1e+308,0,-1e+308)

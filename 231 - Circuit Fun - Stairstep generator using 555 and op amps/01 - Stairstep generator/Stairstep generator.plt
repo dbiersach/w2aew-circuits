@@ -2,7 +2,7 @@
 {
    Npanes: 3
    {
-      traces: 1 {524290,0,"V(PULSE)"}
+      traces: 1 {589828,0,"V(PULSE)"}
       X: ('m',1,0,0.005,0.025)
       Y[0]: (' ',1,-1,2,11)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (0.0125,10) ;V(PULSE): the slower relaxation oscillator that fires Q1 and Q2 to reset the staircase
    },
    {
-      traces: 1 {524290,0,"V(CLOCK)"}
+      traces: 1 {589830,0,"V(CLOCK)"}
       X: ('m',1,0,0.005,0.025)
       Y[0]: (' ',1,-1,2,11)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -22,7 +22,7 @@
       Text: "V" 1 (0.0125,10) ;V(CLOCK): the 555's narrow pulses, one per step
    },
    {
-      traces: 1 {524290,0,"V(OUT)"}
+      traces: 1 {589826,0,"V(OUT)"}
       X: ('m',1,0,0.005,0.025)
       Y[0]: (' ',1,-1,2,11)
       Y[1]: ('_',0,1e+308,0,-1e+308)

@@ -1,6 +1,6 @@
 LTspice 26.1.1 for Windows
 Circuit: VCO ramp sweep.net
-Start Time: Wed Oct 21 11:40:34 2026
+Start Time: Sat Oct 24 21:35:06 2026
 CD4046Bg-corrected.sub(13): This A-device controls a switch device but has zero rise/fall time. Setting rise time to 1ns.
 A6 0 N007 0 N012 0 N016 N013 0 XOR
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -32,3 +32,12 @@ Compress2ndOrder = true
 WARNING: Node nc_01 is floating.
 
 Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.719 seconds.
+Total iterations: 45117
+
+Files loaded:
+VCO ramp sweep.net
+CD4046Bg-corrected.sub
+standard.dio
+standard.mos
+

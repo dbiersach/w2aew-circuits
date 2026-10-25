@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524290,0,"V(inv_in)"}
+      traces: 1 {589830,0,"V(inv_in)"}
       Text: "V" 1 (5.3,5.035) ;The - input: negative feedback holds it at the 5 V reference
       Text: "V" 1 (4.3,4.945) ;it sags only where the output has saturated
       Arrow: "V" 1 2 (3.9,4.95) (3.15,4.935)
@@ -14,7 +14,7 @@
       GridStyle: 1
    },
    {
-      traces: 1 {524290,0,"V(vout)"}
+      traces: 1 {589826,0,"V(vout)"}
       Text: "V" 1 (5.3,9.4) ;Output moves twice as far as the input, and in the opposite direction
       Text: "V" 1 (5.1,6.6) ;Alan's worked example: 4 V in gives 7.00 V out
       Arrow: "V" 1 2 (4.5,6.75) (4.02,7.0)

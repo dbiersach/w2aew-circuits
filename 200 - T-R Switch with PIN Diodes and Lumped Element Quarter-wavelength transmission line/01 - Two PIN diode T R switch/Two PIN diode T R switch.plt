@@ -2,7 +2,7 @@
 {
  Npanes: 2
  {
-  traces: 2 {524290,0,"V(antenna)@1"} {524291,0,"V(antenna)@2"}
+  traces: 2 {589828,0,"V(antenna)@1"} {589829,0,"V(antenna)@2"}
   X: ('M',1,1e+06,0,1e+08)
   Y[0]: (' ',1,0.001,10,2)
   Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -13,7 +13,7 @@
   Text: "V" 1 (6e+06,1.5) ;V(ANTENNA): -6.00 dB driven from the antenna on receive, -6.68 dB driven from the transmitter
  }
  {
-  traces: 2 {524290,0,"V(rx_out)@1"} {524291,0,"V(rx_out)@2"}
+  traces: 2 {589826,0,"V(rx_out)@1"} {589830,0,"V(rx_out)@2"}
   X: ('M',1,1e+06,0,1e+08)
   Y[0]: (' ',1,0.001,10,2)
   Y[1]: ('_',0,1e+308,0,-1e+308)

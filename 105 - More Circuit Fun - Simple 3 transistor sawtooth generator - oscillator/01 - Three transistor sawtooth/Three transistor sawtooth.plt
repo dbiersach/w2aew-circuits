@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 2 {524291,0,"V(thresh)"} {524292,0,"V(drive)"}
+      traces: 2 {589830,0,"V(thresh)"} {589828,0,"V(drive)"}
       X: ('m',1,0.005,0.001,0.01)
       Y[0]: (' ',0,-1,1,7)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (0.0075,6.5) ;V(THRESH) collapses and V(DRIVE) pulses at each reset: the regenerative pair firing
    }
    {
-      traces: 1 {524290,0,"V(ramp)"}
+      traces: 1 {589826,0,"V(ramp)"}
       X: ('m',1,0.005,0.001,0.01)
       Y[0]: (' ',0,0,1,6.6)
       Y[1]: ('_',0,1e+308,0,-1e+308)

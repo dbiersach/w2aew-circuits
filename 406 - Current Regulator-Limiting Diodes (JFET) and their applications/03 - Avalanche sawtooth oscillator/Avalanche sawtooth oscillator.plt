@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524290,0,"I(C1)"}
+      traces: 1 {589830,0,"I(C1)"}
       X: (' ',1,0.001,0.00025,0.003)
       Y[0]: ('m',1,-0.055,0.01,0.02)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (0.002,0.0145) ;A steady 1.0 mA charge, interrupted by 48 mA discharge pulses through the snapback switch
    },
    {
-      traces: 1 {524290,0,"V(RAMP)"}
+      traces: 1 {589826,0,"V(RAMP)"}
       X: (' ',1,0.001,0.00025,0.003)
       Y[0]: (' ',1,3.6,1,9)
       Y[1]: ('_',0,1e+308,0,-1e+308)

@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {524290,0,"V(ctrl)"}
+      traces: 1 {589828,0,"V(ctrl)"}
       X: ('m',1,0.002,0.0003,0.0035)
       Y[0]: (' ',0,-1,2,13)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "V" 1 (0.00275,11.6) ;V(CTRL), the comparator output that throws the diode bridge: a square wave whose duty cycle follows the slope ratio
    }
    {
-      traces: 2 {524291,0,"V(ramp)"} {524292,0,"V(out)"}
+      traces: 2 {589826,0,"V(ramp)"} {589830,0,"V(out)"}
       X: ('m',1,0.002,0.0003,0.0035)
       Y[0]: (' ',0,2.5,0.5,7.6)
       Y[1]: ('_',0,1e+308,0,-1e+308)

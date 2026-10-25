@@ -2,7 +2,7 @@
 {
    Npanes: 2
    {
-      traces: 1 {34603011,0,"I(Rload)"}
+      traces: 1 {34668550,0,"I(Rload)"}
       X: ('u',1,0,5e-05,0.0004)
       Y[0]: ('m',1,-0.0008,0.0002,0.0008)
       Y[1]: ('_',0,1e+308,0,-1e+308)
@@ -12,7 +12,7 @@
       Text: "A" 1 (0.0002,0.00072) ;Load current reverses through zero twice a cycle, and the notch sits on those crossings.
    }
    {
-      traces: 1 {524290,0,"V(ac_out)"}
+      traces: 1 {589826,0,"V(ac_out)"}
       X: ('u',1,0,5e-05,0.0004)
       Y[0]: (' ',1,-0.7,0.2,0.8)
       Y[1]: ('_',0,1e+308,0,-1e+308)
