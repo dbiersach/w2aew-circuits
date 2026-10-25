@@ -14,8 +14,8 @@
    },
    {
       traces: 2 {589826,0,"V(collector)@2-4.634"} {589830,0,"V(collector)@1-4.632"}
-      Text: "V" 2 (0.002,2.88) ;V(collector)@2, output open: 4.54 V p-p, gain 6.54
-      Text: "V" 2 (0.002,2.58) ;V(collector)@1, Alan's 10k load: 2.72 V p-p, gain 3.92, and his scope reads 3.94
+      Text: "V" 2 (0.002,2.88) ;V(collector)@2 is RL=1Meg, the open output: 4.54 V p-p, gain 6.54
+      Text: "V" 6 (0.002,2.58) ;V(collector)@1 is RL=10k, Alan's load: 2.72 V p-p, gain 3.92, and his scope reads 3.94
       X: ('m',1,0,0.0004,0.004)
       Y[0]: (' ',2,-3,0.5,3)
       Y[1]: ('_',0,1e+308,0,-1e+308)

@@ -49,7 +49,7 @@ The collector behaves as a current source, so the stage's output impedance is es
 
 ![Collector load comparison schematic](02%20-%20Collector%20load%20comparison/Collector%20load%20comparison%20schematic.png)
 
-RLOAD is stepped between Alan's 10k and a 1Meg stand-in for the open output terminal he starts from. Step 1 is the 10k load and step 2 is the open output.
+RLOAD is stepped between Alan's 10k and a 1Meg stand-in for the open output terminal he starts from. The schematic writes `.step param RL list 1Meg 10k`, but LTspice runs a list in ascending order of value rather than in the order written, so step 1 is the 10k load and step 2 is the open output. The `@1` and `@2` suffixes on the plotted traces follow that run order, which is why the larger, unloaded swing is `@2`. The log settles it: it prints `.step rl=10000` before `.step rl=1000000`.
 
 ![Collector and base waveforms for both loads](02%20-%20Collector%20load%20comparison/Collector%20load%20comparison%20LTspice%20plot.png)
 
